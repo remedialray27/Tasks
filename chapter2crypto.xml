@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE book-part PUBLIC "-//DTD CUP-BITS Book Interchange DTD v1.2//EN"
+  "https://dtd.cambridge.org/schemas/2021/09/CUP-BITS-book1.dtd">
+
+<book-part book-part-type="chapter" id="chapter-2">
+  <book-part-meta>
+    <title-group>
+      <label>2</label>
+      <title>Classical Encryption</title>
+    </title-group>
+    <contrib-group>
+      <contrib contrib-type="author">
+        <n><surname>Bellare</surname><given-names>Mihir</given-names></n>
+      </contrib>
+      <contrib contrib-type="author">
+        <n><surname>Rogaway</surname><given-names>Phillip</given-names></n>
+      </contrib>
+    </contrib-group>
+    <fpage>29</fpage>
+    <lpage>38</lpage>
+  </book-part-meta>
+
+  <body>
+
+    <p>In this chapter we take a quick look at some classical encryption techniques, illustrating
+    their weakness and using these examples to initiate questions about how to define privacy. We
+    then discuss Shannon&#x2019;s notion of perfect security.</p>
+
+    <sec id="sec-2-1">
+      <title>2.1 Substitution ciphers</title>
+
+      <p>One of the earliest approaches to symmetric encryption is what is called a
+      <italic>substitution cipher</italic>. Say the plaintext is English text. We can view this as
+      a sequence of symbols, each symbol being either a letter, a blank or a punctuation mark.
+      Encryption substitutes each symbol &#x03C3; with another symbol &#x03C0;(&#x03C3;). The
+      function &#x03C0; is the key, and has to be a permutation (meaning, one-to-one and onto) so
+      that decryption is possible.</p>
+
+      <p>Encryption of this form is quite natural and well known, and, indeed, to many people it
+      defines how encryption is done. We will later see many other (and better) ways to encrypt,
+      but it is worth beginning by exploring this one.</p>
+
+      <p>Let&#x2019;s begin by specifying the scheme a little more mathematically. It may be
+      valuable at this time to review the box in the Introduction that recalls the vocabulary of
+      formal languages; we will be talking of things like alphabets, symbols, and strings.</p>
+
+      <p>Let &#x03A3; be a finite alphabet, whose members are called symbols. (In our examples,
+      &#x03A3; would contain the 26 letters of the English alphabet, the blank symbol, and
+      punctuation symbols. Let us refer to this henceforth as the English alphabet.) If x is a
+      string over &#x03A3; then we denote by x[i] its i-th symbol.</p>
+
+      <p>Recall that if x is a string then |x| denotes the length of x, meaning the number of
+      symbols in it. Let us also adopt the convention that if X is a set then |X| denotes its
+      size. The double use of the &#x201C;|&#x00B7;|&#x201D; notation should not cause much
+      problem since the type of object to which it is applied, namely a set or a string, will
+      usually be quite clear.</p>
+
+      <p>A <italic>permutation</italic> on a set S is a map &#x03C0;: S &#x2192; S that is
+      one-to-one and onto. Such a map is invertible, and we denote its inverse by
+      &#x03C0;<sup>&#x2212;1</sup>. The inverse is also a permutation, and the map and its
+      inverse are related by the fact that &#x03C0;<sup>&#x2212;1</sup>(&#x03C0;(x)) = x and
+      &#x03C0;(&#x03C0;<sup>&#x2212;1</sup>(y)) = y for all x, y &#x2208; S. We let Perm(S)
+      denote the set of all permutations on set S. Note that this set has size |S|!.</p>
+
+      <p>In the introduction, we had discussed symmetric encryption schemes, and said that any
+      such scheme is specified as a triple SE = (K, E, D) consisting of a key-generation
+      algorithm, an encryption algorithm, and a decryption algorithm. A <italic>substitution
+      cipher</italic> over alphabet &#x03A3; is a special kind of symmetric encryption scheme in
+      which the output of the key-generation algorithm K is always a permutation over &#x03A3;
+      and the encryption and decryption algorithms are as follows:</p>
+
+      <disp-quote>
+        <p>Algorithm E<sub>&#x03C0;</sub>(M)&#x2003;&#x2003;&#x2003;&#x2003;Algorithm
+        D<sub>&#x03C0;</sub>(C)<br/>
+        For i = 1,...,|M| do&#x2003;&#x2003;For i = 1,...,|C| do<br/>
+        &#x2003;C[i] &#x2190; &#x03C0;(M[i])&#x2003;&#x2003;&#x2003;M[i] &#x2190;
+        &#x03C0;<sup>&#x2212;1</sup>(C[i])<br/>
+        Return C&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;Return M</p>
+      </disp-quote>
+
+      <p>Above, the plaintext M is a string over &#x03A3;, as is the ciphertext C. The key is
+      denoted &#x03C0; and is a permutation over &#x03A3;. We will let Keys(SE) denote the set
+      of all keys that might be output by K.</p>
+
+      <p>There are many possible substitution ciphers over &#x03A3;, depending on the set
+      Keys(SE). In the simplest case, this is the set of all permutations over &#x03A3;, and K
+      is picking a permutation at random. But one might consider schemes in which permutations
+      are chosen from a much smaller set.</p>
+
+      <p>In our examples, unless otherwise indicated, the alphabet will be the English one defined
+      above, namely &#x03A3; contains the 26 English letters, the blank symbol, and punctuation
+      symbols. We will, for simplicity, restrict attention to substitution ciphers that are
+      <italic>punctuation respecting</italic>. By this we mean that any key (permutation)
+      &#x03C0; &#x2208; Keys(SE) leaves blanks and punctuation marks unchanged. In specifying
+      such a key, we need only say how it transforms each of the 26 English letters.</p>
+
+      <p><bold>Example 2.1</bold> This is an example of how encryption is performed with a
+      (punctuation respecting) substitution cipher. An example key (permutation) &#x03C0; is
+      depicted below:</p>
+
+      <table-wrap id="table-2-1">
+        <table>
+          <thead>
+            <tr>
+              <th>&#x03C3;</th>
+              <th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th>
+              <th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th>
+              <th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th>
+              <th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&#x03C0;(&#x03C3;)</td>
+              <td>D</td><td>B</td><td>U</td><td>P</td><td>W</td><td>I</td><td>Z</td>
+              <td>L</td><td>A</td><td>F</td><td>N</td><td>S</td><td>G</td>
+              <td>K</td><td>H</td><td>T</td><td>J</td><td>X</td><td>C</td><td>M</td>
+              <td>Y</td><td>O</td><td>V</td><td>E</td><td>Q</td><td>R</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+
+      <p>Note every English letter appears once and exactly once in the second row of the table.
+      That&#x2019;s why &#x03C0; is called a permutation. The inverse &#x03C0;<sup>&#x2212;1</sup>
+      permutation is obtained by reading the table backwards. Thus &#x03C0;<sup>&#x2212;1</sup>(D)
+      = A and so on. The encryption of the plaintext M = HI&#xA0;THERE is C = LA&#xA0;MLWXW.</p>
+
+      <p>Now let SE = (K, E, D) be an arbitrary substitution cipher. We are interested in its
+      security. To assess this we think about what the adversary has and what it might want to do.</p>
+
+      <p>The adversary begins with the disadvantage of not being given the key &#x03C0;. It is
+      assumed however to come in possession of a ciphertext C. The most basic goal that we can
+      consider for it is that it wants to recover the plaintext M = D(&#x03C0;, C) underlying C.</p>
+
+      <p>The adversary is always assumed to know the &#x201C;rules of the game.&#x201D; Meaning,
+      it knows the algorithms K, E, D. It knows that a substitution cipher is being used, and that
+      it is punctuation respecting in our case. The only thing it does not know a priori is the key,
+      for that is assumed to have been shared secretly and privately between the sender and receiver.</p>
+
+      <p>So the adversary sees some gibberish, such as the text LA&#xA0;MLWXW. One might imagine
+      that in the absence of the key &#x03C0; it would have a tough time figuring out that the
+      message was HI&#xA0;THERE. But in fact, substitution ciphers are not so hard to cryptanalyze.
+      Indeed, breaking a substitution cipher is a popular exercise in a Sunday newspaper or magazine.
+      The adversary can use its knowledge of the structure of English text to its advantage. Often a
+      good way to begin is by making what is called a <italic>frequency table</italic>. This table
+      shows, for every letter &#x03C4;, how often &#x03C4; occurs in the ciphertext. The most
+      common letter in English text is typically E. The next most common are the group T, A, O, I,
+      N, S, H, R. So if X is the most frequent ciphertext symbol, a good guess would be that it
+      represents E. Another thing to do is look for words that have few letters. It is remarkable
+      how quickly you actually (usually) can figure out the key.</p>
+
+      <p><bold>Example 2.2</bold> Let us try to decrypt the following ciphertext:</p>
+
+      <disp-quote>
+        <p>COXBX TBX CVK CDGXR DI T GTI&#x2019;R ADHX VOXI OX ROKQAU IKC RNXPQATCX: VOXI OX
+        PTI&#x2019;C THHKBU DC, TIU VOXI OX PTI.</p>
+      </disp-quote>
+
+      <p>Using frequency analysis (the most common symbol X maps to E, and so on) combined with
+      pattern matching and knowledge of English word structure, one progressively recovers the key.
+      Fig. 2.1 depicts the stages of the cryptanalysis. The final decryption is:</p>
+
+      <disp-quote>
+        <p>THERE ARE TWO TIMES IN A MAN&#x2019;S LIFE WHEN HE SHOULD NOT SPECULATE: WHEN HE
+        CAN&#x2019;T AFFORD IT, AND WHEN HE CAN.</p>
+      </disp-quote>
+
+      <p>The text is a quotation from Mark Twain.</p>
+
+      <fig id="fig-2-1">
+        <label>Figure 2.1</label>
+        <caption><p>Cryptanalysis of Example 2.2, showing four successive stages of key
+        recovery.</p></caption>
+      </fig>
+
+      <p>Some people argue that this type of cryptanalysis is not possible if the ciphertext is
+      short, and thus that substitution ciphers work fine if, say, one changes the key quite
+      frequently. We could spend a lot of time on this subject, but we won&#x2019;t. The reason
+      is that the idea of a substitution cipher is flawed at a quite fundamental level, and the
+      flaw remains in the various variations and enhancements proposed.</p>
+
+      <p>To illustrate why the idea of a substitution cipher is flawed at a fundamental level,
+      consider the following example usage of the scheme. A polling station has a list of voters,
+      V<sub>1</sub>, V<sub>2</sub>, ..., V<sub>n</sub>. Each voter casts a (secret) ballot which
+      is a choice between two values, Y (yes) or N (no). The polling station wants to transmit
+      the list of votes to a tally center, encrypted in order to preserve anonymity. The polling
+      station and tally center have agreed on a key &#x03C0; for a substitution cipher. Our
+      question is, is this secure?</p>
+
+      <p>It quickly becomes apparent that it is not. There are only two letters in v, namely Y
+      and N. This means that c also contains only two letters. If the adversary is one of the
+      voters, say V<sub>1</sub>, it knows its own vote v<sub>1</sub>. It looks at the first symbol
+      in the ciphertext and immediately deduces which letter represents Y and which represents N,
+      thereby recovering all other votes from the ciphertext.</p>
+
+      <p>This attack works even when the ciphertext is short. The weakness it exhibits is in the
+      very nature of the cipher, namely that a particular letter is always encrypted in the same
+      way, and thus repetitions can be detected.</p>
+
+      <p>We want symmetric encryption schemes that are not subject to the types of attacks above.
+      Towards this end we now consider one-time-pad encryption.</p>
+
+    </sec>
+
+    <sec id="sec-2-2">
+      <title>2.2 One-time-pad encryption</title>
+
+      <p>The <italic>One-Time-Pad (OTP)</italic> scheme with key-length m is the symmetric
+      encryption scheme SE = (K, E, D) whose algorithms are as follows. A key is a random m-bit
+      string, chosen as K &#x2190;<sup>$</sup> {0,1}<sup>m</sup>. The encryption algorithm is
+      defined by E<sub>K</sub>(M) = K &#x2295; M, where the message M is an m-bit binary string
+      and &#x2295; denotes bitwise XOR. The decryption algorithm is defined by D<sub>K</sub>(C)
+      = K &#x2295; C, where C &#x2208; {0,1}<sup>m</sup>. The correctness condition is met
+      because D<sub>K</sub>(E<sub>K</sub>(M)) = K &#x2295; (K &#x2295; M) = M for all
+      M &#x2208; {0,1}<sup>m</sup>.</p>
+
+      <p>Let us go back to our voting example. Represent Y by 1 and N by 0, and now encrypt the
+      vote string v = v<sub>1</sub>...v<sub>n</sub> with the OTP scheme with key-length n. Thus
+      the ciphertext is C = K &#x2295; v. This time, weaknesses such as those we saw above are
+      not present. Say the adversary knows that v<sub>1</sub> = 1. It can deduce K<sub>1</sub>,
+      the first bit of K. But having K<sub>1</sub> tells it nothing about the other bits of K,
+      and hence v<sub>2</sub>, ..., v<sub>n</sub> remain hidden.</p>
+
+      <p>The scheme has a property called <italic>perfect security</italic>, which we will define
+      below, and effectively provides the best possible security. We will also see that
+      substitution ciphers do not have this property, providing a more formal interpretation of
+      the concrete weaknesses we have seen in them.</p>
+
+      <p>Before going on, we remark that the perfect security of the OTP with key-length m relies
+      crucially on our encrypting only a single message of length m. Were we to encrypt two or
+      more messages, privacy would be lost. Suppose we encrypt M<sub>1</sub>, then M<sub>2</sub>.
+      The adversary obtains C<sub>1</sub> = K &#x2295; M<sub>1</sub> and C<sub>2</sub> =
+      K &#x2295; M<sub>2</sub>. XORing them together, it obtains M<sub>1</sub> &#x2295;
+      M<sub>2</sub>. This however provides partial information about the data.</p>
+
+      <p>The idea behind perfect security is to consider that one of two messages M<sub>1</sub>
+      or M<sub>2</sub> is being encrypted. The adversary is aware of this, and all it wants to
+      know is which of the two it is. Perfect security says that the adversary cannot tell. It
+      asks that the probability that C arises as the ciphertext is the same whether M<sub>1</sub>
+      or M<sub>2</sub> was chosen to be encrypted.</p>
+
+      <p><bold>Definition 2.3</bold> <italic>(Perfect Security of a Symmetric Encryption Scheme)</italic>
+      Let SE = (K, E, D) be a symmetric encryption scheme, and assume we use it to encrypt just
+      one message, drawn from a set Plaintexts. We say that SE is <italic>perfectly secure</italic>
+      if for any two messages M<sub>1</sub>, M<sub>2</sub> &#x2208; Plaintexts and any C</p>
+
+      <disp-quote>
+        <p>Pr[E<sub>K</sub>(M<sub>1</sub>) = C] = Pr[E<sub>K</sub>(M<sub>2</sub>) = C]. &#x2003;
+        (2.1)</p>
+      </disp-quote>
+
+      <p>In both cases, the probability is over the random choice K &#x2190;<sup>$</sup> K and
+      over the coins tossed by E if any.</p>
+
+      <p>Let us now show that a substitution cipher fails to have this property, even if the
+      ciphertext encrypted is very short, say three letters.</p>
+
+      <p><bold>Claim 2.4</bold> Let SE = (K, E, D) be a substitution cipher over the alphabet
+      &#x03A3; consisting of the 26 English letters. Assume that K picks a random permutation
+      over &#x03A3; as the key. Let Plaintexts be the set of all three letter English words.
+      Assume we use SE to encrypt a single message from Plaintexts. Then SE is not perfectly
+      secure.</p>
+
+      <p>Intuitively, this is due to the weakness we saw above: if a letter appears twice in a
+      plaintext, it is encrypted the same way in the ciphertext, and thus repetitions can be
+      detected. If M<sub>1</sub>, M<sub>2</sub> are messages such that M<sub>1</sub> contains
+      repeated letters but M<sub>2</sub> does not, then if the adversary sees a ciphertext with
+      repeated letters it knows that M<sub>1</sub> was encrypted.</p>
+
+      <p><bold>Proof of Claim 2.4:</bold> We need to show that the condition of Definition 2.3
+      does not hold. We need to show there exist M<sub>1</sub>, M<sub>2</sub> &#x2208; Plaintexts,
+      and there exists C, such that</p>
+
+      <disp-quote>
+        <p>Pr[E<sub>&#x03C0;</sub>(M<sub>1</sub>) = C] &#x2260; Pr[E<sub>&#x03C0;</sub>(M<sub>2</sub>) = C]. &#x2003; (2.2)</p>
+      </disp-quote>
+
+      <p>We set M<sub>1</sub> = FEE (a three letter word containing a repeated letter), M<sub>2</sub>
+      = FAR (a three letter word with no repeated letters), and C = XYY. Now:</p>
+
+      <disp-quote>
+        <p>Pr[E<sub>&#x03C0;</sub>(FEE) = XYY] = |{&#x03C0; &#x2208; Perm(&#x03A3;) :
+        &#x03C0;(F)&#x03C0;(E)&#x03C0;(E) = XYY}| / |Perm(&#x03A3;)| = 24! / 26! = 1/650.</p>
+      </disp-quote>
+
+      <p>The numerator is 24! because the condition means &#x03C0;(F) = X and &#x03C0;(E) = Y,
+      while the remaining 24 input letters may take any distinct values from {letters} &#x2212; {X, Y}.
+      For M<sub>2</sub>:</p>
+
+      <disp-quote>
+        <p>Pr[E<sub>&#x03C0;</sub>(FAR) = XYY] = |{&#x03C0; &#x2208; Perm(&#x03A3;) :
+        &#x03C0;(F)&#x03C0;(A)&#x03C0;(R) = XYY}| / |Perm(&#x03A3;)| = 0 / 26! = 0.</p>
+      </disp-quote>
+
+      <p>No permutation can map two distinct inputs to the same output Y, so the numerator is
+      zero. Since 1/650 &#x2260; 0, Equation (2.2) holds and the proof is complete.</p>
+
+      <p>Let us now show that the OTP scheme with key-length m does have the perfect security
+      property.</p>
+
+      <p><bold>Claim 2.5</bold> Let SE = (K, E, D) be the OTP scheme with key-length m &#x2265; 1.
+      Assume we use it to encrypt a single message drawn from {0,1}<sup>m</sup>. Then SE is
+      perfectly secure.</p>
+
+      <p><bold>Proof of Claim 2.5:</bold> For any M<sub>1</sub>, M<sub>2</sub> &#x2208; {0,1}<sup>m</sup>
+      and any C we need to show that Equation (2.1) is true. We can assume C is also an m-bit string,
+      since otherwise both sides are zero. Now:</p>
+
+      <disp-quote>
+        <p>Pr[E<sub>K</sub>(M<sub>1</sub>) = C] = Pr[K &#x2295; M<sub>1</sub> = C]
+        = |{K &#x2208; {0,1}<sup>m</sup> : K &#x2295; M<sub>1</sub> = C}| / |{0,1}<sup>m</sup>|
+        = 1 / 2<sup>m</sup>.</p>
+      </disp-quote>
+
+      <p>The numerator is one because K can only be the string M<sub>1</sub> &#x2295; C. Similarly
+      Pr[E<sub>K</sub>(M<sub>2</sub>) = C] = 1 / 2<sup>m</sup>. Since the two probabilities are
+      equal, Equation (2.1) is true, completing the proof.</p>
+
+      <p>Perfect security is great in terms of security, but comes at a hefty price. It turns out
+      that in any perfectly secure scheme, the length of the key must be at least the length of the
+      (single) message encrypted. In practice we want parties to be able to hold a short key, for
+      example 128 bits, and then be able to securely encrypt essentially any amount of data. To
+      achieve this, we need to make a switch regarding what kinds of security attributes we seek.
+      We will ask for security that is not perfect but good enough, the latter interpreted in a
+      computational sense.</p>
+
+    </sec>
+
+    <sec id="sec-2-3">
+      <title>2.3 Problems</title>
+
+      <p><bold>Problem 2.1</bold> Suppose that you want to encrypt a single message M &#x2208;
+      {0,1,2} using a random shared key K &#x2208; {0,1,2}. Suppose you do this by representing
+      K and M using two bits (00, 01, or 10), and then XORing the two representations. Does this
+      seem like a good protocol to you? Explain.</p>
+
+      <p><bold>Problem 2.2</bold> Suppose that you want to encrypt a single message M &#x2208;
+      {0,1,2} using a random shared key K &#x2208; {0,1,2}. Explain a good way to do this.</p>
+
+      <p><bold>Problem 2.3</bold> <italic>Symmetric encryption with a deck of cards.</italic>
+      Alice shuffles a deck of cards and deals it all out to herself and Bob (each of them gets
+      half of the 52 cards). Alice now wishes to send a secret message M to Bob by saying something
+      aloud. Eavesdropper Eve is listening in: she hears everything Alice says (but Eve can&#x2019;t
+      see the cards).</p>
+
+      <p>Part A. Suppose Alice&#x2019;s message M is a string of 48 bits. Describe how Alice can
+      communicate M to Bob in such a way that Eve will have no information about what M is.</p>
+
+      <p>Part B. Now suppose Alice&#x2019;s message M is 49 bits. Prove that there exists no
+      protocol which allows Alice to communicate M to Bob in such a way that Eve will have no
+      information about M.</p>
+
+    </sec>
+
+  </body>
+</book-part>

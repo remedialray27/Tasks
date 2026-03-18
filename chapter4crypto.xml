@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE book-part PUBLIC "-//DTD CUP-BITS Book Interchange DTD v1.2//EN"
+  "https://dtd.cambridge.org/schemas/2021/09/CUP-BITS-book1.dtd">
+
+<book-part book-part-type="chapter" id="chapter-4">
+  <book-part-meta>
+    <title-group>
+      <label>4</label>
+      <title>Pseudorandom Functions</title>
+    </title-group>
+    <contrib-group>
+      <contrib contrib-type="author">
+        <n><surname>Bellare</surname><given-names>Mihir</given-names></n>
+      </contrib>
+      <contrib contrib-type="author">
+        <n><surname>Rogaway</surname><given-names>Phillip</given-names></n>
+      </contrib>
+    </contrib-group>
+    <fpage>59</fpage>
+    <lpage>90</lpage>
+  </book-part-meta>
+
+  <body>
+
+    <p>Pseudorandom functions (PRFs) and their cousins, pseudorandom permutations (PRPs), figure
+    as central tools in the design of protocols, especially those for shared-key cryptography. At
+    one level, PRFs and PRPs can be used to model blockciphers, and they thereby enable the
+    security analysis of protocols based on blockciphers. But PRFs and PRPs are also a useful
+    conceptual starting point in contexts where blockciphers don&#x2019;t quite fit the bill
+    because of their fixed block-length. So in this chapter we will introduce PRFs and PRPs and
+    investigate their basic properties.</p>
+
+    <sec id="sec-4-1">
+      <title>4.1 Function families</title>
+
+      <p>A <italic>function family</italic> is a map F: K &#x00D7; D &#x2192; R. Here K is the
+      set of keys of F, D is the domain of F, and R is the range of F. The set of keys and the
+      range are finite, and all of the sets are nonempty. The two-input function F takes a key K
+      and an input X to return a point Y we denote by F(K, X). For any key K &#x2208; K we define
+      the map F<sub>K</sub>: D &#x2192; R by F<sub>K</sub>(X) = F(K, X). We call the function
+      F<sub>K</sub> an <italic>instance</italic> of function family F. Thus F specifies a
+      collection of maps, one for each key. That&#x2019;s why we call F a <italic>function family</italic>
+      or <italic>family of functions</italic>.</p>
+
+      <p>Sometimes we write Keys(F) for K, Dom(F) for D, and Range(F) for R.</p>
+
+      <p>Usually K = {0,1}<sup>k</sup> for some integer k, the key length. Often D = {0,1}<sup>&#x2113;</sup>
+      for some integer &#x2113; called the input length, and R = {0,1}<sup>L</sup> for some
+      integer L called the output length.</p>
+
+      <p>There is some probability distribution on the (finite) set of keys K. Unless otherwise
+      indicated, this distribution will be the uniform one. We denote by K &#x2190;<sup>$</sup> K
+      the operation of selecting a random string from K and naming it K. We denote by f
+      &#x2190;<sup>$</sup> F the operation: K &#x2190;<sup>$</sup> K; f &#x2190; F<sub>K</sub>.
+      In other words, let f be the function F<sub>K</sub> where K is a randomly chosen key.</p>
+
+      <p>A <italic>permutation</italic> is a bijection (i.e. a one-to-one onto map) whose domain
+      and range are the same set. We say that F is a <italic>family of permutations</italic> if
+      Dom(F) = Range(F) and each F<sub>K</sub> is a permutation on this common set.</p>
+
+      <p><bold>Example 4.1</bold> A blockcipher is a family of permutations. In particular DES
+      is a family of permutations DES: K &#x00D7; D &#x2192; R with K = {0,1}<sup>56</sup> and
+      D = {0,1}<sup>64</sup> and R = {0,1}<sup>64</sup>. Similarly AES128 is a family of
+      permutations AES: K &#x00D7; D &#x2192; R with K = {0,1}<sup>128</sup> and
+      D = {0,1}<sup>128</sup> and R = {0,1}<sup>128</sup>.</p>
+
+    </sec>
+
+    <sec id="sec-4-2">
+      <title>4.2 Random functions and permutations</title>
+
+      <p>Let D, R &#x2286; {0,1}<sup>&#x2217;</sup> be finite nonempty sets and let
+      &#x2113;, L &#x2265; 1 be integers. There are two particular function families that we will
+      often consider. One is Func(D, R), the family of all functions of D to R. The other is
+      Perm(D), the family of all permutations on D. For compactness of notation we let
+      Func(&#x2113;, L), Func(&#x2113;), and Perm(&#x2113;) denote Func(D, R), Func(D, D), and
+      Perm(D), respectively, where D = {0,1}<sup>&#x2113;</sup> and R = {0,1}<sup>L</sup>.</p>
+
+      <sec id="sec-4-2-1">
+        <title>4.2.1 Random functions</title>
+
+        <p>The family Func(D, R) has domain D and range R. The set of instances of Func(D, R)
+        is the set of all functions mapping D to R. The key describing any particular instance
+        function is simply a description of this instance function in some canonical notation.
+        The key-space of Func(D, R) is the set of all these keys, under the uniform distribution.</p>
+
+        <p>For the case of Func(&#x2113;, L), the key for a function in this family is a list of
+        all output values as its input ranges over {0,1}<sup>&#x2113;</sup>. Notice that the key
+        space has size 2<sup>L &#x00B7; 2<sup>&#x2113;</sup></sup>; there is a key for every
+        function of &#x2113;-bits to L-bits.</p>
+
+        <p><bold>Example 4.2</bold> We exemplify Func(3, 2), meaning &#x2113; = 3 and L = 2.
+        The domain is {0,1}<sup>3</sup> and the range is {0,1}<sup>2</sup>. An example instance
+        f has input-output table:</p>
+
+        <table-wrap id="table-4-2">
+          <table>
+            <thead>
+              <tr><th>x</th><th>000</th><th>001</th><th>010</th><th>011</th><th>100</th><th>101</th><th>110</th><th>111</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>f(x)</td><td>10</td><td>11</td><td>01</td><td>11</td><td>10</td><td>00</td><td>00</td><td>10</td></tr>
+            </tbody>
+          </table>
+        </table-wrap>
+
+        <p>The key corresponding to this particular function is (10, 11, 01, 11, 10, 00, 00, 10).
+        The key-space of Func(3, 2) has size 2<sup>2 &#x00B7; 2<sup>3</sup></sup> = 2<sup>16</sup>
+        = 65,536.</p>
+
+        <p>A <italic>random function</italic> g: D &#x2192; R placed in a black box corresponds
+        to the following: each time you give the box an input, you get back a random element of R,
+        with the sole constraint that if you twice give the box the same input X, it returns the
+        same output g(X). The dynamic view of a random function can be thought of as implemented
+        by a program that maintains a table T, initially empty. On input X: if T[X] is not defined,
+        pick Y &#x2190;<sup>$</sup> R and set T[X] &#x2190; Y; return T[X].</p>
+
+        <p>One must remember that the term &#x201C;random function&#x201D; is misleading. The
+        randomness of the function refers to the way it was chosen, not to an attribute of the
+        selected function itself. It makes no sense to talk of the randomness of an individual
+        function; the term &#x201C;random function&#x201D; just means a function chosen at random.</p>
+
+        <p><bold>Example 4.3</bold> Let&#x2019;s do some simple probabilistic computations to
+        understand random functions. In all of the following, the probability is taken over a
+        random choice of f from Func(&#x2113;, L).</p>
+
+        <list list-type="order">
+          <list-item><label>1.</label>
+            <p>Fix X &#x2208; {0,1}<sup>&#x2113;</sup> and Y &#x2208; {0,1}<sup>L</sup>. Then
+            Pr[f(X) = Y] = 2<sup>&#x2212;L</sup>. The probability doesn&#x2019;t depend on
+            &#x2113;, nor on the values of X, Y.</p>
+          </list-item>
+          <list-item><label>2.</label>
+            <p>Fix X<sub>1</sub>, X<sub>2</sub> &#x2208; {0,1}<sup>&#x2113;</sup> and
+            Y<sub>1</sub>, Y<sub>2</sub> &#x2208; {0,1}<sup>L</sup>, and assume X<sub>1</sub>
+            &#x2260; X<sub>2</sub>. Then Pr[f(X<sub>1</sub>) = Y<sub>1</sub> |
+            f(X<sub>2</sub>) = Y<sub>2</sub>] = 2<sup>&#x2212;L</sup>. Even if we know the value
+            of f on X<sub>1</sub>, its value on a different point X<sub>2</sub> is equally likely
+            to be any L-bit string.</p>
+          </list-item>
+          <list-item><label>3.</label>
+            <p>Fix X<sub>1</sub>, X<sub>2</sub> &#x2208; {0,1}<sup>&#x2113;</sup> and
+            Y &#x2208; {0,1}<sup>L</sup>. Then Pr[f(X<sub>1</sub>) = Y and f(X<sub>2</sub>) = Y]
+            = 2<sup>&#x2212;2L</sup> if X<sub>1</sub> &#x2260; X<sub>2</sub>, and
+            = 2<sup>&#x2212;L</sup> if X<sub>1</sub> = X<sub>2</sub>.</p>
+          </list-item>
+          <list-item><label>4.</label>
+            <p>Fix X<sub>1</sub>, X<sub>2</sub> &#x2208; {0,1}<sup>&#x2113;</sup> and
+            Y &#x2208; {0,1}<sup>L</sup>. Then Pr[f(X<sub>1</sub>) &#x2295; f(X<sub>2</sub>) = Y]
+            = 2<sup>&#x2212;L</sup> if X<sub>1</sub> &#x2260; X<sub>2</sub>; 0 if
+            X<sub>1</sub> = X<sub>2</sub> and Y &#x2260; 0<sup>L</sup>; 1 if
+            X<sub>1</sub> = X<sub>2</sub> and Y = 0<sup>L</sup>.</p>
+          </list-item>
+          <list-item><label>5.</label>
+            <p>Suppose l &#x2264; L and let &#x03C4;: {0,1}<sup>L</sup> &#x2192; {0,1}<sup>l</sup>
+            denote the function that returns the first l bits of its input. Fix distinct
+            X<sub>1</sub>, X<sub>2</sub> &#x2208; {0,1}<sup>&#x2113;</sup>,
+            Y<sub>1</sub> &#x2208; {0,1}<sup>L</sup> and Z<sub>2</sub> &#x2208; {0,1}<sup>l</sup>.
+            Then Pr[&#x03C4;(f(X<sub>2</sub>)) = Z<sub>2</sub> | f(X<sub>1</sub>) = Y<sub>1</sub>]
+            = 2<sup>&#x2212;l</sup>.</p>
+          </list-item>
+        </list>
+
+      </sec>
+
+      <sec id="sec-4-2-2">
+        <title>4.2.2 Random permutations</title>
+
+        <p>The family Perm(D) has domain and range D. The set of instances of Perm(D) is the set
+        of all permutations on D. For Perm(&#x2113;), the key space is the set of all 2<sup>&#x2113;</sup>-tuples
+        of distinct &#x2113;-bit strings, and the key space is equipped with the uniform
+        distribution. Thus &#x03C0; &#x2190;<sup>$</sup> Perm(&#x2113;) is the operation of
+        picking a random permutation on {0,1}<sup>&#x2113;</sup>.</p>
+
+        <p><bold>Example 4.4</bold> We exemplify Perm(3), meaning &#x2113; = 3. An example
+        instance &#x03C0; has input-output table:</p>
+
+        <table-wrap id="table-4-4">
+          <table>
+            <thead>
+              <tr><th>x</th><th>000</th><th>001</th><th>010</th><th>011</th><th>100</th><th>101</th><th>110</th><th>111</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>&#x03C0;(x)</td><td>010</td><td>111</td><td>101</td><td>011</td><td>110</td><td>100</td><td>000</td><td>001</td></tr>
+            </tbody>
+          </table>
+        </table-wrap>
+
+        <p>The key-space of Perm(3) has size 8! = 40,320.</p>
+
+        <p>In the dynamic view, a random permutation &#x03C0;: D &#x2192; D placed in a black
+        box corresponds to the following. If you give the box an input X, it returns a point
+        chosen at random from D minus the set of all values previously returned. The dynamic view
+        of a random permutation can be thought of as implemented by a program maintaining a table
+        T, initially empty, and a set S of returned values. On input X: if T[X] is not defined,
+        pick Y &#x2190;<sup>$</sup> D &#x2212; S; set T[X] &#x2190; Y; S &#x2190; S &#x222A; {T[X]};
+        return T[X].</p>
+
+        <p><bold>Example 4.5</bold> Let&#x2019;s look at some probabilistic computations involving
+        random permutations. The probability is taken over &#x03C0; &#x2190;<sup>$</sup>
+        Perm(&#x2113;).</p>
+
+        <list list-type="order">
+          <list-item><label>1.</label>
+            <p>Fix X, Y &#x2208; {0,1}<sup>&#x2113;</sup>. Then Pr[&#x03C0;(X) = Y] =
+            2<sup>&#x2212;&#x2113;</sup>. This is the same as if &#x03C0; had been selected
+            from Func(&#x2113;, &#x2113;) rather than from Perm(&#x2113;). The similarity
+            vanishes when more than one point is considered.</p>
+          </list-item>
+          <list-item><label>2.</label>
+            <p>Fix X<sub>1</sub>, X<sub>2</sub> &#x2208; {0,1}<sup>&#x2113;</sup> and
+            Y<sub>1</sub>, Y<sub>2</sub> &#x2208; {0,1}<sup>L</sup>, and assume
+            X<sub>1</sub> &#x2260; X<sub>2</sub>. Then Pr[&#x03C0;(X<sub>1</sub>) = Y<sub>1</sub>
+            | &#x03C0;(X<sub>2</sub>) = Y<sub>2</sub>] = 1/(2<sup>&#x2113;</sup> &#x2212; 1) if
+            Y<sub>1</sub> &#x2260; Y<sub>2</sub>, and 0 if Y<sub>1</sub> = Y<sub>2</sub>.</p>
+          </list-item>
+          <list-item><label>3.</label>
+            <p>Fix X<sub>1</sub>, X<sub>2</sub> &#x2208; {0,1}<sup>&#x2113;</sup> and
+            Y &#x2208; {0,1}<sup>L</sup>. Then Pr[&#x03C0;(X<sub>1</sub>) = Y and
+            &#x03C0;(X<sub>2</sub>) = Y] = 0 if X<sub>1</sub> &#x2260; X<sub>2</sub>, and
+            = 2<sup>&#x2212;&#x2113;</sup> if X<sub>1</sub> = X<sub>2</sub>. This is true
+            because a permutation can never map distinct points to the same point.</p>
+          </list-item>
+          <list-item><label>4.</label>
+            <p>Fix X<sub>1</sub>, X<sub>2</sub> &#x2208; {0,1}<sup>&#x2113;</sup> and
+            Y &#x2208; {0,1}<sup>&#x2113;</sup>. Then Pr[&#x03C0;(X<sub>1</sub>) &#x2295;
+            &#x03C0;(X<sub>2</sub>) = Y] = 1/(2<sup>&#x2113;</sup> &#x2212; 1) if
+            X<sub>1</sub> &#x2260; X<sub>2</sub> and Y &#x2260; 0<sup>&#x2113;</sup>;
+            0 if X<sub>1</sub> &#x2260; X<sub>2</sub> and Y = 0<sup>&#x2113;</sup>;
+            0 if X<sub>1</sub> = X<sub>2</sub> and Y &#x2260; 0<sup>&#x2113;</sup>;
+            1 if X<sub>1</sub> = X<sub>2</sub> and Y = 0<sup>&#x2113;</sup>.</p>
+          </list-item>
+        </list>
+
+      </sec>
+
+    </sec>
+
+    <sec id="sec-4-3">
+      <title>4.3 Pseudorandom functions</title>
+
+      <p>A <italic>pseudorandom function</italic> is a family of functions with the property that
+      the input-output behavior of a random instance of the family is &#x201C;computationally
+      indistinguishable&#x201D; from that of a random function. Someone who has only black-box
+      access to a function has a hard time telling whether the function in question is a random
+      instance of the family or a random function.</p>
+
+      <p>We fix a family of functions F: K &#x00D7; D &#x2192; R. Imagine that you are in a room
+      which contains a terminal connected to a computer outside your room. The computer implements
+      a function g: D &#x2192; R, so that whenever you type a value X you get back g(X). We
+      consider two different ways in which g will be chosen:</p>
+
+      <p><bold>World 0:</bold> The function g is drawn at random from Func(D, R),
+      namely g &#x2190;<sup>$</sup> Func(D, R).</p>
+
+      <p><bold>World 1:</bold> The function g is drawn at random from F, namely
+      g &#x2190;<sup>$</sup> F (which means K &#x2190;<sup>$</sup> K and g is set to
+      F<sub>K</sub>).</p>
+
+      <p>You are not told which of the two worlds was chosen. Your job is to discover which world
+      you are in using only your link enabling you to provide values X and get back g(X). After
+      trying some number of values of your choice, you must output a decision.</p>
+
+      <p>In the formalization, the entity referred to as &#x201C;you&#x201D; above is an algorithm
+      called the adversary. The adversary algorithm A may be randomized. We formalize the ability
+      to query g as giving A an oracle. We write A<sup>g</sup> to mean that adversary A is being
+      given oracle access to function g.</p>
+
+      <p><bold>Definition 4.6</bold> Let F: K &#x00D7; D &#x2192; R be a family of functions,
+      and let A be an algorithm that takes an oracle for a function g: D &#x2192; R, and returns
+      a bit. We consider two experiments:</p>
+
+      <disp-quote>
+        <p><bold>Experiment Exp<sub>F</sub><sup>prf-1</sup>(A)</bold>&#x2003;&#x2003;<bold>Experiment Exp<sub>F</sub><sup>prf-0</sup>(A)</bold><br/>
+        K &#x2190;<sup>$</sup> K&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;g &#x2190;<sup>$</sup> Func(D, R)<br/>
+        b &#x2190;<sup>$</sup> A<sup>F<sub>K</sub></sup>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;b &#x2190;<sup>$</sup> A<sup>g</sup><br/>
+        Return b&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;Return b</p>
+      </disp-quote>
+
+      <p>The <italic>prf-advantage</italic> of A is defined as</p>
+
+      <disp-quote>
+        <p>Adv<sub>F</sub><sup>prf</sup>(A) = Pr[Exp<sub>F</sub><sup>prf-1</sup>(A) = 1]
+        &#x2212; Pr[Exp<sub>F</sub><sup>prf-0</sup>(A) = 1].</p>
+      </disp-quote>
+
+      <p>The family F is public. The worlds are captured by experiments. The first experiment picks
+      a random instance F<sub>K</sub> of family F and then runs adversary A with oracle g = F<sub>K</sub>.
+      The second experiment picks a random function g: D &#x2192; R and runs A with this oracle.
+      The measure of how well A does at telling the two worlds apart is the prf-advantage of A.</p>
+
+      <p>Different adversaries will have different advantages. An adversary may achieve a greater
+      advantage by being more clever in the questions it asks, by asking more questions, or by
+      spending more computing time. The resources of interest include the time-complexity t, the
+      number of queries q, and the total length &#x03BC; of all queries.</p>
+
+      <p>Intuitively, F is &#x201C;secure&#x201D; if Adv<sub>F</sub><sup>prf</sup>(A) is
+      &#x201C;low&#x201D; for all adversaries whose resources are &#x201C;practical.&#x201D;
+      This is our first example of a cryptographic definition. What varies across definitions
+      is the experiments; this is where we pin down how we measure security.</p>
+
+    </sec>
+
+    <sec id="sec-4-4">
+      <title>4.4 Pseudorandom permutations</title>
+
+      <p>A family of functions F: K &#x00D7; D &#x2192; D is a <italic>pseudorandom permutation</italic>
+      if the input-output behavior of a random instance of the family is &#x201C;computationally
+      indistinguishable&#x201D; from that of a random permutation on D.</p>
+
+      <p>When F is a family of permutations, one can consider two settings. One, the adversary
+      gets an oracle for g being tested (<italic>chosen-plaintext attack, CPA</italic>). The other,
+      the adversary gets, in addition, an oracle for g<sup>&#x2212;1</sup>
+      (<italic>chosen-ciphertext attack, CCA</italic>).</p>
+
+      <sec id="sec-4-4-1">
+        <title>4.4.1 PRP under CPA</title>
+
+        <p>We fix a family of functions F: K &#x00D7; D &#x2192; D. We consider an adversary A
+        with oracle access to a function g chosen in one of two ways: World 0 via
+        g &#x2190;<sup>$</sup> Perm(D); World 1 via g &#x2190;<sup>$</sup> F.</p>
+
+        <p><bold>Definition 4.7</bold> Let F: K &#x00D7; D &#x2192; D be a family of functions,
+        and let A be an algorithm that takes an oracle for a function g: D &#x2192; D, and returns
+        a bit. We consider two experiments:</p>
+
+        <disp-quote>
+          <p><bold>Experiment Exp<sub>F</sub><sup>prp-cpa-1</sup>(A)</bold>&#x2003;&#x2003;<bold>Experiment Exp<sub>F</sub><sup>prp-cpa-0</sup>(A)</bold><br/>
+          K &#x2190;<sup>$</sup> K&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;g &#x2190;<sup>$</sup> Perm(D)<br/>
+          b &#x2190;<sup>$</sup> A<sup>F<sub>K</sub></sup>&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;b &#x2190;<sup>$</sup> A<sup>g</sup><br/>
+          Return b&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;Return b</p>
+        </disp-quote>
+
+        <p>The <italic>prp-cpa-advantage</italic> of A is defined as</p>
+
+        <disp-quote>
+          <p>Adv<sub>F</sub><sup>prp-cpa</sup>(A) = Pr[Exp<sub>F</sub><sup>prp-cpa-1</sup>(A) = 1]
+          &#x2212; Pr[Exp<sub>F</sub><sup>prp-cpa-0</sup>(A) = 1].</p>
+        </disp-quote>
+
+        <p>The intuition is similar to that for Definition 4.6. The difference is that here the
+        &#x201C;ideal&#x201D; object that F is being compared with is the family of random
+        permutations, not the family of random functions.</p>
+
+      </sec>
+
+      <sec id="sec-4-4-2">
+        <title>4.4.2 PRP under CCA</title>
+
+        <p>We fix a family of permutations F: K &#x00D7; D &#x2192; D. We consider an adversary
+        A with oracle access to two functions, g and its inverse g<sup>&#x2212;1</sup>.</p>
+
+        <p><bold>Definition 4.8</bold> Let F: K &#x00D7; D &#x2192; D be a family of permutations,
+        and let A be an algorithm that takes an oracle for a function g: D &#x2192; D and also an
+        oracle for the function g<sup>&#x2212;1</sup>: D &#x2192; D, and returns a bit. We
+        consider two experiments:</p>
+
+        <disp-quote>
+          <p><bold>Experiment Exp<sub>F</sub><sup>prp-cca-1</sup>(A)</bold>&#x2003;&#x2003;<bold>Experiment Exp<sub>F</sub><sup>prp-cca-0</sup>(A)</bold><br/>
+          K &#x2190;<sup>$</sup> K&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;g &#x2190;<sup>$</sup> Perm(D)<br/>
+          b &#x2190;<sup>$</sup> A<sup>F<sub>K</sub>, F<sub>K</sub><sup>&#x2212;1</sup></sup>&#x2003;&#x2003;b &#x2190;<sup>$</sup> A<sup>g, g<sup>&#x2212;1</sup></sup><br/>
+          Return b&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;&#x2003;Return b</p>
+        </disp-quote>
+
+        <p>The <italic>prp-cca-advantage</italic> of A is defined as</p>
+
+        <disp-quote>
+          <p>Adv<sub>F</sub><sup>prp-cca</sup>(A) = Pr[Exp<sub>F</sub><sup>prp-cca-1</sup>(A) = 1]
+          &#x2212; Pr[Exp<sub>F</sub><sup>prp-cca-0</sup>(A) = 1].</p>
+        </disp-quote>
+
+        <p>The adversary here has more power: not only can it query g, but it can directly query
+        g<sup>&#x2212;1</sup>. Informally, a family F is a secure PRP under CCA if
+        Adv<sub>F</sub><sup>prp-cca</sup>(A) is &#x201C;small&#x201D; for all adversaries using
+        a &#x201C;practical&#x201D; amount of resources.</p>
+
+      </sec>
+
+      <sec id="sec-4-4-3">
+        <title>4.4.3 Relations between the notions</title>
+
+        <p>If an adversary does not query g<sup>&#x2212;1</sup> the oracle might as well not be
+        there, and the adversary is effectively mounting a chosen-plaintext attack. Thus we have
+        the following:</p>
+
+        <p><bold>Proposition 4.9</bold> [PRP-CCA implies PRP-CPA] Let F: K &#x00D7; D &#x2192; D
+        be a family of permutations and let A be a (PRP-CPA attacking) adversary. Suppose that A
+        runs in time t, asks q queries, and these queries total &#x03BC; bits. Then there exists a
+        (PRP-CCA attacking) adversary B that runs in time t, asks q chosen-plaintext queries,
+        these queries totaling &#x03BC; bits, and asks no chosen-ciphertext queries, where
+        Adv<sub>F</sub><sup>prp-cca</sup>(B) &#x2265; Adv<sub>F</sub><sup>prp-cpa</sup>(A).</p>
+
+        <p>The theorem says that if you have an adversary A that breaks F in the PRP-CPA sense,
+        then you have some other adversary B that breaks F in the PRP-CCA sense. As a consequence,
+        PRP-CCA security implies PRP-CPA security.</p>
+
+      </sec>
+
+    </sec>
+
+    <sec id="sec-4-5">
+      <title>4.5 Modeling blockciphers</title>
+
+      <p>One of the primary motivations for the notions of PRFs and PRPs is to model blockciphers
+      and thereby enable the security analysis of protocols that use blockciphers.</p>
+
+      <p>Classically, security of blockciphers has focused on key recovery. As we have seen, even
+      a cursory glance at common blockcipher usages shows that hardness of key recovery is not
+      sufficient for security. We suggest that the master security property of a blockcipher is
+      that it be a secure PRP, under either CPA or CCA.</p>
+
+      <p>We cannot prove that specific blockciphers have this property. The best we can do is
+      assume they do, and then go on to use them. For quantitative security assessments, we would
+      make specific conjectures about the advantage functions. For example, we might conjecture
+      something like</p>
+
+      <disp-quote>
+        <p>Adv<sub>DES</sub><sup>prp-cpa</sup>(A<sub>t,q</sub>) &#x2264; c<sub>1</sub> &#x00B7;
+        t / T<sub>DES</sub> / 2<sup>55</sup> + c<sub>2</sub> &#x00B7; q / 2<sup>40</sup></p>
+      </disp-quote>
+
+      <p>for any adversary A<sub>t,q</sub> that runs in time at most t and asks at most q 64-bit
+      oracle queries. Here T<sub>DES</sub> is the time to do one DES computation, and c<sub>1</sub>,
+      c<sub>2</sub> are some constants. In other words, we are conjecturing that the best attacks
+      are either exhaustive key search or linear cryptanalysis.</p>
+
+      <p>More interesting is Adv<sub>DES</sub><sup>prf</sup>(t, q). Here we cannot do better than
+      assume that</p>
+
+      <disp-quote>
+        <p>Adv<sub>DES</sub><sup>prf</sup>(A<sub>t,q</sub>) &#x2264; c<sub>1</sub> &#x00B7;
+        t / T<sub>DES</sub> / 2<sup>55</sup> + q<sup>2</sup> / 2<sup>64</sup>.</p>
+      </disp-quote>
+
+      <p>This is due to the birthday attack discussed later. The second term arises because the
+      object under consideration is a family of permutations.</p>
+
+      <p>We stress that these are all conjectures. There could exist highly effective attacks that
+      break DES or AES as a PRF without recovering the key. Certainly, to assume that a blockcipher
+      is a PRF is a much stronger assumption than that it is secure against key recovery. Nonetheless,
+      if a blockcipher is broken as a PRF it should be considered insecure, and a replacement
+      should be sought.</p>
+
+    </sec>
+
+    <sec id="sec-4-6">
+      <title>4.6 Example attacks</title>
+
+      <p><bold>Example 4.10</bold> We define a family of functions F: {0,1}<sup>k</sup> &#x00D7;
+      {0,1}<sup>&#x2113;</sup> &#x2192; {0,1}<sup>L</sup> as follows. We let k = L&#x2113; and
+      view a k-bit key K as specifying an L-row by &#x2113;-column matrix of bits. The input
+      string X = X[1]...X[&#x2113;] is viewed as a sequence of bits, and F(K, X) is the
+      corresponding matrix-vector product, where all arithmetic is modulo 2.</p>
+
+      <p>We observe that for any key K we have F<sub>K</sub>(0<sup>&#x2113;</sup>) = 0<sup>L</sup>.
+      This is a weakness since a random function of &#x2113;-bits to L-bits is very unlikely to
+      return 0<sup>L</sup> on input 0<sup>&#x2113;</sup>. The adversary D works as follows:</p>
+
+      <disp-quote>
+        <p>Adversary D<sup>g</sup><br/>
+        Y &#x2190; g(0<sup>&#x2113;</sup>)<br/>
+        if Y = 0<sup>L</sup> then return 1 else return 0</p>
+      </disp-quote>
+
+      <p>We claim that Pr[Exp<sub>F</sub><sup>prf-1</sup>(D) = 1] = 1 and
+      Pr[Exp<sub>F</sub><sup>prf-0</sup>(D) = 1] = 2<sup>&#x2212;L</sup>. Why? In Experiment
+      Exp<sub>F</sub><sup>prf-1</sup>(D), g = F<sub>K</sub> for some K, so g(0<sup>&#x2113;</sup>)
+      = 0<sup>L</sup> and D returns 1. In Experiment Exp<sub>F</sub><sup>prf-0</sup>(D), g is a
+      random function and the probability that g(0<sup>&#x2113;</sup>) = 0<sup>L</sup> is
+      2<sup>&#x2212;L</sup>. Therefore Adv<sub>F</sub><sup>prf</sup>(D) = 1 &#x2212; 2<sup>&#x2212;L</sup>,
+      which is close to 1. Thus F is not a secure PRF.</p>
+
+      <p><bold>Example 4.11</bold> Suppose we are given a secure PRF F: {0,1}<sup>k</sup> &#x00D7;
+      {0,1}<sup>&#x2113;</sup> &#x2192; {0,1}<sup>L</sup>. We want to use F to design a PRF
+      G: {0,1}<sup>k</sup> &#x00D7; {0,1}<sup>&#x2113;</sup> &#x2192; {0,1}<sup>2L</sup>
+      with the same input length but twice the output length. We suggest:</p>
+
+      <disp-quote>
+        <p>G<sub>K</sub>(x) = F<sub>K</sub>(x) &#x2016; F<sub>K</sub>(x&#x0305;)</p>
+      </disp-quote>
+
+      <p>where x&#x0305; denotes the bitwise complement of x. However, G is insecure regardless
+      of the quality of F. The adversary D works as follows:</p>
+
+      <disp-quote>
+        <p>Adversary D<sup>g</sup><br/>
+        y<sub>1</sub> &#x2190; g(1<sup>&#x2113;</sup>)<br/>
+        y<sub>2</sub> &#x2190; g(0<sup>&#x2113;</sup>)<br/>
+        Parse y<sub>1</sub> = y<sub>1,1</sub> &#x2016; y<sub>1,2</sub> with |y<sub>1,1</sub>| = |y<sub>1,2</sub>| = L<br/>
+        Parse y<sub>2</sub> = y<sub>2,1</sub> &#x2016; y<sub>2,2</sub> with |y<sub>2,1</sub>| = |y<sub>2,2</sub>| = L<br/>
+        if y<sub>1,1</sub> = y<sub>2,2</sub> then return 1 else return 0</p>
+      </disp-quote>
+
+      <p>Note that 1<sup>&#x2113;</sup> is the bitwise complement of 0<sup>&#x2113;</sup>. In
+      World 1, G<sub>K</sub>(1<sup>&#x2113;</sup>) = F<sub>K</sub>(1<sup>&#x2113;</sup>) &#x2016;
+      F<sub>K</sub>(0<sup>&#x2113;</sup>) and G<sub>K</sub>(0<sup>&#x2113;</sup>) =
+      F<sub>K</sub>(0<sup>&#x2113;</sup>) &#x2016; F<sub>K</sub>(1<sup>&#x2113;</sup>). The first
+      half of y<sub>1</sub> always equals the second half of y<sub>2</sub>, so D returns 1. In
+      World 0, g is a random function, so the probability that the first half of g(1<sup>&#x2113;</sup>)
+      equals the second half of g(0<sup>&#x2113;</sup>) is 2<sup>&#x2212;L</sup>. Therefore
+      Adv<sub>G</sub><sup>prf</sup>(D) = 1 &#x2212; 2<sup>&#x2212;L</sup>, showing G is insecure.</p>
+
+    </sec>
+
+    <sec id="sec-4-7">
+      <title>4.7 Security against key recovery</title>
+
+      <p>Security against key recovery is not sufficient as a notion of security for a blockcipher.
+      However it is certainly necessary. We have indicated that we want to adopt as notion of
+      security for a blockcipher the notion of a PRF or a PRP. If this is to be viable, it should
+      be the case that any function family that is insecure under key recovery is also insecure as
+      a PRF or PRP. In this section we verify this simple fact.</p>
+
+      <p><bold>Definition 4.12</bold> Let F: K &#x00D7; D &#x2192; R be a family of functions,
+      and let B be an algorithm that takes an oracle for a function g: D &#x2192; R and outputs
+      a string. We consider the experiment:</p>
+
+      <disp-quote>
+        <p>Experiment Exp<sub>F</sub><sup>kr</sup>(B)<br/>
+        K &#x2190;<sup>$</sup> Keys(F)<br/>
+        K&#x2032; &#x2190; B<sup>F<sub>K</sub></sup><br/>
+        If K&#x2032; = K then return 1 else return 0</p>
+      </disp-quote>
+
+      <p>The <italic>kr-advantage</italic> of B is defined as Adv<sub>F</sub><sup>kr</sup>(B)
+      = Pr[Exp<sub>F</sub><sup>kr</sup>(B) = 1].</p>
+
+      <p><bold>Example 4.13</bold> Let F: {0,1}<sup>k</sup> &#x00D7; {0,1}<sup>l</sup> &#x2192;
+      {0,1}<sup>L</sup> be the family of functions from Example 4.10. The following adversary B
+      recovers the key. Let e<sub>j</sub> be the l-bit binary string having a 1 in position j and
+      zeros everywhere else.</p>
+
+      <disp-quote>
+        <p>Adversary B<sup>F<sub>K</sub></sup><br/>
+        K&#x2032; &#x2190; &#x03B5; // &#x03B5; is the empty string<br/>
+        for j = 1,...,l do<br/>
+        &#x2003;y<sub>j</sub> &#x2190; F<sub>K</sub>(e<sub>j</sub>)<br/>
+        &#x2003;K&#x2032; &#x2190; K&#x2032; &#x2016; y<sub>j</sub><br/>
+        return K&#x2032;</p>
+      </disp-quote>
+
+      <p>The adversary B invokes its oracle to compute the output of the function on input e<sub>j</sub>.
+      The result y<sub>j</sub> is exactly the j-th column of the matrix associated to the key K.
+      The matrix entries are concatenated to yield K&#x2032;, which is returned as the key. Since
+      the adversary always finds the key, Adv<sub>F</sub><sup>kr</sup>(B) = 1.</p>
+
+      <p><bold>Proposition 4.14</bold> Let F: K &#x00D7; D &#x2192; R be a family of functions,
+      and let B be a key-recovery adversary against F. Assume B&#x2019;s running time is at most
+      t and it makes at most q &lt; |D| oracle queries. Then there exists a PRF adversary A
+      against F such that A has running time at most t plus the time for one computation of F,
+      makes at most q + 1 oracle queries, and</p>
+
+      <disp-quote>
+        <p>Adv<sub>F</sub><sup>kr</sup>(B) &#x2264; Adv<sub>F</sub><sup>prf</sup>(A) +
+        1 / |R|. &#x2003; (4.1)</p>
+      </disp-quote>
+
+      <p>Furthermore if D = R then there also exists a PRP CPA adversary A against F such that
+      A has running time at most t plus the time for one computation of F, makes at most q + 1
+      oracle queries, and</p>
+
+      <disp-quote>
+        <p>Adv<sub>F</sub><sup>kr</sup>(B) &#x2264; Adv<sub>F</sub><sup>prp-cpa</sup>(A) +
+        1 / (|D| &#x2212; q). &#x2003; (4.2)</p>
+      </disp-quote>
+
+      <p>The Proposition implies that if a family of functions is a secure PRF or PRP then it is
+      also secure against all key-recovery attacks. In particular, if a blockcipher is modeled as
+      a PRP or PRF, we are implicitly assuming it to be secure against key-recovery attacks.</p>
+
+      <p><bold>Proof of Proposition 4.14:</bold> We prove the first equation. Adversary A is
+      provided an oracle for a function g: D &#x2192; R, and will try to determine in which World
+      it is. To do so, it runs adversary B as a subroutine.</p>
+
+      <disp-quote>
+        <p>Adversary A<sup>g</sup><br/>
+        i &#x2190; 0<br/>
+        Run adversary B, replying to its oracle queries as follows:<br/>
+        &#x2003;When B makes an oracle query x do<br/>
+        &#x2003;&#x2003;i &#x2190; i + 1; x<sub>i</sub> &#x2190; x<br/>
+        &#x2003;&#x2003;y<sub>i</sub> &#x2190; g(x<sub>i</sub>)<br/>
+        &#x2003;&#x2003;Return y<sub>i</sub> to B as the answer<br/>
+        Until B stops and outputs a key K&#x2032;<br/>
+        Let x be some point in D &#x2212; {x<sub>1</sub>,...,x<sub>q</sub>}<br/>
+        y &#x2190; g(x)<br/>
+        if F(K&#x2032;, x) = y then return 1 else return 0</p>
+      </disp-quote>
+
+      <p>A is running B and itself providing answers to B&#x2019;s oracle queries via the oracle
+      g. When B returns some K&#x2032; &#x2208; K, A tests by checking whether F(K&#x2032;, x)
+      agrees with g(x) for a new point x not queried by B. We claim that
+      Pr[Exp<sub>F</sub><sup>prf-1</sup>(A) = 1] &#x2265; Adv<sub>F</sub><sup>kr</sup>(B) and
+      Pr[Exp<sub>F</sub><sup>prf-0</sup>(A) = 1] = 1 / |R|. Subtracting yields Equation (4.1).
+      The first claim is true because in World 1 the oracle g is a random instance of F, which is
+      exactly what B expects. The second is true because in World 0 the function g is random, and
+      since x was never queried by B, the value g(x) is unpredictable. The proof of Equation (4.2)
+      is similar, using the fact that in World 0, g is a random permutation of D and g(x) can
+      assume at least |D| &#x2212; q values.</p>
+
+      <p><bold>Example 4.15</bold> Define the blockcipher E: {0,1}<sup>k</sup> &#x00D7;
+      {0,1}<sup>&#x2113;</sup> &#x2192; {0,1}<sup>&#x2113;</sup> by E<sub>K</sub>(x) = x for all
+      k-bit keys K and all &#x2113;-bit inputs x. We claim that it is very secure against
+      key-recovery but very insecure as a PRP under CPA. For any adversary B,
+      Adv<sub>E</sub><sup>kr</sup>(B) = 2<sup>&#x2212;k</sup>, regardless of the running time
+      and number of queries made by B. On the other hand there is an adversary A, making only one
+      oracle query, such that Adv<sub>E</sub><sup>prp-cpa</sup>(A) &#x2265; 1 &#x2212;
+      2<sup>&#x2212;&#x2113;</sup>. Since E does not depend on K, querying the oracle yields no
+      information about K, so the key guess is correct with probability only 2<sup>&#x2212;k</sup>.
+      On the other hand, an adversary can test whether g(0<sup>&#x2113;</sup>) = 0<sup>&#x2113;</sup>
+      and achieve a prp-advantage of 1 &#x2212; 2<sup>&#x2212;&#x2113;</sup>.</p>
+
+    </sec>
+
+    <sec id="sec-4-8">
+      <title>4.8 The birthday attack</title>
+
+      <p>Suppose E: {0,1}<sup>k</sup> &#x00D7; {0,1}<sup>&#x2113;</sup> &#x2192; {0,1}<sup>&#x2113;</sup>
+      is a family of permutations. If we are given an oracle g: {0,1}<sup>&#x2113;</sup> &#x2192;
+      {0,1}<sup>&#x2113;</sup> which is either an instance of E or a random function, there is a
+      simple test to determine which: query the oracle at distinct points x<sub>1</sub>,
+      x<sub>2</sub>,..., x<sub>q</sub>, and get back values y<sub>1</sub>, y<sub>2</sub>,...,
+      y<sub>q</sub>. If g were a permutation, the values must be distinct. If g was a random
+      function, they may or may not be distinct. So, if they are distinct, bet on a permutation.</p>
+
+      <p>Roughly, it takes q &#x2248; &#x221A;2<sup>&#x2113;</sup> queries to get an advantage
+      that is quite close to 1. The reason is the birthday paradox. This tells us that an instance
+      of a blockcipher can be distinguished from a random function based on seeing a number of
+      input-output examples which is approximately 2<sup>&#x2113;/2</sup>.</p>
+
+      <p><bold>Proposition 4.16</bold> Let E: {0,1}<sup>k</sup> &#x00D7; {0,1}<sup>&#x2113;</sup>
+      &#x2192; {0,1}<sup>&#x2113;</sup> be a family of permutations. Suppose q satisfies
+      2 &#x2264; q &#x2264; 2<sup>(&#x2113;+1)/2</sup>. Then there is an adversary A, making q
+      oracle queries, such that</p>
+
+      <disp-quote>
+        <p>Adv<sub>E</sub><sup>prf</sup>(A) &#x2265; 0.3 &#x00B7; q(q &#x2212; 1) / 2<sup>&#x2113;</sup>.
+        &#x2003; (4.5)</p>
+      </disp-quote>
+
+      <p><bold>Proof of Proposition 4.16:</bold> Adversary A queries its oracle g at the first q
+      points in lexicographic order, getting back values y<sub>1</sub>,...,y<sub>q</sub>. If all
+      y<sub>i</sub> are distinct, it returns 1 (betting on a permutation); otherwise it returns 0.
+      In World 1, g = E<sub>K</sub> for some key K, and since E is a family of permutations, g is
+      a permutation, so y<sub>1</sub>,...,y<sub>q</sub> are always all distinct, and A returns 1
+      with probability 1. In World 0, g is a random function, so y<sub>1</sub>,...,y<sub>q</sub>
+      are random independently distributed values in {0,1}<sup>&#x2113;</sup>. The probability
+      that they are all distinct is 1 &#x2212; C(N, q) where N = 2<sup>&#x2113;</sup> and
+      C(N, q) is the birthday collision probability. Subtracting gives Adv<sub>E</sub><sup>prf</sup>(A)
+      = C(N, q) &#x2265; 0.3 &#x00B7; q(q &#x2212; 1) / 2<sup>&#x2113;</sup>.</p>
+
+    </sec>
+
+    <sec id="sec-4-9">
+      <title>4.9 The PRP/PRF switching lemma</title>
+
+      <p>When we analyse blockcipher-based constructions, we find a curious dichotomy: PRPs are
+      what most naturally model blockciphers, but analyses are often considerably simpler and more
+      natural assuming the blockcipher is a PRF. To bridge the gap, we relate the prp-security
+      of a blockcipher to its prf-security. The following says, roughly, these two measures are
+      always close.</p>
+
+      <p><bold>Lemma 4.17</bold> [PRP/PRF Switching Lemma] Let E: K &#x00D7; {0,1}<sup>n</sup>
+      &#x2192; {0,1}<sup>n</sup> be a function family. Let A be an adversary that asks at most q
+      oracle queries. Then</p>
+
+      <disp-quote>
+        <p>|Pr[&#x03C1; &#x2190;<sup>$</sup> Func(n) : A<sup>&#x03C1;</sup> &#x21D2; 1]
+        &#x2212; Pr[&#x03C0; &#x2190;<sup>$</sup> Perm(n) : A<sup>&#x03C0;</sup> &#x21D2; 1]|
+        &#x2264; q(q &#x2212; 1) / 2<sup>n+1</sup>. &#x2003; (4.8)</p>
+      </disp-quote>
+
+      <p>As a consequence,</p>
+
+      <disp-quote>
+        <p>|Adv<sub>E</sub><sup>prf</sup>(A) &#x2212; Adv<sub>E</sub><sup>prp</sup>(A)|
+        &#x2264; q(q &#x2212; 1) / 2<sup>n+1</sup>. &#x2003; (4.9)</p>
+      </disp-quote>
+
+      <p>The proof introduces a technique that we shall use repeatedly: a <italic>game-playing
+      argument</italic>. We are trying to compare what happens when an adversary A interacts with
+      a random permutation oracle to what happens when the adversary interacts with a random
+      function oracle. We set up each of these two interactions as a kind of game, writing out
+      the game in pseudocode. Any time that the behavior in the two games differs, we set a flag
+      <bold>bad</bold>. The probability that the flag <bold>bad</bold> gets set is then used to
+      bound the difference between the experiments.</p>
+
+      <p><bold>Proof:</bold> We prove Equation (4.8), from which Equation (4.9) follows. We
+      define two games, P and R, with pseudocode as follows. In both games, when adversary A asks
+      query X: choose Y &#x2190;<sup>$</sup> {0,1}<sup>n</sup>. In Game P (only), if Y is already
+      in Range(&#x03C0;), set <bold>bad</bold> &#x2190; true and re-choose Y from the co-range of
+      &#x03C0;. In both games, set &#x03C0;(X) &#x2190; Y and return Y.</p>
+
+      <p>Game R perfectly simulates a random function &#x03C1; &#x2190;<sup>$</sup> Func(n): on
+      each query a random n-bit string is returned. Game P simulates a random permutation
+      &#x03C0; &#x2190;<sup>$</sup> Perm(n): each response is a random new answer, never
+      previously returned. Therefore Pr[A<sup>&#x03C1;</sup> &#x21D2; 1] = Pr[A<sup>Game R</sup>
+      &#x21D2; 1] and Pr[A<sup>&#x03C0;</sup> &#x21D2; 1] = Pr[A<sup>Game P</sup> &#x21D2; 1].</p>
+
+      <p>Now: Pr[A<sup>Game R</sup> &#x21D2; 1] &#x2212; Pr[A<sup>Game P</sup> &#x21D2; 1] &#x2264;
+      Pr[A<sup>Game R</sup> sets bad]. This follows from the fact that any sequence of coin tosses
+      that contributes to the adversary&#x2019;s advantage (outputting 1 in R and 0 in P) must
+      result in <bold>bad</bold> being set; otherwise the games produce the same responses and
+      hence the same output.</p>
+
+      <p>To bound Pr[A<sup>Game R</sup> sets bad]: line 11 (the bad-setting line) is executed q
+      times. The first time, Range(&#x03C0;) has 0 points; the second time, 1 point; and so on.
+      Each time, we select a random Y from {0,1}<sup>n</sup>. By the sum bound, the probability
+      that Y is ever in Range(&#x03C0;) is at most (0 + 1 + 2 + ... + (q &#x2212; 1)) / 2<sup>n</sup>
+      = q(q &#x2212; 1) / 2<sup>n+1</sup>. This proves Equation (4.8).</p>
+
+      <p>The PRP/PRF switching lemma is one of the central tools for understanding block-cipher
+      based protocols, and the game-playing method will be one of our central techniques for doing
+      proofs.</p>
+
+    </sec>
+
+    <sec id="sec-4-10">
+      <title>4.10 Unix one-way function</title>
+
+      <p>The framework for the Unix password-hashing scheme is this. We fix some function
+      h: {0,1}<sup>k</sup> &#x2192; {0,1}<sup>L</sup>, which we call the
+      <italic>password hashing function</italic>. A user U chooses a k-bit password K, and the
+      system stores the value y = h(K) together with the user&#x2019;s name U. When the user
+      logs in, the system computes h(K) and declares the user authentic if and only if this value
+      equals y. A party who obtains (U, y) cannot gain trivial entry: they must still find a K
+      such that h(K) = y.</p>
+
+      <p>A simple example choice of h is h(K) = DES<sub>K</sub>(0<sup>64</sup>), so k = 56 and
+      L = 64. To prove anything meaningful, we must make some assumption about DES. We make the
+      assumption that DES is a secure PRP and ask what we can prove about the security of the
+      simplified password scheme.</p>
+
+      <p>We need to decide exactly what security property to target. One would think the security
+      question boils down to asking how hard it is to recover K given y = h(K). But recovering
+      any K&#x2032; such that h(K&#x2032;) = y, even if K&#x2032; &#x2260; K, would also break
+      the scheme. This corresponds to asking that h be a <italic>one-way function</italic>: it is
+      computationally infeasible to recover the pre-image of a range point.</p>
+
+      <p><bold>Definition 4.18</bold> Let h: {0,1}<sup>k</sup> &#x2192; {0,1}<sup>L</sup> be a
+      function, and let I be an algorithm that on input an L-bit string returns a k-bit string.
+      We consider the experiment:</p>
+
+      <disp-quote>
+        <p>Experiment Exp<sub>h</sub><sup>owf</sup>(I)<br/>
+        K &#x2190;<sup>$</sup> {0,1}<sup>k</sup>; y &#x2190; h(K)<br/>
+        x &#x2190; I(y)<br/>
+        If h(x) = y then return 1 else return 0</p>
+      </disp-quote>
+
+      <p>The <italic>owf-advantage</italic> of I is defined as Adv<sub>h</sub><sup>owf</sup>(I)
+      = Pr[Exp<sub>h</sub><sup>owf</sup>(I) = 1].</p>
+
+      <p><bold>Theorem 4.19</bold> Let F: {0,1}<sup>k</sup> &#x00D7; {0,1}<sup>l</sup> &#x2192;
+      {0,1}<sup>L</sup> be a family of functions, and define h: {0,1}<sup>k</sup> &#x2192;
+      {0,1}<sup>L</sup> via h(K) = F(K, 0<sup>l</sup>) for all K &#x2208; {0,1}<sup>k</sup>.
+      Then we have</p>
+
+      <disp-quote>
+        <p>Adv<sub>h</sub><sup>owf</sup>(t) &#x2264; 1 / (1 &#x2212; 2<sup>k&#x2212;L</sup>)
+        &#x00B7; Adv<sub>F</sub><sup>prf</sup>(t&#x2032;, 1, l), &#x2003; (4.17)</p>
+      </disp-quote>
+
+      <p>under the assumption that k &#x2264; L &#x2212; 1. Here t&#x2032; is t plus the time
+      for one computation of F.</p>
+
+      <p>As per the theorem, Adv<sub>h</sub><sup>owf</sup>(t) can be at most twice
+      Adv<sub>F</sub><sup>prf</sup>(t&#x2032;, 1, l), since k &#x2264; L &#x2212; 1 implies
+      1 / (1 &#x2212; 2<sup>k&#x2212;L</sup>) &#x2264; 2. So if F is secure, h is also secure.
+      It is thus a proof of security, showing that h is one-way if F is a secure PRF.</p>
+
+      <p><bold>Proof of Theorem 4.19:</bold> We associate to any adversary I attempting to
+      invert h an adversary D<sub>I</sub> attacking F such that</p>
+
+      <disp-quote>
+        <p>Adv<sub>h</sub><sup>owf</sup>(I) &#x2264; 1 / (1 &#x2212; 2<sup>k&#x2212;L</sup>)
+        &#x00B7; Adv<sub>F</sub><sup>prf</sup>(D<sub>I</sub>). &#x2003; (4.18)</p>
+      </disp-quote>
+
+      <p>This adversary takes an oracle for a function g: {0,1}<sup>l</sup> &#x2192;
+      {0,1}<sup>L</sup> and works as follows:</p>
+
+      <disp-quote>
+        <p>Adversary D<sub>I</sub><sup>g</sup><br/>
+        y &#x2190; g(0<sup>l</sup>)<br/>
+        x &#x2190; I(y)<br/>
+        If F(x, 0<sup>l</sup>) = y then return 1 else return 0</p>
+      </disp-quote>
+
+      <p>We claim that Pr[Exp<sub>F</sub><sup>prf-1</sup>(D<sub>I</sub>) = 1] =
+      Adv<sub>h</sub><sup>owf</sup>(I) and Pr[Exp<sub>F</sub><sup>prf-0</sup>(D<sub>I</sub>) = 1]
+      &#x2264; 2<sup>k</sup> / 2<sup>L</sup> &#x00B7; Adv<sub>h</sub><sup>owf</sup>(I).
+      Subtracting and rearranging yields Equation (4.18). Setting &#x03B5; = Adv<sub>h</sub><sup>owf</sup>(I)
+      and dividing both sides by (1 &#x2212; 2<sup>k&#x2212;L</sup>) gives the result.</p>
+
+    </sec>
+
+    <sec id="sec-4-11">
+      <title>4.11 Historical notes</title>
+
+      <p>The concept of pseudorandom functions is due to Goldreich, Goldwasser and Micali, while
+      that of pseudorandom permutation is due to Luby and Rackoff. These works are however in
+      the complexity-theoretic or &#x201C;asymptotic&#x201D; setting. In contrast our approach
+      is motivated by the desire to model blockciphers and is called the &#x201C;concrete
+      security&#x201D; approach. Definitions 4.6 and 4.7 are from Bellare, Kilian and Rogaway,
+      as are Propositions 4.16 and 4.17.</p>
+
+    </sec>
+
+    <sec id="sec-4-12">
+      <title>4.12 Problems</title>
+
+      <p><bold>Problem 4.1</bold> Let E: {0,1}<sup>k</sup> &#x00D7; {0,1}<sup>n</sup> &#x2192;
+      {0,1}<sup>n</sup> be a secure PRP. Consider the family of permutations E&#x2032;:
+      {0,1}<sup>k</sup> &#x00D7; {0,1}<sup>2n</sup> &#x2192; {0,1}<sup>2n</sup> defined by
+      E&#x2032;<sub>K</sub>(x &#x2016; x&#x2032;) = E<sub>K</sub>(x) &#x2016;
+      E<sub>K</sub>(x &#x2295; x&#x2032;). Show that E&#x2032; is not a secure PRP.</p>
+
+      <p><bold>Problem 4.2</bold> Consider the following blockcipher E: {0,1}<sup>3</sup> &#x00D7;
+      {0,1}<sup>2</sup> &#x2192; {0,1}<sup>2</sup> with eight keys (rows) and the table showing
+      where each of 0, 1, 2, 3 maps. Compute the maximal prp-advantage an adversary can get
+      (a) with one query, (b) with four queries, and (c) with two queries.</p>
+
+      <p><bold>Problem 4.3</bold> Present a secure construction for the problem of Example 4.11.
+      That is, given a PRF F: {0,1}<sup>k</sup> &#x00D7; {0,1}<sup>n</sup> &#x2192; {0,1}<sup>n</sup>,
+      construct a PRF G: {0,1}<sup>k</sup> &#x00D7; {0,1}<sup>n</sup> &#x2192; {0,1}<sup>2n</sup>
+      which is a secure PRF as long as F is secure.</p>
+
+      <p><bold>Problem 4.4</bold> Design a blockcipher E: {0,1}<sup>k</sup> &#x00D7; {0,1}<sup>128</sup>
+      &#x2192; {0,1}<sup>128</sup> that is secure (up to a large number of queries) against
+      non-adaptive adversaries, but is completely insecure (even for two queries) against an
+      adaptive adversary.</p>
+
+      <p><bold>Problem 4.5</bold> Let a[i] denote the i-th bit of a binary string a, where
+      1 &#x2264; i &#x2264; |a|. The inner product of n-bit binary strings a, b is
+      &#x27E8;a, b&#x27E9; = a[1]b[1] &#x2295; a[2]b[2] &#x2295; &#x00B7;&#x00B7;&#x00B7;
+      &#x2295; a[n]b[n]. A family of functions F: {0,1}<sup>k</sup> &#x00D7; {0,1}<sup>&#x2113;</sup>
+      &#x2192; {0,1}<sup>L</sup> is said to be <italic>inner-product preserving</italic> if for
+      every K &#x2208; {0,1}<sup>k</sup> and every distinct x<sub>1</sub>, x<sub>2</sub>
+      &#x2208; {0,1}<sup>&#x2113;</sup> &#x2212; {0<sup>&#x2113;</sup>} we have
+      &#x27E8;F(K, x<sub>1</sub>), F(K, x<sub>2</sub>)&#x27E9; = &#x27E8;x<sub>1</sub>,
+      x<sub>2</sub>&#x27E9;. Prove that if F is inner-product preserving then there exists an
+      adversary A, making at most two oracle queries, such that Adv<sub>F</sub><sup>prf</sup>(A)
+      &#x2265; 1/2 &#x00B7; (1 + 1/2<sup>L</sup>). Explain why this shows that if F is
+      inner-product preserving then F is not a secure PRF.</p>
+
+      <p><bold>Problem 4.6</bold> Let E: {0,1}<sup>k</sup> &#x00D7; {0,1}<sup>&#x2113;</sup>
+      &#x2192; {0,1}<sup>&#x2113;</sup> be a blockcipher. The <italic>two-fold cascade</italic>
+      of E is the blockcipher E<sup>(2)</sup>: {0,1}<sup>2k</sup> &#x00D7; {0,1}<sup>&#x2113;</sup>
+      &#x2192; {0,1}<sup>&#x2113;</sup> defined by E<sup>(2)</sup><sub>K<sub>1</sub> &#x2016; K<sub>2</sub></sub>(x)
+      = E<sub>K<sub>1</sub></sub>(E<sub>K<sub>2</sub></sub>(x)). Prove that if E is a secure PRP
+      then so is E<sup>(2)</sup>.</p>
+
+      <p><bold>Problem 4.7</bold> Let A be an adversary that makes at most q total queries to
+      its two oracles, f and g, where f, g: {0,1}<sup>n</sup> &#x2192; {0,1}<sup>n</sup>. Assume
+      that A never asks the same query X to both of its oracles. Define Adv(A) =
+      Pr[&#x03C0; &#x2190; Perm(n): A<sup>&#x03C0;(&#x00B7;), &#x03C0;(&#x00B7;)</sup> = 1]
+      &#x2212; Pr[&#x03C0;, &#x03C0;&#x2032; &#x2190; Perm(n):
+      A<sup>&#x03C0;(&#x00B7;), &#x03C0;&#x2032;(&#x00B7;)</sup> = 1]. Prove a good upper
+      bound for Adv(A), say Adv(A) &#x2264; q<sup>2</sup> / 2<sup>n</sup>.</p>
+
+      <p><bold>Problem 4.8</bold> Let F: {0,1}<sup>k</sup> &#x00D7; {0,1}<sup>&#x2113;</sup>
+      &#x2192; {0,1}<sup>&#x2113;</sup> be a family of functions and r &#x2265; 1 an integer.
+      The <italic>r-round Feistel cipher</italic> associated to F is the family of permutations
+      F<sup>(r)</sup>: {0,1}<sup>rk</sup> &#x00D7; {0,1}<sup>2&#x2113;</sup> &#x2192;
+      {0,1}<sup>2&#x2113;</sup>. (a) Prove that there exists an adversary A, making at most two
+      oracle queries, such that Adv<sub>F<sup>(2)</sup></sub><sup>prf</sup>(A) &#x2265;
+      1 &#x2212; 2<sup>&#x2212;&#x2113;</sup>. (b) Prove that there exists an adversary A,
+      making at most two queries to its first oracle and one to its second oracle, such that
+      Adv<sub>F<sup>(3)</sup></sub><sup>prp-cca</sup>(A) &#x2265; 1 &#x2212;
+      3 &#x00B7; 2<sup>&#x2212;&#x2113;</sup>.</p>
+
+      <p><bold>Problem 4.9</bold> Let E: K &#x00D7; {0,1}<sup>n</sup> &#x2192; {0,1}<sup>n</sup>
+      be a function family and let A be an adversary that asks at most q queries. In trying to
+      construct a proof that |Adv<sub>E</sub><sup>prp</sup>(A) &#x2212; Adv<sub>E</sub><sup>prf</sup>(A)|
+      &#x2264; q<sup>2</sup> / 2<sup>n+1</sup>, Michael and Peter put forward an argument a
+      fragment of which is as follows: &#x201C;Consider an adversary A that asks at most q oracle
+      queries to a function &#x03C1;, where &#x03C1; is determined by randomly sampling from
+      Func(n). Let C (for &#x2018;collision&#x2019;) be the event that A asks some two distinct
+      queries X and X&#x2032; and the oracle returns the same answer. Then clearly
+      Pr[&#x03C0; &#x2190;<sup>$</sup> Perm(n): A<sup>&#x03C0;</sup> &#x21D2; 1] =
+      Pr[&#x03C1; &#x2190;<sup>$</sup> Func(n): A<sup>&#x03C1;</sup> &#x21D2; 1 | C].&#x201D;
+      Show that Michael and Peter have it all wrong: prove that Pr[&#x03C0; &#x2190;<sup>$</sup>
+      Perm(n): A<sup>&#x03C0;</sup> &#x21D2; 1] is not necessarily the same as
+      Pr[&#x03C1; &#x2190;<sup>$</sup> Func(n): A<sup>&#x03C1;</sup> &#x21D2; 1 | C]. Do this
+      by selecting a number n and constructing an adversary A for which the left and right sides
+      of the equation above are unequal.</p>
+
+    </sec>
+
+  </body>
+</book-part>
