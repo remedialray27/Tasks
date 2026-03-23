@@ -1,0 +1,3091 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE book PUBLIC "-//DTD CUP-BITS Book Interchange DTD v1.2//EN"
+  "https://dtd.cambridge.org/schemas/2021/09/CUP-BITS-book1.dtd">
+
+<book>
+
+  <book-meta>
+    <book-title-group>
+      <book-title>Electronic Commerce: The Strategic Perspective</book-title>
+    </book-title-group>
+    <contrib-group>
+      <contrib contrib-type="author">
+        <n><surname>Watson</surname><given-names>Richard T.</given-names></n>
+        <aff>University of Georgia, USA</aff>
+      </contrib>
+      <contrib contrib-type="author">
+        <n><surname>Berthon</surname><given-names>Pierre</given-names></n>
+      </contrib>
+      <contrib contrib-type="author">
+        <n><surname>Pitt</surname><given-names>Leyland F.</given-names></n>
+      </contrib>
+      <contrib contrib-type="author">
+        <n><surname>Zinkhan</surname><given-names>George M.</given-names></n>
+      </contrib>
+    </contrib-group>
+    <permissions>
+      <license license-type="open-access">
+        <license-p>Available under Creative Commons Attribution-ShareAlike 4.0
+        International License (http://creativecommons.org/licenses/by-sa/4.0/).</license-p>
+      </license>
+    </permissions>
+  </book-meta>
+
+  <body>
+
+    
+    <!-- CHAPTER 1 -->
+
+    <book-part book-part-type="chapter" id="chapter-1">
+      <book-part-meta>
+        <title-group>
+          <label>1</label>
+          <title>Electronic Commerce: An Introduction</title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="editor">
+            <n><surname>Watson</surname><given-names>Richard T.</given-names></n>
+            <aff>University of Georgia, USA</aff>
+          </contrib>
+        </contrib-group>
+        <fpage>3</fpage>
+        <lpage>18</lpage>
+      </book-part-meta>
+
+      <body>
+
+        <sec id="sec-1-1">
+          <title>1.1 Introduction</title>
+
+          <p>Electronic commerce is a revolution in business practices. If organizations are
+          going to take advantage of new Internet technologies, then they must take a strategic
+          perspective. That is, care must be taken to make a close link between corporate strategy
+          and electronic commerce strategy.</p>
+
+          <p>In this chapter, we address some essential strategic issues, describe the major themes
+          tackled by this book, and outline the other chapters. Among the central issues we discuss
+          are defining electronic commerce, identifying the extent of a firm&#x2019;s Internet
+          usage, explaining how electronic commerce can address the three strategic challenges
+          facing all firms, and understanding the parameters of disintermediation.</p>
+        </sec>
+
+        <sec id="sec-1-2">
+          <title>1.2 Electronic commerce defined</title>
+
+          <p>Electronic commerce, in a broad sense, is the use of computer networks to improve
+          organizational performance. Increasing profitability, gaining market share, improving
+          customer service, and delivering products faster are some of the organizational
+          performance gains possible with electronic commerce. Electronic commerce is more than
+          ordering goods from an on-line catalog. It involves all aspects of an organization&#x2019;s
+          electronic interactions with its stakeholders, the people who determine the future of
+          the organization. Thus, electronic commerce includes activities such as establishing a
+          Web page to support investor relations or communicating electronically with college
+          students who are potential employees. In brief, electronic commerce involves the use of
+          information technology to enhance communications and transactions with all of an
+          organization&#x2019;s stakeholders. Such stakeholders include customers, suppliers,
+          government regulators, financial institutions, managers, employees, and the public at
+          large.</p>
+        </sec>
+
+        <sec id="sec-1-3">
+          <title>1.3 Who should use the Internet?</title>
+
+          <p>Every organization needs to consider whether it should have an Internet presence
+          and, if so, what should be the extent of its involvement. There are two key factors to
+          be considered in answering these questions.</p>
+
+          <p>First, how many existing or potential customers are likely to be Internet users? If a
+          significant proportion of a firm&#x2019;s customers are Internet users, and the search
+          costs for the product or service are reasonably (even moderately) high, then an
+          organization should have a presence; otherwise, it is missing an opportunity to inform
+          and interact with its customers. If a firm does not have a Web site, then there is the
+          risk that potential customers, who are Web savvy, will flow to competitors who have a
+          Web presence.</p>
+
+          <p>Second, what is the information intensity of a company&#x2019;s products and
+          services? An <italic>information-intense product</italic> is one that requires
+          considerable information to describe it completely. For example, a CD is information
+          intensive; multimedia are useful for describing it. Consequently, Sony Music provides
+          an image of a CD&#x2019;s cover, the liner notes, a list of tracks, and 30-second
+          samples of some tracks.</p>
+
+          <p>The two parameters, number of customers on the Web and product information
+          intensity, can be combined to provide a straightforward model (see Figure 1.1) for
+          determining which companies should be using the Internet. Organizations falling in the
+          top right quadrant are prime candidates because many of their customers have Internet
+          access and their products have a high information content.</p>
+
+          <fig id="fig-1-1">
+            <label>Figure 1.1</label>
+            <caption><p>Internet presence grid.</p></caption>
+          </fig>
+        </sec>
+
+        <sec id="sec-1-4">
+          <title>1.4 Why use the Internet?</title>
+
+          <p>Along with other environmental challenges, organizations face three critical strategic
+          challenges: demand risk, innovation risk, and inefficiency risk. The Internet, and
+          especially the Web, can be a device for reducing these risks.</p>
+
+          <sec id="sec-1-4-1">
+            <title>1.4.1 Demand risk</title>
+
+            <p>Sharply changing demand or the collapse of markets poses a significant risk for
+            many firms. Smith-Corona, one of the last U.S. manufacturers of typewriters, filed for
+            bankruptcy in 1995. Cheap personal computers destroyed the typewriter market. In
+            simple terms, <italic>demand risk</italic> means fewer customers want to buy a
+            firm&#x2019;s wares. The globalization of the world market and increasing deregulation
+            expose firms to greater levels of competition and magnify the threat of demand risk.
+            To counter demand risk, organizations need to be flexible, adaptive, and continually
+            searching for new markets and stimulating demand for their products and services.</p>
+
+            <p>The growth strategy matrix [Ansoff, 1957] suggests that a business can grow by
+            considering products and markets. Thus, the Web can be used as a
+            <italic>market penetration</italic> mechanism, where neither the product nor the
+            target market is changed. The Web merely provides a tool for increasing sales by
+            taking market share from competitors, or by increasing the size of the market. The
+            U.K. supermarket group Tesco is using its Web site to market chocolates, wines, and
+            flowers, enabling customers to view products in a full-color electronic catalogue, fill
+            out a simple order form, and facilitate delivery.</p>
+
+            <p>Alternatively, the Web can be used to <italic>develop markets</italic>, by
+            facilitating the introduction and distribution of existing products into new markets.
+            A presence on the Web means being international by definition, so for many firms with
+            limited resources, the Web will offer hitherto undreamed-of opportunities to tap into
+            global markets. Icelandic fishing companies can sell smoked salmon to the world.</p>
+
+            <p>A finer-grained approach to market development is to create a one-to-one
+            customized interaction between the vendor and buyer. Bank America offers customers
+            the opportunity to construct their own bank by pulling together the elements of the
+            desired banking service. Firefly markets technology for adaptive Web site learning&#x2014;
+            its software tries to discover what type of music a visitor likes so that it can recommend
+            CDs, and also electronically matches a visitor&#x2019;s profile to create virtual
+            communities.</p>
+
+            <p>Any firm establishing a Web presence, no matter how small or localized, instantly
+            enters global marketing. Small firms can market to the entire Internet world with a few
+            pages on the Web. The economies of scale and scope enjoyed by large organizations are
+            considerably diminished. With communication via the Internet, global market
+            development becomes a reality for many firms, irrespective of their size or location.</p>
+
+            <p>The Web can also be a mechanism that facilitates <italic>product development</italic>,
+            as companies who know their existing customers well create exciting, new, or alternative
+            offerings for them. The Sporting Life, a U.K. newspaper specializing in providing
+            up-to-the-minute information to the gaming fraternity, uses the Web to offer hourly
+            updates on betting changes in major horse races and downloadable racing data.</p>
+
+            <p>Finally, the Web can be used to <italic>diversify</italic> a business by taking new
+            products to new markets. American Express Direct is using a Web site to go beyond its
+            traditional traveler&#x2019;s check, credit card, and travel service business by
+            providing on-line facilities to purchase mutual funds, annuities, and equities.</p>
+          </sec>
+
+          <sec id="sec-1-4-2">
+            <title>1.4.2 Innovation risk</title>
+
+            <p>In most mature industries, there is an oversupply of products and services, and
+            customers have a choice, which makes them more sophisticated and finicky consumers.
+            Failure to be as innovative as competitors&#x2014;<italic>innovation risk</italic>&#x2014;is a
+            second strategic challenge. In an era of accelerating technological development, the
+            firm that fails to improve continually its products and services is likely to lose market
+            share to competitors and maybe even disappear. To remain alert to potential
+            innovations, firms need an open flow of concepts and ideas.</p>
+
+            <p>Internet tools can be used to create open communication links with a wide range of
+            customers. E-mail can facilitate frequent communication with the most innovative
+            customers. A bulletin board can be created to enable any customer to request product
+            changes or new features. The advantage of a bulletin board is that another customer
+            reading an idea may contribute to its development and elaboration. Also, a firm can
+            monitor relevant discussion groups to discern what customers are saying about its
+            products or services and those of its competitors.</p>
+          </sec>
+
+          <sec id="sec-1-4-3">
+            <title>1.4.3 Inefficiency risk</title>
+
+            <p>Failure to match competitors&#x2019; unit costs&#x2014;<italic>inefficiency risk</italic>&#x2014;is
+            a third strategic challenge. A major potential use of the Internet is to lower costs by
+            distributing as much information as possible electronically. For example, American
+            Airlines now uses its Web site for providing frequent flyers an update of their current
+            air miles, potentially making expensive paper mail unnecessary.</p>
+
+            <p>The cost of handling orders can also be reduced by using interactive forms to
+            capture customer data and order details. Savings result from customers directly
+            entering all data. Also, because orders can be handled asynchronously, the firm can
+            balance its work force because it no longer has to staff for peak ordering periods.</p>
+
+            <p>Many Web sites make use of FAQs&#x2014;frequently asked questions&#x2014;to lower the
+            cost of communicating with customers. A firm can post the most frequently asked
+            questions, and its answers to these, as a way of expeditiously and efficiently handling
+            common information requests that might normally require access to a service
+            representative. UPS, for example, has answers to more than 40 frequent customer
+            questions on its FAQ page.</p>
+          </sec>
+        </sec>
+
+        <sec id="sec-1-5">
+          <title>1.5 Disintermediation</title>
+
+          <p>Electronic commerce offers many opportunities to reformulate traditional modes of
+          business. <italic>Disintermediation</italic>, the elimination of intermediaries such as
+          brokers and dealers, is one possible outcome in some industries. Some speculate that
+          electronic commerce will result in widespread disintermediation, which makes it a
+          strategic issue that most firms should carefully address. A closer analysis enables us to
+          provide some guidance on identifying those industries least, and most, threatened by
+          disintermediation.</p>
+
+          <p>Consider the case of Manheim Auctions. It auctions cars for auto makers (at the
+          termination of a lease) and rental companies. As an intermediary, it is part of a chain
+          that starts with the car owner and ends with the consumer. In a truncated value chain,
+          Manheim and the car dealer are deleted. The car&#x2019;s owner sells directly to the
+          consumer. Edmunds, publisher of hard-copy and Web-based guides to new and used cars,
+          is linking with a large auto-leasing company to offer direct buying to customers. On the
+          other hand, a number of dealers are seeking to link themselves to customers through the
+          Internet via the Autobytel Web site.</p>
+
+          <p>We gain greater insight into disintermediation by taking a more abstract view of the
+          situation (see Figure 1.2). A <italic>value chain</italic> consists of a series of
+          organizations that progressively convert some raw material into a product in the hands
+          of a consumer. Associated with a value chain are physical and information flows, and the
+          information flow is usually bidirectional. It is really a value <italic>network</italic>
+          rather than a chain, because any organization may receive inputs from multiple upstream
+          objects.</p>
+
+          <fig id="fig-1-2">
+            <label>Figure 1.2</label>
+            <caption><p>Value network.</p></caption>
+          </fig>
+
+          <p>Consider an organization that has a relatively high number of physical inputs and
+          outputs. It is likely this object will develop specialized assets for processing the
+          physical flows. The need to process high-volume physical flows is likely to result in
+          economies of scale. On the information flow side, it is not so much the volume of
+          transactions that matters since it is relatively easy to scale up an automated
+          transaction processing system. It is the diversity of the information flow that is
+          critical because diversity increases decision complexity. Combining these notions of
+          physical flow size and information flow diversity, we arrive at the
+          <italic>disintermediation threat grid</italic> (see Figure 1.3). The threat to Manheim
+          is low because of its economies of scale, large investment in specialized assets, and a
+          well-developed skill in processing a variety of transactions. Car dealers are another
+          matter because they are typically small, have few specialized assets, and little
+          transaction diversity. For dealers, disintermediation is a high threat.</p>
+
+          <fig id="fig-1-3">
+            <label>Figure 1.3</label>
+            <caption><p>Disintermediation threat grid.</p></caption>
+          </fig>
+
+          <p>We need to keep in mind that disintermediation is not a binary event. Rather, it is
+          on or off for some linkages in the value network. What is more likely to emerge is
+          greater consumer choice in terms of products and buying relationships. Thus, to be part
+          of a consumer&#x2019;s options, Manheim needs to be willing to deal directly with
+          consumers.</p>
+        </sec>
+
+        <sec id="sec-1-6">
+          <title>1.6 Key themes addressed</title>
+
+          <p>Some of the key themes addressed in this book are summarized in Table 1.1. First, we
+          introduce a number of new themes, models, metaphors, and examples to describe the
+          business changes that are implied by the Internet. An example of one of our metaphors
+          is Joseph Schumpeter&#x2019;s notion of <italic>creative destruction</italic>: capitalist
+          economies create new industries and new business opportunities while sweeping away old
+          technologies and old ways of doing things. It is a sobering message that none of the
+          major wagon makers was able to make the transition to automobile production.</p>
+
+          <p>Amazon.com has relatively few employees and no retail outlets; and yet, it has a
+          higher market capitalization than Barnes &amp; Noble, which has more than one thousand
+          retail outlets. Nonetheless, Barnes &amp; Noble is fighting back by creating its own
+          Web-based business. The Internet may spawn <italic>hybrid business strategies</italic>&#x2014;those
+          that combine innovative electronic strategies with traditional methods of competition.</p>
+
+          <table-wrap id="table-1-1">
+            <label>Table 1.1</label>
+            <caption><p>Key themes addressed by this book.</p></caption>
+            <table>
+              <tbody>
+                <tr><td>1.</td><td>New models, theories, metaphors, and examples for describing
+                electronic commerce and its impact on business and society</td></tr>
+                <tr><td>2.</td><td>Describing the reliability and robustness of the technology
+                that underlies the Internet and its multimedia component (the Web)</td></tr>
+                <tr><td>3.</td><td>Describing how organizations can compete today, with an emphasis
+                on outlining electronic commerce strategies and tactics</td></tr>
+                <tr><td>4.</td><td>Predicting the future, especially the impact of information
+                technology on future business strategies and business forms</td></tr>
+                <tr><td>5.</td><td>Describing technology trends that will emerge in the future</td></tr>
+                <tr><td>6.</td><td>New ways of communicating with stakeholders and measuring
+                communication effectiveness</td></tr>
+                <tr><td>7.</td><td>Comparing and contrasting the Internet with other communication
+                media (e.g., TV and brochures)</td></tr>
+                <tr><td>8.</td><td>Key features of the Internet which make it a revolutionary force
+                in the economy (a force of creative destruction)</td></tr>
+                <tr><td>9.</td><td>The multi-disciplinary perspective that is necessary to comprehend
+                electronic commerce</td></tr>
+                <tr><td>10.</td><td>Elements that underlie effective Web pages and Web site
+                strategy</td></tr>
+                <tr><td>11.</td><td>New kinds of human interactions that are enhanced by the
+                Internet</td></tr>
+                <tr><td>12.</td><td>New marketing strategies for pricing, promoting, and distributing
+                goods and services</td></tr>
+              </tbody>
+            </table>
+          </table-wrap>
+
+          <p>Value to organizations is one of our themes. The stock market value of some high
+          technology firms is almost unbelievable. As of March 1999, the combined market
+          capitalization of the 13 largest American steel firms is approximately USD 6 billion,
+          less than one-third the value of the Internet bookseller, Amazon.com. Firms such as
+          Microsoft are knowledge organizations, and it is this knowledge that creates such
+          tremendous value for shareholders.</p>
+
+          <p>At the same time, technology creates value for consumers. Some of this value comes in
+          the form of enhanced products and services. Some of the value comes from more favorable
+          prices. Some of the value comes in the form of enhanced and more rapid communications.
+          In brief, the Internet raises quality of life, and it has the potential to perform this
+          miracle on a global scale.</p>
+
+          <p>The Internet is complex. We adopt an interdisciplinary approach to study this new
+          technology and its strategic ramifications. Specifically, we concentrate on the following
+          three disciplines: management information systems, marketing, and business strategy.
+          The Internet is relevant for communicating with multiple stakeholder groups. Since we
+          approach electronic commerce from a marketing perspective, we concentrate especially
+          on consumers and how knowledge about their perspectives can be used to fashion
+          effective business strategies.</p>
+
+          <sec id="sec-1-6-1">
+            <title>1.6.1 Outline for the book</title>
+
+            <p>This book contains eight chapters. Chapter Two briefly describes the technology that
+            makes electronic commerce possible, while Chapter Three introduces the topic of Web
+            strategy. The major functions of marketing are described in the next five chapters:
+            Promotion (Chapter Four); Promotion and Purchase (Chapter Five); Distribution
+            (Chapter Six); Service (Chapter Seven); and Pricing (Chapter Eight). The final chapter
+            takes a broader, societal perspective and discusses the influence of electronic commerce
+            on society.</p>
+          </sec>
+
+          <sec id="sec-1-6-2">
+            <title>1.6.2 Chapter Two: The technology of electronic commerce</title>
+
+            <p>Chapter Two deals with the technology that underlies electronic commerce.
+            Specifically, we discuss the methods that computers use to communicate with each
+            other. We compare and contrast the Internet (which is global in nature and has the
+            potential to communicate with multiple stakeholder groups); the intranet (which focuses
+            on internal communications within the organization); and the extranet (which
+            concentrates on exchanges with a specific business partner). Chapter Two also introduces
+            the security issues associated with electronic commerce and the potential for new forms
+            of electronic money.</p>
+          </sec>
+
+          <sec id="sec-1-6-3">
+            <title>1.6.3 Chapter Three: Web strategy</title>
+
+            <p>This chapter introduces elements of electronic strategy. In particular, we describe
+            <italic>attractors</italic>, which firms use to draw visitors to their Web site,
+            including sponsorship, the customer service center, and the town hall. We discuss
+            different attractor strategies that are appropriate, depending upon what material an
+            organization wants to put on the Web.</p>
+          </sec>
+
+          <sec id="sec-1-6-4">
+            <title>1.6.4 Chapter Four: Promotion</title>
+
+            <p>This is the first of a series of five chapters that discuss the four major functions
+            of marketing: promotion, price, distribution, and product (service). As the Web is a
+            new communications medium, we devote two chapters to promotion. In Chapter Four, we
+            introduce a model for thinking about communication strategy in cyberspace: the
+            Integrated Internet Marketing model.</p>
+          </sec>
+
+          <sec id="sec-1-6-5">
+            <title>1.6.5 Chapter Five: Promotion and purchase</title>
+
+            <p>Chapter Five describes new methods for measuring communication effectiveness in
+            cyberspace. We present several metaphors for thinking about what the Web can be,
+            including the electronic trade show and the virtual flea market. We link the buying
+            phases to Web functions and capabilities. Measurement is a key theme in the chapter,
+            and we describe the role of the Web in the marketing communications mix.</p>
+          </sec>
+
+          <sec id="sec-1-6-6">
+            <title>1.6.6 Chapter Six: Distribution</title>
+
+            <p>The advent of electronic commerce has the potential to transform logistics and
+            distribution. Today, a small software firm in Austin, Texas, can deliver its product
+            (via the Web) to a customer in Seoul, South Korea. The economic landscape is altered
+            dramatically. This chapter outlines strategic directions that are likely to be
+            successful in the twenty-first century.</p>
+          </sec>
+
+          <sec id="sec-1-6-7">
+            <title>1.6.7 Chapter Seven: Service</title>
+
+            <p>Services are more and more important in the U.S. economy. In Chapter Seven, we
+            describe how electronic commerce comes to blur the distinction between products and
+            services. Traditionally, services are a challenge to market because of four key
+            properties: intangibility, simultaneity, heterogeneity, and perishability. We show how
+            electronic commerce can be used to overcome traditional problems in services
+            marketing.</p>
+          </sec>
+
+          <sec id="sec-1-6-8">
+            <title>1.6.8 Chapter Eight: Pricing</title>
+
+            <p>Price directly affects a firm&#x2019;s revenue. Chapter Eight describes pricing
+            methods and strategies that are effective in cyberspace. We take a customer value
+            perspective to illustrate various price-setting strategies (e.g., negotiation, reducing
+            customer risk) and show how these strategies can be used to attain organizational
+            objectives.</p>
+          </sec>
+
+          <sec id="sec-1-6-9">
+            <title>1.6.9 Chapter Nine: Postmodernism</title>
+
+            <p>The final chapter concentrates on societal changes that are encouraged by electronic
+            commerce. Through the metaphors of modernism and postmodernism, we show how
+            electronic commerce influences: perceptions of reality; notions of time and space;
+            values; and attitudes toward organizations. Chapter Nine is future oriented and
+            discusses electronic commerce as a revolutionary force that has the potential to
+            transform society and consumers&#x2019; perceptions of business practice.</p>
+          </sec>
+        </sec>
+
+        <sec id="sec-1-7">
+          <title>1.7 Conclusion</title>
+
+          <p>As the prior outline clearly illustrates, this is a book about electronic commerce
+          strategy. We focus on the major issues that challenge every serious thinker about the
+          impact of the Internet on the future of business.</p>
+        </sec>
+
+        <sec id="sec-1-8">
+          <title>1.8 Cases</title>
+
+          <p>Dutta, S., and A. De Meyer. 1998. E*trade, Charles Schwab and Yahoo!: the
+          transformation of on-line brokerage. Fontainebleau, France: INSEAD. ECCH 698-029-1.</p>
+
+          <p>Galal, H. 1995. Verifone: The transaction automation company. Harvard Business
+          School, 9-195-088.</p>
+
+          <p>McKeown, P. G., &amp; Watson, R. T. (1999). Manheim Auctions.
+          <italic>Communications of the AIS</italic>, 1(20), 1&#x2013;20.</p>
+
+          <p>Vandermerwe, S., and M. Taishoff. 1998. Amazon.com: marketing a new electronic
+          go-between service provider. London, U.K.: Imperial College. ECCH 598-069-1.</p>
+        </sec>
+
+        <sec id="sec-1-9">
+          <title>1.9 References</title>
+
+          <p>Ansoff, H. I. 1957. Strategies for diversification.
+          <italic>Harvard Business Review</italic> 35(2):113&#x2013;124.</p>
+
+          <p>Child, J. 1987. Information technology, organizations, and the response to strategic
+          challenges. <italic>California Management Review</italic> 30(1):33&#x2013;50.</p>
+
+          <p>Quelch, J. A., and L. R. Klein. 1996. The Internet and international marketing.
+          <italic>Sloan Management Review</italic> 37(3):60&#x2013;75.</p>
+
+          <p>Zinkhan, G. M. 1986. Copy testing industrial advertising: methods and measure. In
+          <italic>Business marketing</italic>, edited by A. G. Woodside. Greenwich, CT: JAI Press,
+          259&#x2013;280.</p>
+        </sec>
+
+      </body>
+    </book-part>
+
+    <!-- CHAPTER 2 -->
+
+
+    <book-part book-part-type="chapter" id="chapter-2">
+      <book-part-meta>
+        <title-group>
+          <label>2</label>
+          <title>Electronic Commerce Technology</title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="editor">
+            <n><surname>Watson</surname><given-names>Richard T.</given-names></n>
+            <aff>University of Georgia, USA</aff>
+          </contrib>
+        </contrib-group>
+        <fpage>19</fpage>
+        <lpage>42</lpage>
+      </book-part-meta>
+
+      <body>
+
+        <sec id="sec-2-1">
+          <title>2.1 Introduction</title>
+
+          <p>In the first chapter, we argued that organizations need to make a metamorphosis. They
+          have to abandon existing business practices to create new ways of interacting with
+          stakeholders. This chapter will provide you with the wherewithal to understand the
+          technology that enables an organization to make this transformation.</p>
+        </sec>
+
+        <sec id="sec-2-2">
+          <title>2.2 Internet technology</title>
+
+          <p>Computers can communicate with each other when they speak a common language or use a
+          common communication protocol. Transmission Control Protocol/Internet Protocol (TCP/IP)
+          is the communication network protocol used on the Internet. TCP/IP has two parts. TCP
+          handles the transport of data, and IP performs routing and addressing.</p>
+
+          <sec id="sec-2-2-1">
+            <title>2.2.1 Data transport</title>
+
+            <p>The two main methods for transporting data across a network are circuit and packet
+            switching. Circuit switching is commonly used for voice and packet switching for data.
+            Parts of the telephone system still operate as a circuit-switched network.</p>
+
+            <p>The Internet is a packet switching network. The TCP part of TCP/IP is responsible
+            for splitting a message from the sending computer into packets, uniquely numbering each
+            packet, transmitting the packets, and putting them together in the correct sequence at
+            the receiving computer. The major advantage of packet switching is that it permits
+            sharing of resources (e.g., a communication link) and makes better use of available
+            bandwidth.</p>
+          </sec>
+
+          <sec id="sec-2-2-2">
+            <title>2.2.2 Routing</title>
+
+            <p>Routing is the process of determining the path a message will take from the sending
+            to the receiving computer. It is the responsibility of the IP part of TCP/IP for
+            dynamically determining the best route through the network. Because routing is dynamic,
+            packets of the same message may take different paths and not necessarily arrive in the
+            sequence in which they were sent.</p>
+          </sec>
+
+          <sec id="sec-2-2-3">
+            <title>2.2.3 Addressability</title>
+
+            <p>Messages can be sent from one computer to another only when every server on the
+            Internet is uniquely addressable. The Internet Network Information Center (InterNIC)
+            manages the assignment of unique IP addresses. An IP address is a unique 32-bit number
+            consisting of four groups of decimal numbers in the range 0 to 255 (e.g.,
+            128.192.73.60). IP numbers are difficult to recall. A Domain Name Server (DNS) converts
+            a human-readable address like aussie.mgmt.uga.edu to the IP address 128.192.73.60. The
+            exponential growth of the Internet will eventually result in a shortage of IP addresses,
+            and the development of next-generation IP (IPng) is underway.</p>
+          </sec>
+        </sec>
+
+        <sec id="sec-2-3">
+          <title>2.3 Infrastructure</title>
+
+          <p>Electronic commerce is built on top of a number of different technologies. These
+          various technologies create a layered, integrated infrastructure that permits the
+          development and deployment of electronic commerce applications (see Figure 2.1). Each
+          layer is founded on the layer below it and cannot function without it.</p>
+
+          <fig id="fig-2-1">
+            <label>Figure 2.1</label>
+            <caption><p>Electronic commerce infrastructure.</p></caption>
+          </fig>
+
+          <sec id="sec-2-3-1">
+            <title>2.3.1 National information infrastructure</title>
+
+            <p>This layer is the bedrock of electronic commerce because all traffic must be
+            transmitted by one or more of the communication networks comprising the national
+            information infrastructure (NII). The components of an NII include the TV and radio
+            broadcast industries, cable TV, telephone networks, cellular communication systems,
+            computer networks, and the Internet. The trend in many countries is to increase
+            competition among the various elements of the NII to increase its overall efficiency.</p>
+          </sec>
+
+          <sec id="sec-2-3-2">
+            <title>2.3.2 Message distribution infrastructure</title>
+
+            <p>This layer consists of software for sending and receiving messages. Its purpose is
+            to deliver a message from a server to a client. Messages can be unformatted (e.g.,
+            e-mail) or formatted (e.g., a purchase order). Electronic data interchange (EDI),
+            e-mail, and hypertext transfer protocol (HTTP) are examples of messaging software.</p>
+          </sec>
+
+          <sec id="sec-2-3-3">
+            <title>2.3.3 Electronic publishing infrastructure</title>
+
+            <p>Concerned with content, the Web is a very good example of this layer. It permits
+            organizations to publish a full range of text and multimedia. There are three key
+            elements of the Web: a uniform resource locator (URL), which is used to uniquely
+            identify any server; a network protocol; and a structured markup language, HTML.</p>
+          </sec>
+
+          <sec id="sec-2-3-4">
+            <title>2.3.4 Business services infrastructure</title>
+
+            <p>The principal purpose of this layer is to support common business processes. Nearly
+            every business is concerned with collecting payment for the goods and services it sells.
+            Thus, the business services layer supports secure transmission of credit card numbers
+            by providing encryption and electronic funds transfer. Furthermore, the business
+            services layer should include facilities for encryption and authentication.</p>
+          </sec>
+
+          <sec id="sec-2-3-5">
+            <title>2.3.5 Electronic commerce applications</title>
+
+            <p>Finally, on top of all the other layers sits an application. Consider the case of
+            a book seller with an on-line catalog (see Table 2.1). The application is a book
+            catalog; encryption is used to protect a customer&#x2019;s credit card number; the
+            application is written in HTML; HTTP is the messaging protocol; and the Internet
+            physically transports messages between the book seller and customer.</p>
+
+            <table-wrap id="table-2-1">
+              <label>Table 2.1</label>
+              <caption><p>An electronic commerce application.</p></caption>
+              <table>
+                <tbody>
+                  <tr><td>Electronic commerce applications</td><td>Book catalog</td></tr>
+                  <tr><td>Business services infrastructure</td><td>Encryption</td></tr>
+                  <tr><td>Electronic publishing infrastructure</td><td>HTML</td></tr>
+                  <tr><td>Message distribution infrastructure</td><td>HTTP</td></tr>
+                  <tr><td>National information infrastructure</td><td>Internet</td></tr>
+                </tbody>
+              </table>
+            </table-wrap>
+          </sec>
+        </sec>
+
+        <sec id="sec-2-4">
+          <title>2.4 Electronic publishing</title>
+
+          <p>Two common approaches to electronic publishing are Adobe&#x2019;s portable document
+          format (PDF) and HTML. The differences between HTML and PDF are summarized in
+          Table 2.2.</p>
+
+          <table-wrap id="table-2-2">
+            <label>Table 2.2</label>
+            <caption><p>HTML versus PDF.</p></caption>
+            <table>
+              <thead>
+                <tr><th>HTML</th><th>PDF</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>A markup language</td><td>A page description language</td></tr>
+                <tr><td>HTML files can be created by a wide variety of software</td>
+                    <td>PDF files are created using special software sold by Adobe</td></tr>
+                <tr><td>Browser is free</td><td>Viewer is free</td></tr>
+                <tr><td>Captures structure</td><td>Captures structure and layout</td></tr>
+                <tr><td>Reader can change presentation</td><td>Creator determines presentation</td></tr>
+              </tbody>
+            </table>
+          </table-wrap>
+
+          <sec id="sec-2-4-1">
+            <title>2.4.1 PDF</title>
+
+            <p>PDF is a page description language that captures electronically the layout of the
+            original document. Adobe&#x2019;s Acrobat Exchange software permits any document
+            created by a DOS, Macintosh, Windows, or Unix application to be converted to PDF. The
+            fidelity of the original document is maintained&#x2014;text, graphics, and tables are
+            faithfully reproduced when the PDF file is printed or viewed. PDF is an operating
+            system independent and printer independent way of presenting the same text and images
+            on many different systems. PDF has been adopted by a number of organizations, including
+            the Internal Revenue Service for tax forms.</p>
+          </sec>
+
+          <sec id="sec-2-4-2">
+            <title>2.4.2 HTML</title>
+
+            <p>HTML is a <italic>markup language</italic>, which means it marks a portion of text
+            as referring to a particular type of information. HTML does not specify how this is to
+            be interpreted; this is the function of the browser. Often the person using the browser
+            can specify how the information will be presented. For instance, using the preference
+            features of your browser, you can indicate the font and size for presenting information.
+            As a result, you can significantly alter the look of the page, which could have been
+            carefully crafted by a graphic artist to convey a particular look and feel.</p>
+          </sec>
+
+          <sec id="sec-2-4-3">
+            <title>2.4.3 HTML or PDF?</title>
+
+            <p>The choice between HTML and PDF depends on the main purpose of the document. If
+            the intention is to inform the reader, then there is generally less concern with how
+            the information is rendered. Alternatively, if the goal is to influence the reader
+            (e.g., an advertisement) or maintain the original look of the source document (e.g.,
+            a taxation form or newspaper), then PDF is the better alternative. The two formats
+            coexist. A PDF document can include links to an HTML document, and vice versa.</p>
+          </sec>
+        </sec>
+
+        <sec id="sec-2-5">
+          <title>2.5 Electronic commerce topologies</title>
+
+          <p>There are three types of communication networks used for electronic commerce (see
+          Table 2.3), depending on whether the intent is to support cooperation with a range of
+          stakeholders, cooperation among employees, or cooperation with a business partner.</p>
+
+          <table-wrap id="table-2-3">
+            <label>Table 2.3</label>
+            <caption><p>Electronic commerce topologies.</p></caption>
+            <table>
+              <thead>
+                <tr><th>Topology</th><th>Internet</th><th>Intranet</th><th>Extranet</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Extent</td><td>Global</td><td>Organizational</td><td>Business partnership</td></tr>
+                <tr><td>Focus</td><td>Stakeholder relationships</td>
+                    <td>Employee information and communication</td>
+                    <td>Distribution channel communication</td></tr>
+              </tbody>
+            </table>
+          </table-wrap>
+
+          <p>The Internet is a global network of networks. Any computer connected to the Internet
+          can communicate with any server in the system (see Figure 2.2). Thus, the Internet is
+          well-suited to communicating with a wide variety of stakeholders.</p>
+
+          <fig id="fig-2-2">
+            <label>Figure 2.2</label>
+            <caption><p>The Internet.</p></caption>
+          </fig>
+
+          <p>Many organizations have realized that Internet technology can also be used to establish
+          an intra-organizational network that enables people within the organization to communicate
+          and cooperate with each other. This so-called <italic>intranet</italic> (see Figure 2.3)
+          is essentially a fenced-off mini-Internet within an organization. A firewall is used to
+          restrict access so that people outside the organization cannot access the intranet.</p>
+
+          <fig id="fig-2-3">
+            <label>Figure 2.3</label>
+            <caption><p>The Intranet.</p></caption>
+          </fig>
+
+          <p>An <italic>extranet</italic> (see Figure 2.4) is designed to link a buyer and supplier
+          to facilitate greater coordination of common activities. The idea of an extranet derives
+          from the notion that each business has a value chain and the end-point of one
+          firm&#x2019;s chain links to the beginning of another&#x2019;s. Internet technology can
+          be used to support communication and data transfer between two value chains. The economies
+          gained from low-cost Internet software and infrastructure mean many more buyers and
+          supplier pairs can now cooperate electronically.</p>
+
+          <fig id="fig-2-4">
+            <label>Figure 2.4</label>
+            <caption><p>An extranet.</p></caption>
+          </fig>
+
+          <sec id="sec-2-5-1">
+            <title>2.5.1 EDI</title>
+
+            <p>EDI, which has been used for some 20 years, describes the electronic exchange of
+            standard business documents between firms. A structured, standardized data format is
+            used to exchange common business documents (e.g., invoices and shipping orders) between
+            trading partners. In contrast to the free form of e-mail messages, EDI supports the
+            exchange of repetitive, routine business transactions. The main standard used in the
+            U.S. and Canada is known as ANSI X.12, and the major international standard is
+            EDIFACT. The main advantages of EDI are: paper handling is reduced, saving time and
+            money; data are exchanged in real time; there are fewer errors since data are keyed
+            only once; enhanced data sharing enables greater coordination; and money flows are
+            accelerated and payments received sooner.</p>
+
+            <p>Despite these advantages, for most companies EDI is still the exception, not the
+            rule. Most EDI traffic has been handled by value-added networks (VANs) or private
+            networks. These networks are too expensive for all but the largest companies. However,
+            the Internet will enable smaller companies to take advantage of EDI. Internet
+            communication costs are typically less than with traditional EDI, and the Internet is
+            a global network potentially accessible by nearly every firm.</p>
+          </sec>
+        </sec>
+
+        <sec id="sec-2-6">
+          <title>2.6 Security</title>
+
+          <p>Security is an eternal concern for organizations as they face the dual problem of
+          protecting stored data and transported messages. Electronic commerce poses additional
+          security problems. First, the intent of the Internet is to give people remote access to
+          information. The system is inherently open, and traditional approaches of restricting
+          access by the use of physical barriers are less viable. Second, because electronic
+          commerce is based on computers and networks, these same technologies can be used to
+          attack security systems. Hackers can use computers to intercept network traffic and scan
+          it for confidential information.</p>
+
+          <sec id="sec-2-6-1">
+            <title>2.6.1 Access control</title>
+
+            <p><italic>Data access control</italic>, the major method of controlling access to
+            stored data, often begins with some form of visitor authentication. A variety of
+            authentication mechanisms may be used (see Table 2.4). The common techniques for the
+            Internet are account number, password, and IP address.</p>
+
+            <table-wrap id="table-2-4">
+              <label>Table 2.4</label>
+              <caption><p>Authentication mechanisms.</p></caption>
+              <table>
+                <thead>
+                  <tr><th>Class</th><th>Examples</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Personal memory</td><td>Name, account number, password</td></tr>
+                  <tr><td>Possessed object</td><td>Badge, plastic card, key, IP address</td></tr>
+                  <tr><td>Personal characteristic</td><td>Fingerprint, voiceprint, signature, hand size</td></tr>
+                </tbody>
+              </table>
+            </table-wrap>
+
+            <sec id="sec-2-6-1-1">
+              <title>2.6.1.1 Firewall</title>
+
+              <p>A <italic>firewall</italic> is a device (e.g., a computer) placed between an
+              organization&#x2019;s network and the Internet. This barrier monitors and controls
+              all traffic between the Internet and the intranet. Its purpose is to restrict the
+              access of outsiders to the intranet. A firewall is usually located at the point where
+              an intranet connects to the Internet.</p>
+
+              <p>There are several approaches to operating a firewall. The simplest method is to
+              restrict traffic to packets with designated IP addresses. Another screening rule is to
+              restrict access to certain applications (e.g., Web pages). Implementing and managing
+              a firewall involves a tradeoff between the cost of maintaining the firewall and the
+              loss caused by unauthorized access.</p>
+            </sec>
+          </sec>
+
+          <sec id="sec-2-6-2">
+            <title>2.6.2 Coding</title>
+
+            <p>Coding or encryption techniques, as old as writing, have been used for thousands
+            of years to maintain confidentiality. Although encryption is primarily used for
+            protecting the integrity of messages, it can also be used to complement data access
+            controls. The intruder cannot read the data without knowing the method of encryption
+            and the key.</p>
+
+            <p>Internet messages can pass through many computers on their way from sender to
+            receiver, and there is always the danger that a sniffer program on an intermediate
+            computer briefly intercepts and reads a message. Without a secure means of transmitting
+            payment information, customers and merchants will be very reluctant to place and receive
+            orders. Secure transmission of information is necessary for electronic commerce to
+            thrive.</p>
+
+            <sec id="sec-2-6-2-1">
+              <title>2.6.2.1 Encryption</title>
+
+              <p>Encryption is the process of transforming messages or data to protect their
+              meaning. Encryption scrambles a message so that it is meaningful only to the person
+              knowing the method of encryption and the key for deciphering it. The reverse process,
+              <italic>decryption</italic>, converts a seemingly senseless character string into the
+              original message. A popular form of encryption, readily available to Internet users,
+              goes by the name of Pretty Good Privacy (PGP). PGP is a public domain implementation
+              of public-key encryption.</p>
+
+              <p>Traditional encryption, which uses the same key to encode and decode a message,
+              has a very significant problem: how do you securely distribute the key? A
+              <italic>public-key encryption system</italic> has two keys: one private and the other
+              public. A public key can be freely distributed because it is quite separate from its
+              corresponding private key. To send and receive messages, communicators first need to
+              create separate pairs of private and public keys and then exchange their public keys.
+              The sender encrypts a message with the intended receiver&#x2019;s public key, and
+              upon receiving the message, the receiver applies her private key (see Figure 2.5).
+              The receiver&#x2019;s private key, the only one that can decrypt the message, must be
+              kept secret to permit secure message exchange.</p>
+
+              <fig id="fig-2-5">
+                <label>Figure 2.5</label>
+                <caption><p>Encryption with a public-key system.</p></caption>
+              </fig>
+
+              <p>The elegance of the public-key system is that it totally avoids the problem of
+              secure transmission of keys. Public keys can be freely exchanged. Indeed, there can
+              be a public database containing each person&#x2019;s or organization&#x2019;s public
+              key.</p>
+            </sec>
+
+            <sec id="sec-2-6-2-2">
+              <title>2.6.2.2 Signing</title>
+
+              <p>A public-key encryption system can also be used to authenticate messages. In cases
+              where the content of the message is not confidential, the receiver may still wish to
+              verify the sender&#x2019;s identity. A sender&#x2019;s private key is used to create
+              a <italic>signed message</italic>. The receiver then applies the sender&#x2019;s
+              public key to verify the signature (see Figure 2.6).</p>
+
+              <fig id="fig-2-6">
+                <label>Figure 2.6</label>
+                <caption><p>Signing with a public-key system.</p></caption>
+              </fig>
+            </sec>
+          </sec>
+        </sec>
+
+        <sec id="sec-2-7">
+          <title>2.7 Electronic money</title>
+
+          <p>When commerce goes electronic, the means of paying for goods and services must also
+          go electronic. Paper-based payment systems cannot support the speed, security, privacy,
+          and internationalization necessary for electronic commerce. There are four fundamental
+          concerns regarding electronic money: security, authentication, anonymity, and
+          divisibility.</p>
+
+          <table-wrap id="table-2-9">
+            <label>Table 2.9</label>
+            <caption><p>Characteristics of electronic money.</p></caption>
+            <table>
+              <thead>
+                <tr><th></th><th>Security</th><th>Authentication</th><th>Anonymity</th><th>Divisibility</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>EFT</td><td>High</td><td>High</td><td>Low</td><td>Yes</td></tr>
+                <tr><td>Digital cash</td><td>Medium</td><td>High</td><td>High</td><td>Yes</td></tr>
+                <tr><td>Ecash</td><td>High</td><td>High</td><td>High</td><td>Yes</td></tr>
+                <tr><td>Credit card</td><td>High</td><td>High</td><td>Low</td><td>Yes</td></tr>
+              </tbody>
+            </table>
+          </table-wrap>
+
+          <sec id="sec-2-7-1">
+            <title>2.7.1 Electronic funds transfer</title>
+
+            <p>Electronic funds transfer (EFT), introduced in the late 1960s, uses the existing
+            banking structure to support a wide variety of payments. EFT is essentially electronic
+            checking. Instead of writing a check and mailing it, the buyer initiates an electronic
+            checking transaction. The transaction is then electronically transmitted to an
+            intermediary (usually the banking system), which transfers the funds from the
+            buyer&#x2019;s account to the seller&#x2019;s account. Electronic checking is fast;
+            transactions are instantaneous. Paper handling costs are substantially reduced. Bad
+            checks are no longer a problem because the seller&#x2019;s account balance is verified
+            at the moment of the transaction. The major shortfall of EFT is that all transactions
+            must pass through the banking system, which is legally required to record every
+            transaction. This lack of privacy can have serious consequences. Cash gives
+            anonymity.</p>
+          </sec>
+
+          <sec id="sec-2-7-2">
+            <title>2.7.2 Digital cash</title>
+
+            <p>Digital cash is an electronic parallel of notes and coins. Two variants of digital
+            cash are presently available: prepaid cards and smart cards. A <italic>smart card</italic>
+            combines many functions into one card. It can serve as personal identification, credit
+            card, ATM card, telephone credit card, critical medical information record and as cash
+            for small transactions. A smart card, containing memory and a microprocessor, can store
+            as much as 100 times more data than a magnetic-stripe card.</p>
+
+            <p>The stored-value card, the most common application of smart card technology, can be
+            used to purchase a wide variety of items. Consumers buy cards of standard denominations
+            from a card dispenser or bank. When the card is used to pay for an item, the amount of
+            the transaction is transferred to the reader, and the value of the card is reduced by
+            the transaction amount. The problem with digital cash, like real cash, is that you can
+            lose it or it can be stolen.</p>
+          </sec>
+
+          <sec id="sec-2-7-3">
+            <title>2.7.3 Ecash</title>
+
+            <p>Digicash of Amsterdam has developed an electronic payment system called ecash that
+            can be used to withdraw and deposit electronic cash over the Internet. The system is
+            designed to provide secure payment between computers using e-mail or the Internet.
+            Ecash can be used for everyday Internet transactions, such as buying software,
+            receiving money from parents, or paying for a pizza to be delivered. At the same time,
+            ecash provides the privacy of cash because the payer can remain anonymous. To use ecash,
+            you need a digital bank account and ecash client software. The security system is based
+            on public-key cryptography and passwords.</p>
+          </sec>
+
+          <sec id="sec-2-7-4">
+            <title>2.7.4 Credit card</title>
+
+            <p>Credit cards are a safe, secure, and widely used remote payment system. Millions of
+            people use them every day for ordering goods by phone. The development of secure servers
+            and clients has made transmitting credit card numbers extremely safe. The major
+            shortcoming of credit cards is that they do not support person-to-person transfers and
+            do not have the privacy of cash.</p>
+          </sec>
+        </sec>
+
+        <sec id="sec-2-8">
+          <title>2.8 Secure electronic transactions</title>
+
+          <p>Electronic commerce requires participants to have a secure means of transmitting the
+          confidential data necessary to perform a transaction. Banks prefer credit card numbers to
+          be hidden from prying electronic eyes. In addition, consumers want assurance that the Web
+          site with which they are dealing is not a bogus operation. Two forms of protecting
+          electronic transactions are SSL and SET.</p>
+
+          <sec id="sec-2-8-1">
+            <title>2.8.1 SSL</title>
+
+            <p>Secure Sockets Layer (SSL) was created by Netscape for managing the security of
+            message transmissions in a network. SSL uses public-key encryption to encode the
+            transmission of secure messages (e.g., those containing a credit card number) between
+            a browser and a Web server.</p>
+          </sec>
+
+          <sec id="sec-2-8-2">
+            <title>2.8.2 SET</title>
+
+            <p>Secure Electronic Transaction (SET) is a financial industry innovation designed to
+            increase consumer and merchant confidence in electronic commerce. Backed by major credit
+            card companies, MasterCard and Visa, SET is designed to offer a high level of security
+            for Web-based financial transactions. SET is based on cryptography and digital
+            certificates. Public-key cryptography ensures message confidentiality between parties
+            in a financial transaction. <italic>Digital certificates</italic> uniquely identify the
+            parties to a transaction. They are issued by banks or clearinghouses and kept in
+            registries so that authenticated users can look up other users&#x2019; public keys.</p>
+
+            <p>Think of a digital certificate as an electronic credit card. It contains a
+            person&#x2019;s name, a serial number, expiration date, a copy of the certificate
+            holder&#x2019;s public key, and the digital signature of the certificate-issuing
+            authority.</p>
+
+            <sec id="sec-2-8-2-1">
+              <title>2.8.2.1 The SET components</title>
+
+              <p><bold>Cardholder wallet.</bold> The application on the cardholder&#x2019;s side
+              is also called the <italic>digital wallet</italic>. This software plug-in contains
+              a consumer&#x2019;s digital certificate, shipping and other account information,
+              protected by a password.</p>
+
+              <p><bold>Merchant server.</bold> On the merchant side, a merchant server accepts
+              electronic credit card payments.</p>
+
+              <p><bold>Payment gateway.</bold> The payment gateway is the bridge between SET and
+              the existing payment network. A payment gateway application translates SET messages
+              for the existing payment system to complete the electronic transaction.</p>
+
+              <p><bold>Certificate authority.</bold> The certificate authority issues and manages
+              digital certificates, which are proofs of the identities for all parties involved
+              in a SET transaction.</p>
+            </sec>
+
+            <sec id="sec-2-8-2-2">
+              <title>2.8.2.2 The process</title>
+
+              <p>The following steps illustrate SET in action: (1) The customer opens a MasterCard
+              or Visa account with a bank. (2) The customer receives a digital certificate. (3)
+              Third-party merchants also receive digital certificates from the bank. (4) The customer
+              places an electronic order from a merchant&#x2019;s Web page. (5) The customer&#x2019;s
+              browser receives and confirms that the merchant&#x2019;s digital certificate is valid.
+              (6) The browser sends the order information, encrypted with the merchant&#x2019;s
+              public key, and payment information encrypted with the bank&#x2019;s public key.
+              (7) The merchant verifies the customer by checking the digital signature on the
+              customer&#x2019;s certificate. (8) The merchant sends the order message along to the
+              bank. (9) The bank verifies the merchant and the message. (10) The bank digitally
+              signs and sends authorization to the merchant. (11) The customer receives the goods
+              and a receipt. (12) The merchant gets paid. (13) The customer gets a monthly bill
+              from the bank.</p>
+
+              <p>The advantage of SET is that a consumer&#x2019;s credit card number cannot be
+              deciphered by the merchant. Only the bank and card issuer can decode this number.
+              This facility provides an additional level of security for consumers, banks, and
+              credit card issuers.</p>
+            </sec>
+          </sec>
+
+          <sec id="sec-2-8-3">
+            <title>2.8.3 Cookies</title>
+
+            <p>The creator of a Web site often wants to remember facts about you and your visit.
+            A <italic>cookie</italic> is the mechanism for remembering details of a single visit
+            or store facts between visits. A cookie is a small file (not more than 4k) stored on
+            your hard disk by a Web application. Cookies have several uses: visit tracking;
+            storing information (so that you don&#x2019;t have to supply your name and address
+            details each time you visit a particular site); customization (e.g., CNN remembering
+            that you are mainly interested in news about ice skating and cooking); and marketing
+            (remembering what sites you have visited so that relevant advertisements can be
+            supplied). Cookies are a useful way of collecting data to provide visitors with better
+            service.</p>
+          </sec>
+        </sec>
+
+        <sec id="sec-2-9">
+          <title>2.9 Conclusion</title>
+
+          <p>The rapid growth of electronic commerce is clear evidence of the reliability and
+          robustness of the underlying technology. Many of the pieces necessary to facilitate
+          electronic commerce are mature, well-tested technologies, such as public-key encryption.
+          The future is likely to see advances that make electronic commerce faster, less expensive,
+          more reliable, and more secure.</p>
+        </sec>
+
+        <sec id="sec-2-10">
+          <title>2.10 Cases</title>
+
+          <p>Austin, R. D., and M. Cotteleer. 1997. Ford Motor Company: maximizing the business
+          value of Web technologies. Harvard Business School, 9-198-006.</p>
+
+          <p>Parent, M. 1997. Cisco Systems Inc.: managing corporate growth using an Intranet.
+          London, Canada: University of Western Ontario. 997E018.</p>
+        </sec>
+
+        <sec id="sec-2-11">
+          <title>2.11 References</title>
+
+          <p>Applegate, L. M., C. W. Holsapple, R. Kalakota, F. J. Rademacher, and A. B.
+          Whinston. 1996. Electronic commerce: building blocks for new business opportunity.
+          <italic>Journal of Organizational Computing and Electronic Commerce</italic>
+          6(1):1&#x2013;10.</p>
+
+          <p>Kalakota, R., and A. B. Whinston. 1996. <italic>Frontiers of electronic commerce</italic>.
+          Reading, MA: Addison-Wesley.</p>
+
+          <p>Watson, R. T., P. G. McKeown, and M. Garfield. 1997. Topologies for electronic
+          cooperation. In <italic>Telekooperation in Unternehmen</italic>, edited by F. Lehner and
+          S. Dustdar. Weisbaden, Germany: Deutscher Universit&#xe4;ts Verlag, 1&#x2013;11.</p>
+        </sec>
+
+      </body>
+    </book-part>
+
+    <!-- CHAPTER 3-->
+
+    <book-part book-part-type="chapter" id="chapter-3">
+      <book-part-meta>
+        <title-group>
+          <label>3</label>
+          <title>Web Strategy: Attracting and Retaining Visitors</title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="editor">
+            <n><surname>Watson</surname><given-names>Richard T.</given-names></n>
+            <aff>University of Georgia, USA</aff>
+          </contrib>
+        </contrib-group>
+        <fpage>43</fpage>
+        <lpage>59</lpage>
+      </book-part-meta>
+
+      <body>
+
+        <sec id="sec-3-1">
+          <title>3.1 Introduction</title>
+
+          <p>The Web changes the nature of communication between firms and customers. The
+          traditional advertiser decides the message content, and on the Web, the customer selects
+          the message. Traditional advertising primarily centers on the firm broadcasting a message.
+          However, the Web puts this flow in reverse thrust. Customers have considerable control
+          over which messages they receive because it is primarily by visiting Web sites that they
+          are exposed to marketing communications.</p>
+
+          <p>The Web increases the richness of communication because it enables greater
+          interactivity between the firm and its customers and among customers. Firms and customers
+          can get much closer to each other because of the relative ease and low cost of electronic
+          interaction.</p>
+
+          <p>In the new world of Web advertising, the rules are different. The Web, compared to
+          other media, provides a relatively level playing field for all participants in that: access
+          opportunities are essentially equal for all players, regardless of size; share of voice is
+          essentially uniform&#x2014;no player can drown out others; initial set-up costs present
+          minimal or nonexistent barriers to entry.</p>
+
+          <p>Differentiation&#x2014;success in appealing to desirable market segments so as to
+          maintain visibility, create defensible market positions, and forge institutional
+          identity&#x2014;is considered to be a central key to survival and growth for businesses in
+          the new electronic marketplace. In other words: <italic>How do you create a mountain in
+          a flat world?</italic></p>
+
+          <p>An <italic>attractor</italic> is a Web site with the potential to attract and interact
+          with a relatively large number of visitors in a target stakeholder group. While the Web
+          site must be a good attractor, it must also have the facility for interaction if its powers
+          of attraction are to have a long life span. Good sites offer interaction above all else;
+          less effective sites may often look more visually appealing, but offer little incentive to
+          interact. Many organizations have simply used the Web as an electronic dumping ground for
+          their corporate brochures&#x2014;this in no way exploits the major attribute of the
+          medium: its ability to interact with the visitor.</p>
+
+          <p>We propose that the strategic use of hard-to-imitate attractors, building blocks for
+          gaining visibility with targeted stakeholders, will be a key factor in on-line marketing.
+          This insight helps define the issues we want to focus on in this chapter: identification
+          and classification of attractors; and use of attractors to support a marketing strategy.</p>
+        </sec>
+
+        <sec id="sec-3-2">
+          <title>3.2 Types of attractors</title>
+
+          <p>Given the recency of the Web, there is limited prior research on electronic commerce,
+          and theories are just emerging. To understand how firms distinguish themselves in a flat
+          world, we reviewed marketing research literature, surfed many Web sites, monitored Web
+          sites that publish reviews of other companies&#x2019; Web efforts, and examined prize
+          lists for innovative Web solutions.</p>
+
+          <p>After visiting many Web sites and identifying those that seem to have the potential to
+          attract a large number of visitors, we used metaphors to label and group sites into
+          categories (see Table 3.1). The categories are not mutually exclusive.</p>
+
+          <table-wrap id="table-3-1">
+            <label>Table 3.1</label>
+            <caption><p>Types of attractors.</p></caption>
+            <table>
+              <tbody>
+                <tr><td>The entertainment park</td></tr>
+                <tr><td>The archive</td></tr>
+                <tr><td>Exclusive sponsorship</td></tr>
+                <tr><td>The Town Hall</td></tr>
+                <tr><td>The club</td></tr>
+                <tr><td>The gift shop</td></tr>
+                <tr><td>The freeway intersection or portal</td></tr>
+                <tr><td>The customer service center</td></tr>
+              </tbody>
+            </table>
+          </table-wrap>
+
+          <sec id="sec-3-2-1">
+            <title>3.2.1 The entertainment park</title>
+
+            <p>Web sites in this category engage visitors in activities that demand a high degree
+            of participation while offering entertainment. Many use games to market products and
+            enhance corporate image. These sites have the potential to generate experiential flow,
+            because they provide various degrees of challenge to visitors. They are interactive and
+            often involve elements and environments that promote telepresence experiences. The
+            potential competitive advantages gained through these attractors are high traffic
+            potential (with repeat visits) and creation or enforcement of an image of a dynamic,
+            exciting, and friendly corporation. Examples include GTE Laboratories&#x2019; Fun Stuff
+            (Web versions of MineSweeper, Rubik&#x2019;s cube), the Kellogg Company&#x2019;s site
+            for young visitors to color drawings, and Joe Boxer&#x2019;s unusual effects and
+            contests.</p>
+
+            <sec id="sec-3-2-1-1">
+              <title>3.2.1.1 The archive</title>
+
+              <p>Archive sites provide visitors with opportunities to discover the historical aspects
+              of the company&#x2019;s activities. Their appeal lies in the instant and universal
+              access to interesting information. The credibility of a well-established image is
+              usually the foundation of a successful archive. The strength of these attractors is
+              that they are difficult to imitate. The potential competitive advantage gained is the
+              building and maintenance of the image of a trusted, reputable, and well-established
+              corporation. Examples include Ford&#x2019;s historical library of rare photos,
+              Boeing&#x2019;s aircraft information site, and Hewlett-Packard&#x2019;s Palo Alto
+              garage history.</p>
+            </sec>
+          </sec>
+
+          <sec id="sec-3-2-2">
+            <title>3.2.2 Exclusive sponsorship</title>
+
+            <p>An organization may be the exclusive sponsor of an event of public interest, and
+            use its Web site to extend its audience reach. Sponsorship attractors have broad
+            traffic potential and can attract many visitors in short periods (e.g., the World Cup).
+            They can enhance the image of the corporation through the provision of timely, exclusive,
+            and valuable information. Examples include Texaco&#x2019;s Metropolitan Opera radio
+            schedule, Coca-Cola&#x2019;s details of sponsored concerts and sporting events, and
+            Planet Reebok&#x2019;s athlete interviews.</p>
+          </sec>
+
+          <sec id="sec-3-2-3">
+            <title>3.2.3 The town hall</title>
+
+            <p>The traditional town hall has long been a venue for assembly where people can hear
+            a famous person speak, attend a conference, or participate in a seminar. The town hall
+            has gone virtual, and these public forums are found on the Web. Town halls have a
+            potentially higher level of interactivity and participation than sponsorship. However,
+            there is the continuing problem of advising the potential audience of who is appearing.
+            Examples include Tripod&#x2019;s daily interviews with people from a wide variety of
+            areas, and CMP Publications&#x2019; Cyberforum where an IT guru posts statements and
+            responds to issues raised by readers.</p>
+          </sec>
+
+          <sec id="sec-3-2-4">
+            <title>3.2.4 The club</title>
+
+            <p>People have a need to be part of a group and have satisfactory relationships with
+            others. For some people, a Web club can satisfy this need. On the Internet, the club
+            is an electronic community. Typically, visitors have to register or become members to
+            participate, and they often adopt electronic personas when they enter the club. Web
+            clubs can increase company loyalty, enhance customer feedback, and improve customer
+            service through members helping members. Examples include Snapple&#x2019;s personal
+            ads for matching customers, Zima&#x2019;s loyalty club Tribe Z, and Apple&#x2019;s
+            EvangeList bulletin board for Macintosh devotees.</p>
+          </sec>
+
+          <sec id="sec-3-2-5">
+            <title>3.2.5 The gift shop</title>
+
+            <p>Gifts and free samples nearly always get attention. Web gifts typically include
+            digitized material such as software (e.g., screensavers and utilities), photographs,
+            digital paintings, research reports, and non-digital offerings (e.g., a T-shirt). Often,
+            gifts are provided as an explicit bargain for dialogue participation. Examples include
+            Ameritech&#x2019;s downloadable digital Monet paintings, Kodak&#x2019;s library of
+            high-quality digital images, and Ragu Foods&#x2019; recipes, Italian-language lessons,
+            and merchandise.</p>
+          </sec>
+
+          <sec id="sec-3-2-6">
+            <title>3.2.6 The freeway intersections or portals</title>
+
+            <p>Web sites that provide advanced information processing services (e.g., search
+            engines) can become n-dimensional Web freeway intersections with intense traffic flow,
+            presenting significant advertising opportunities. Search engines, directories, news
+            centers, and electronic malls can attract hundreds of thousands of visitors in a day.
+            Some of these sites are entry points to the Web for many people, and are known as
+            <italic>portals</italic>. Examples include Yahoo! (a hierarchical directory of Web
+            sites) and AltaVista (a Web search engine).</p>
+
+            <sec id="sec-3-2-6-1">
+              <title>3.2.6.1 The customer service center</title>
+
+              <p>By directly meeting their information needs, a Web site can be highly attractive
+              to existing customers. Many organizations now use their Web site to support the
+              ownership phase of the customer service life cycle. For instance, Sprint permits
+              customers to check account balances, UPS has a parcel tracking service, and many
+              software companies support downloading of software updates (e.g., Adobe). The Web
+              site is a customer service center. When providing service to existing customers, the
+              organization also has the opportunity to sell other products and services.</p>
+            </sec>
+          </sec>
+        </sec>
+
+        <sec id="sec-3-3">
+          <title>3.3 Summary</title>
+
+          <p>Organizations are taking a variety of approaches to making their Web sites attractive
+          to a range of stakeholders. Web sites can attract a broad audience, some of whom are
+          never likely to purchase the company&#x2019;s wares, but could influence perceptions of
+          the company. Other Web sites focus on serving one particular stakeholder&#x2014;the
+          customer. Of course, an organization is not restricted to using one form of attractor.
+          It makes good sense to take a variety of approaches so as to maximize the attractiveness
+          of a site and to meet the diverse needs of Web surfers (see Table 3.2).</p>
+
+          <table-wrap id="table-3-2">
+            <label>Table 3.2</label>
+            <caption><p>Tripod&#x2019;s use of attractors.</p></caption>
+            <table>
+              <thead>
+                <tr><th>Type of attractor</th><th>Tripod&#x2019;s approach</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Entertainment park</td><td>Limited development, except for a novel
+                concentration game where members test their memory</td></tr>
+                <tr><td>Town Hall</td><td>Daily interviews on topics of likely interest to college
+                students; past interviews can be recalled</td></tr>
+                <tr><td>Club</td><td>Only members can use HereMOO, a graphical interactive
+                environment; visitors can join Tripod by providing basic demographic data</td></tr>
+                <tr><td>Gift shop</td><td>Every 25th new member wins a T-shirt; weekly
+                competitions</td></tr>
+                <tr><td>Freeway intersection or portal</td><td>An entry point for a number of news
+                services and stock prices</td></tr>
+                <tr><td>Customer service center</td><td>A travel planner and daily reminder are
+                examples of services that members can use</td></tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </sec>
+
+        <sec id="sec-3-4">
+          <title>3.4 Attractiveness factors</title>
+
+          <p>The previous examples illustrate the variety of tactics used by organizations to make
+          their sites attractors. To gain a deeper understanding of attractiveness, we examine
+          possible dimensions for describing the relationship between a visitor and a Web site.
+          The service design literature, and in particular the service process matrix, provide the
+          stimulus for defining the elements of attractiveness.</p>
+
+          <p>The service process matrix (see Figure 3.1), with dimensions of degree of labor
+          intensity and interaction and customization, identifies four types of service businesses.
+          Labor-intensive businesses have a high ratio of cost of labor relative to the value of
+          plant and equipment. Interaction and customization are, respectively, the extent to which
+          the consumer interacts with the service process and the service is customized for the
+          consumer.</p>
+
+          <fig id="fig-3-1">
+            <label>Figure 3.1</label>
+            <caption><p>The service process matrix (Adapted from Schmenner).</p></caption>
+          </fig>
+
+          <p>If we now turn to the Web, labor intensity disappears as a key element because the
+          Web is an automated service delivery system. Hence, we focus our attention on interaction
+          and customization and split these out as two separate elements to create the
+          <italic>attractors grid</italic> (see Figure 3.2). Each of the four quadrants in the
+          attractors grid has a label. A <italic>utility</italic> (e.g., search engine) requires
+          little interaction and there is no customization. A <italic>service center</italic>
+          provides information tailored to the customer&#x2019;s current concern. In
+          <italic>mass entertainment</italic> (e.g., an entertainment park), the visitor
+          participates in an enjoyable interaction, but there is no attempt to customize.
+          The atmosphere of a <italic>club</italic> is customized interaction.</p>
+
+          <fig id="fig-3-2">
+            <label>Figure 3.2</label>
+            <caption><p>Attractors grid.</p></caption>
+          </fig>
+
+          <p>In contrast to the service process matrix&#x2019;s push down the diagonal, the
+          impetus with attractors should be towards customized service&#x2014;up the diagonal. A
+          potential of the Web is that it will make mass customization work. It will enable
+          customized service to each customer, while serving millions of them at the same time.
+          By mass customization, the firm will learn from customers; more importantly, customers
+          are more likely to remain loyal, not so much because the firm serves them so well, but
+          because they do not want to teach another firm what&#x2019;s already known about them
+          by their current provider.</p>
+        </sec>
+
+        <sec id="sec-3-5">
+          <title>3.5 Sustainable attractiveness</title>
+
+          <p>The problem with many Web sites, like many good ideas, is that they are easily
+          imitated. Because the Web is so public, firms can systematically analyze each other&#x2019;s
+          Web sites. Consequently, organizations need to be concerned with
+          <italic>sustainable attractiveness</italic>&#x2014;the ability to create and maintain a
+          site that continues to attract targeted stakeholders.</p>
+
+          <p>Attractors can be classified by ease of imitation, an assessment of the cost and time
+          to copy another Web site&#x2019;s concept (see Table 3.3). The easiest thing to reproduce
+          is information that is already in print (e.g., the corporate brochure). At the other
+          extreme, there are attractors that can never be imitated or for which there are few
+          substitutes. No other beverage company can have a Coke Museum&#x2014;real or virtual.
+          Firms with respected and well-known brands have a degree of exclusiveness that they can
+          impart to their Web sites.</p>
+
+          <table-wrap id="table-3-3">
+            <label>Table 3.3</label>
+            <caption><p>Ease of imitation of attractors.</p></caption>
+            <table>
+              <thead>
+                <tr><th>Ease of imitation</th><th>Examples of attractors</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Easy</td><td>Corporate brochure</td></tr>
+                <tr><td>Imitate with some effort</td><td>Software utilities; Directory or search
+                engine; Advanced customer service application</td></tr>
+                <tr><td>Costly to imitate</td><td>Sponsorship; Valuable and rare resources;
+                Archive with some exclusive features</td></tr>
+                <tr><td>Impossible to imitate</td><td>Well-established brand name or corporate
+                image</td></tr>
+              </tbody>
+            </table>
+          </table-wrap>
+
+          <p>This analysis suggests that Web application designers should try to take advantage of:
+          prior back-end IT investments that take time to duplicate; special relations (e.g.,
+          sponsorship); special information resources (e.g., an archive); established brand or
+          image (part of the enterprise&#x2019;s history); and proprietary intellectual/artistic
+          capital (e.g., a Monet painting).</p>
+        </sec>
+
+        <sec id="sec-3-6">
+          <title>3.6 Strategies for attractors</title>
+
+          <p>Stakeholder analysis can be a useful tool for determining which types and forms of
+          attractors to develop. After selecting the targeted stakeholder group, the organization
+          needs to decide the degree of focus of its attraction. We proffer a two-stage process
+          for selecting the properties of an attractor (see Figure 3.3): first, identify the target
+          stakeholder groups and make the site more attractive to these groups&#x2014;the
+          <italic>influence filter</italic>; second, decide the degree of customization&#x2014;the
+          <italic>target refractor</italic>.</p>
+
+          <fig id="fig-3-3">
+            <label>Figure 3.3</label>
+            <caption><p>Attractor strategies.</p></caption>
+          </fig>
+
+          <sec id="sec-3-6-1">
+            <title>3.6.1 Broad attraction</title>
+
+            <p>A broad attractor can be useful for communicating with a number of types of
+            stakeholders or many of the people in one category of stakeholders. Many archives,
+            entertainment parks, and search engines have a general appeal, and there is no attempt
+            to attract a particular segment. A broad attractor provides content with minimal
+            adjustment to the needs of the visitor.</p>
+          </sec>
+
+          <sec id="sec-3-6-2">
+            <title>3.6.2 Specialized attraction</title>
+
+            <p>A specialized attractor appeals to a more narrow audience. UPS, with its parcel
+            tracking system, has decided to focus on current customers. A customer can enter a
+            tracking number to determine the current location of a package and download software
+            for preparing transportation documentation. A specialized attractor may attract fewer
+            visitors, but nearly all those who make the link find the visit worthwhile.</p>
+          </sec>
+
+          <sec id="sec-3-6-3">
+            <title>3.6.3 Personalized attractor</title>
+
+            <p>The marketer&#x2019;s goal is to develop an interactive relationship with individual
+            customers. Personalized attractors can be customized to meet the needs of the individual
+            visitor. Computer magazine publisher Ziff-Davis offers visitors the opportunity to
+            specify a personal profile. After completing a registration form, the visitor can then
+            select what to see on future visits. The Mayo Clinic uses the Internet Chat facility to
+            host monthly on-line forums with Clinic specialists, allowing visitors to get advice on
+            their particular ailments.</p>
+
+            <p>There are two types of personalized attractors. <italic>Adaptable attractors</italic>
+            can be customized by the visitor, as in the case of Ziff-Davis. <italic>Adaptive
+            attractors</italic> learn from the visitor&#x2019;s behavior and determine what should
+            be presented. One advantage of a personalized attractor is that it can create switching
+            costs for the visitor. Although establishing a personal profile is not a relatively high
+            cost for the visitor, it can create some impediment to switching. An adaptive Web site
+            further raises costs because the switching visitor will possibly have to suffer an
+            inferior service while the new site learns what is relevant to the customer.</p>
+          </sec>
+        </sec>
+
+        <sec id="sec-3-7">
+          <title>3.7 Conclusion</title>
+
+          <p>Because we often learn by modeling the behavior of others, we have used metaphors and
+          examples to illustrate the variety of attractors that are currently operational. The
+          attractors grid is a more formal method of classifying attractors, and provided we have
+          identified the key parameters for describing attractors, does indicate complete coverage
+          of the types of attractors.</p>
+
+          <p>The attractor strategy model is a tool for linking attractors to a stakeholder-driven
+          view of strategy. In our view, attractors are strategic information systems and must be
+          aligned with organizational goals. Web sites have the potential for creating competitive
+          advantage by attracting numerous visitors so that many potential customers learn about a
+          firm&#x2019;s products and services or influential stakeholders gain a positive impression
+          of the firm. The advantage, however, may be short-lived unless the organization has some
+          valuable and rare resource that cannot be duplicated. Sustainable attractiveness is
+          dependent on managers understanding what information to deliver and how to present it to
+          stakeholders.</p>
+        </sec>
+
+        <sec id="sec-3-8">
+          <title>3.8 Cases</title>
+
+          <p>Sviokla, J. 1996. Edmund&#x2019;s&#x2014;www.edmunds.com. Harvard Business School,
+          9-397-016.</p>
+        </sec>
+
+        <sec id="sec-3-9">
+          <title>3.9 References</title>
+
+          <p>Armstrong, A., and J. Hagel. 1996. The real value of on-line communities.
+          <italic>Harvard Business Review</italic> 74(3):134&#x2013;141.</p>
+
+          <p>Peppers, D., and M. Rogers. 1993. <italic>The one to one future: building
+          relationships one customer at a time</italic>. New York, NY: Currency Doubleday.</p>
+
+          <p>Pine, B. J., B. Victor, and A. C. Boynton. 1993. Making mass customization work.
+          <italic>Harvard Business Review</italic> 71(5):108&#x2013;119.</p>
+
+          <p>Schmenner, R. W. 1986. How can a service business prosper?
+          <italic>Sloan Management Review</italic> 27(3):21&#x2013;32.</p>
+
+          <p>Watson, R. T., S. Akselsen, and L. F. Pitt. 1998. Attractors: building mountains in
+          the flat landscape of the World Wide Web.
+          <italic>California Management Review</italic> 40(2):36&#x2013;56.</p>
+        </sec>
+
+      </body>
+    </book-part>
+
+    <!-- CHAPTER 4 -->
+
+    <book-part book-part-type="chapter" id="chapter-4">
+      <book-part-meta>
+        <title-group>
+          <label>4</label>
+          <title>Promotion: Integrated Web Communications</title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="editor">
+            <n><surname>Zinkhan</surname><given-names>George M.</given-names></n>
+            <aff>University of Georgia, USA</aff>
+          </contrib>
+        </contrib-group>
+        <fpage>60</fpage>
+        <lpage>70</lpage>
+      </book-part-meta>
+
+      <body>
+
+        <sec id="sec-4-1">
+          <title>4.1 Introduction</title>
+
+          <p>Communication is the very heart of marketing, and for years companies have fashioned
+          communication strategies based on print, radio, and TV media to broadcast their message,
+          but times are changing. In the age of the Internet, Benetton uses Quicktime VR to
+          establish the atmosphere of its retail outlets; ABN Amro has a banner advertisement
+          directly behind the goal at an Internet soccer game; Sony provides downloadable audio
+          clips of its latest CDs; and Voice of America makes available, via FTP, software for
+          predicting high-frequency broadcast propagation. These companies recognize that the
+          Internet is an all-purpose communication medium for interacting with a wide variety of
+          stakeholders.</p>
+
+          <p>As organizations stampede to the Internet, they need a systematic way to examine
+          opportunities and relate them to available Internet tools. In particular, they need a
+          cohesive marketing strategy for exploiting Internet technologies.
+          <italic>Integrated Internet Marketing (I2M)</italic> is a structured approach to
+          combining marketing strategy with Internet technology. I2M promotes creation of a
+          strategy that synergistically exploits the range of Internet technologies (e.g., text,
+          audio, video, and hyperlinking) to achieve marketing goals.</p>
+        </sec>
+
+        <sec id="sec-4-2">
+          <title>4.2 Internet technology for supporting marketing</title>
+
+          <p>To understand the potential of Internet marketing, knowledge of the different Internet
+          tools is necessary (see Table 4.1).</p>
+
+          <table-wrap id="table-4-1">
+            <label>Table 4.1</label>
+            <caption><p>Internet technologies.</p></caption>
+            <table>
+              <thead>
+                <tr><th>Technology</th><th>Description</th><th>Examples</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Asynchronous text</td><td>E-mail is generally used for one-to-one and
+                one-to-few communications. A bulletin board (in the form of a newsgroup or listserv)
+                can handle one-to-many and many-to-many communications.</td><td>Cathay Pacific uses
+                a one-to-many bulletin board to advise prospective customers of special airfares.
+                Claris uses bulletin boards to support the exchange of ideas among customers and
+                support staff.</td></tr>
+                <tr><td>Synchronous text</td><td>Chat enables several people to participate in
+                a real-time text-based discussion.</td><td>The American Booksellers Association uses
+                chat to interview authors.</td></tr>
+                <tr><td>File transfer</td><td>File transfer protocol (FTP) permits the exchange
+                of files across the Internet.</td><td>Oracle uses FTP to distribute a 90-day trial
+                version of Power Objects.</td></tr>
+                <tr><td>Telnet</td><td>Telnet enables an authorized user to connect to and run
+                programs on another computer.</td><td>The Library of Congress Information System
+                (LOCIS) is accessible using Telnet.</td></tr>
+                <tr><td>Audio</td><td>Audio files are either downloaded and then played, or played
+                as downloaded (streaming audio).</td><td>ABC uses Progressive Network&#x2019;s
+                RealAudio to deliver a news bulletin.</td></tr>
+                <tr><td>Video</td><td>Video files, like audio, are either downloaded and then
+                played, or played as they are downloaded (streaming video).</td><td>PBS uses VDOnet
+                Corp. technology to broadcast samples of its programs.</td></tr>
+                <tr><td>Newswire</td><td>An electronic newswire broadcasts stock prices, sports
+                scores, news, weather, and other items.</td><td>Companies are using Pointcast for
+                reaching employees with internal news.</td></tr>
+                <tr><td>Search engine</td><td>A search engine supports finding information on
+                the Web. Advanced engines locate information based on defined attributes.</td>
+                <td>Internet Air Fares allows visitors the ability to search for the cheapest
+                airfares on a particular route.</td></tr>
+                <tr><td>Virtual reality</td><td>The visitor can look around a location through a
+                full 360 degrees, as well as zoom in and out.</td><td>Honda use QuickTime VR to
+                enable prospective customers to view its latest models, both inside and
+                outside.</td></tr>
+              </tbody>
+            </table>
+          </table-wrap>
+
+          <sec id="sec-4-2-1">
+            <title>4.2.1 The Web as an integrating technology</title>
+
+            <p>The Web is the umbrella technology that can provide a single interface to each of
+            the technologies previously described. The hypertext feature of the Web enables links
+            to be created within a document or to another document anywhere on the Web. The
+            multimedia capability means that a Web page can display graphics, videos and play
+            sound and animations, as well as provide support for on-line forms and multiple windows.
+            The Web is the means by which a company can use a variety of Internet tools to interact
+            with customers and other influential stakeholders. To a large extent, an
+            organization&#x2019;s Web site defines the organization&#x2014;establishing an
+            enduring image in the minds of stakeholders.</p>
+          </sec>
+        </sec>
+
+        <sec id="sec-4-3">
+          <title>4.3 Integrated Internet Marketing</title>
+
+          <p>The interactive and multimedia capabilities of the Web, combined with other Internet
+          facilities such as e-mail&#x2019;s support for personal and mass communication, present
+          a range of tools for interacting with customers. Furthermore, the Web can provide an
+          interface to back-end applications (e.g., databases and expert systems technology).
+          Consequently, the Internet offers an excellent basis for a variety of marketing tactics,
+          which permits the development of a model for Integrated Internet Marketing (I2M).</p>
+
+          <p>I2M (see Figure 4.1) is the coordination of Internet facilities to market products
+          and services, shape stakeholders&#x2019; (customers, in particular) attitudes, and
+          establish or maintain a corporate image. The central idea of I2M is that an organization
+          should coordinate its use of the Internet to develop a coherent, synchronous marketing
+          strategy.</p>
+
+          <fig id="fig-4-1">
+            <label>Figure 4.1</label>
+            <caption><p>Integrated Internet Marketing.</p></caption>
+          </fig>
+
+          <p>The Web offers a unique way to shape corporate image because it provides a means of
+          communicating with so many stakeholder groups. Traditional marketing theory and practice
+          have discovered that it is very difficult to manage a corporate image so that the
+          identical image is communicated to every stakeholder group. The Web provides a powerful
+          tool to assist managers in communicating a unified image.</p>
+
+          <sec id="sec-4-3-1">
+            <title>4.3.1 The I2M matrix</title>
+
+            <p>The I2M matrix (see Table 4.2) can be used by firms to search systematically for
+            opportunities for using the Internet to support marketing strategies. The concept is
+            that each cell of the matrix is a focal point for brainstorming. An interactive version
+            of the matrix can be used to stimulate thinking by showcasing how organizations are
+            using a particular cell. Thus, clicking on the cell at the intersection of Atmospherics
+            and Asynchronous text would jump to a page containing links to organizations using
+            asynchronous text (e.g., a bulletin board) to establish atmosphere. Apple, an example
+            for this cell, has established a bulletin board, EvangeList, to keep the faith of
+            Macintosh aficionados.</p>
+
+            <table-wrap id="table-4-2">
+              <label>Table 4.2</label>
+              <caption><p>The I2M matrix.</p></caption>
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Asynchronous text</th>
+                    <th>Synchronous text</th>
+                    <th>File transfer</th>
+                    <th>Telnet</th>
+                    <th>Audio</th>
+                    <th>Video</th>
+                    <th>Newswire</th>
+                    <th>Search engine</th>
+                    <th>Virtual reality</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Atmospherics</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>Employees</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>Litter</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>News stories</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>Signs</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>Personal experiences</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>Advertising</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>Word of mouth</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>Public relations</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>Products and services</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td>Popular culture</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+              </table>
+            </table-wrap>
+
+            <p>Because we often learn by modeling the behavior of others, linking I2M cells to
+            existing Web examples assists managers in identifying opportunities for their
+            organization. Furthermore, by providing a variety of examples for each cell, creative
+            behavior is aroused because each example can be a different stimulus.</p>
+          </sec>
+
+          <sec id="sec-4-3-2">
+            <title>4.3.2 News stories</title>
+
+            <p>Traditionally, organizations have relied on news media and advertisements to
+            transmit their stories to the customer. Naturally, the use of intermediaries can pose
+            problems. For example, news stories, not reported as envisaged, can result in the
+            customer receiving a distorted, unintended message. When dealing with the Pentium
+            hullabaloo, Intel&#x2019;s CEO Andy Grove used the Internet to communicate directly
+            with customers by posting its press release to its Web page, as does Reebok.</p>
+          </sec>
+
+          <sec id="sec-4-3-3">
+            <title>4.3.3 Advertising</title>
+
+            <p>The hyperlink, a key feature of the Web, permits a reader to jump to another Web
+            site by clicking on a link. An advertiser can place hyperlink signs or logos at relevant
+            points on the Web so that interested readers may be enticed to link to the
+            advertiser&#x2019;s Web site. Hyperlinks are the billboards of the information highway.
+            They are most valuable when they appear on Web pages read by many potential consumers,
+            such as CNN or USA Today. As it is very easy to record the number of links from one
+            page to another, it is relatively simple for advertisers to place a value on a
+            particular hyperlink.</p>
+          </sec>
+
+          <sec id="sec-4-3-4">
+            <title>4.3.4 Atmospherics</title>
+
+            <p>A Web site is the information age&#x2019;s extension of society&#x2019;s long
+            history of developing attractive artificial environments. It parallels the Greek temple
+            and Gothic cathedral of past centuries, which were designed to evoke certain feelings
+            within visitors. Similarly, a Web site should achieve a specific emotional effect on
+            the visitor that prolongs browsing of a site. Alberto&#x2019;s nightclub in Mountain
+            View, California, stimulates interest by creating an aura of excitement and action.
+            The Web provides an opportunity for customers to experience an organization&#x2019;s
+            atmospherics without actually being there.</p>
+          </sec>
+
+          <sec id="sec-4-3-5">
+            <title>4.3.5 Employees</title>
+
+            <p>E-mail and bulletin boards have become effective methods of communicating with
+            employees, particularly for highly dispersed international organizations. Because
+            policy changes can be distributed inexpensively and instantly, the organization can
+            gain a high degree of consistency in its communications with employees and other
+            stakeholders. Instead of an in-house newsletter, an intranet can be used to keep
+            employees informed of company developments. Use of e-mail and the Web should lead to
+            consistent internal communication, a necessary prerequisite of consistent external
+            communication with customers, suppliers, shareholders, and other parties.</p>
+          </sec>
+
+          <sec id="sec-4-3-6">
+            <title>4.3.6 Litter</title>
+
+            <p>The discarded Big Mac wrapper blowing across the highway does little for
+            McDonald&#x2019;s corporate image. On the Internet, an advertisement arriving along
+            with other e-mail may be perceived by some readers as highly offensive electronic
+            pollution. Sending junk e-mail, also known as <italic>spamming</italic>, has aroused
+            the ire of many Internet users, and America Online has taken action to block e-mail
+            from certain firms. Organizations need to ensure that their Internet communications
+            are not offensive or time-wasting to visitors. The Web also makes it easy for unhappy
+            consumers to create a Web site disparaging a company or product. Consequently, firms
+            must monitor such sites and Internet traffic about them to head off PR disasters.</p>
+          </sec>
+
+          <sec id="sec-4-3-7">
+            <title>4.3.7 Signs</title>
+
+            <p>Most organizations prominently display their logos and other identifying signs on
+            their buildings, packaging, and other visual points of customer contact. There has been
+            a clear transfer of this concept to the Web. A corporate logo frequently is visually
+            reinforced by placing it on each Web page. Organizations can be extremely creative in
+            their use of signs. Reykjavik Advertising makes clever use of the puffin,
+            Iceland&#x2019;s national bird, as a traffic indicator on each page. Animation is
+            another way firms can reinvent their signs. Manheim Auctions, for example, uses
+            animation to reinforce recognition of its corporate logo.</p>
+          </sec>
+
+          <sec id="sec-4-3-8">
+            <title>4.3.8 Personal experience</title>
+
+            <p>Customers often prefer to try products before buying, and some software providers
+            take advantage of this preference. Qualcomm widely distributes a freeware version of
+            Eudora Light, an e-mail package. Customers who adopt the freeware version can easily
+            upgrade to a commercial version, which offers additional features. Game maker Storm
+            Impact distributes TaskMaker as freeware with the full functionality available for the
+            first two tasks; however, the next eight tasks require payment of USD 25. These examples
+            support the notion of <italic>sampling</italic>&#x2014;something which has previously
+            been very difficult in the case of services and less tangible products.</p>
+
+            <sec id="sec-4-3-8-1">
+              <title>4.3.8.1 Word of mouth</title>
+
+              <p>Gossip and idle chatter around the water fountain are now complemented by e-mail
+              and bulletin boards. Bad news travels extremely fast on the Internet&#x2014;as Intel
+              discovered when the flaw in the Pentium chip was revealed in a message on the Internet
+              and quickly conveyed to millions of Pentium customers, who bombarded Intel with e-mail.
+              Word of mouth does not adequately describe the situation when a single electronic
+              message can reach hundreds of thousands of people in a matter of minutes. Corporations
+              need to monitor bulletin boards that discuss their products and those of their
+              competitors, so they can quickly detect emerging problems and respond to assertions
+              that may be incorrect.</p>
+            </sec>
+          </sec>
+
+          <sec id="sec-4-3-9">
+            <title>4.3.9 Public relations</title>
+
+            <p>When IBM announced its takeover bid for Lotus, it used the Internet to reach its
+            stakeholders, media, and Lotus employees. IBM&#x2019;s Web page featured the letter
+            from IBM CEO Louis Gerstner to Jim Manzi, Lotus CEO, the internal memo to IBM
+            employees, press release, audio clip of Gerstner explaining the offer, and a transcript
+            of Gerstner&#x2019;s 45-minute news conference. By the end of the day, 23,000 people
+            had accessed the Web page&#x2014;about double the normal traffic. The Web can be an
+            effective public relations tool. The advantage is that a company can immediately
+            transmit its message to stakeholders without relying on intermediaries, such as
+            newspapers and TV.</p>
+          </sec>
+
+          <sec id="sec-4-3-10">
+            <title>4.3.10 Products and services</title>
+
+            <p>There are now thousands of firms using the Internet to deliver products and services.
+            Software companies are selling software directly from Web sites and many companies
+            deliver services via their Web site. Apple, like many hardware and software firms, has
+            a simple system for improving customer service. It uses a listserv to network customers
+            using similar products. As a result, the customers support each other, reducing the
+            number of people that Apple has to support. The real task is to ensure that the customer
+            with the problem finds the customer with the solution.</p>
+          </sec>
+
+          <sec id="sec-4-3-11">
+            <title>4.3.11 Popular culture</title>
+
+            <p>Firms have discovered that popular culture (including movies, songs, and live
+            performances) can be used to publicize their goods. As the Internet develops, clearly
+            labeled products and ads are appearing in virtual network games. A popular MUD,
+            Genocide, already features well-known fast-food stores. Goalkeeper, an Internet soccer
+            simulator, lets visitors kick a soccer ball to try to beat the goalkeeper. The
+            background of the game, a soccer stadium, includes typical sports arena advertising,
+            including a banner for ABN AMRO, one of the world&#x2019;s top 20 banks.</p>
+          </sec>
+        </sec>
+
+        <sec id="sec-4-4">
+          <title>4.4 Conclusion</title>
+
+          <p>As transactions are increasingly conducted electronically, a firm&#x2019;s Web site
+          will be its defining image and the main point of interaction with many stakeholders.
+          Consequently, firms must ensure that they take full advantage of the technology available
+          to maximize their impact. A systematic approach, using the I2M matrix and modeling the
+          behavior of others, provides a framework for designing and implementing an effective Web
+          site that takes full advantage of the Internet tools. Integrated use of this technology,
+          however, is not enough. Not only must use of Internet tools be integrated, but also a
+          corporation&#x2019;s entire Web presence must be cohesive in order to communicate a
+          consistent message to stakeholders.</p>
+        </sec>
+
+        <sec id="sec-4-5">
+          <title>4.5 Cases</title>
+
+          <p>Subirana, B., and S. Palavecino. 1998. Amadeus: starting on the Internet and electronic
+          commerce. Barcelona, Spain: IESE. ECCH 198-024-1.</p>
+        </sec>
+
+        <sec id="sec-4-6">
+          <title>4.6 References</title>
+
+          <p>Schultz, D. E., S. I. Tannenbaum, and R. F. Lauterborn. 1994.
+          <italic>The new marketing paradigm: integrated marketing communications</italic>.
+          Lincolnwood, IL: NTC Business Books.</p>
+
+          <p>Zinkhan, G. M., and R. T. Watson. 1996. Advertising trends: innovation and the
+          process of creative destruction.
+          <italic>Journal of Business Research</italic> 37(3):163&#x2013;171.</p>
+        </sec>
+
+      </body>
+    </book-part>
+
+    <!-- CHAPTER 5-->
+
+    <book-part book-part-type="chapter" id="chapter-5">
+      <book-part-meta>
+        <title-group>
+          <label>5</label>
+          <title>Promotion and Purchase: Measuring Effectiveness</title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="editor">
+            <n><surname>Berthon</surname><given-names>Pierre</given-names></n>
+            <aff>Bentley College, USA</aff>
+          </contrib>
+        </contrib-group>
+        <fpage>71</fpage>
+        <lpage>84</lpage>
+      </book-part-meta>
+
+      <body>
+
+        <sec id="sec-5-1">
+          <title>5.1 Introduction</title>
+
+          <p>The Web has attracted a great deal of attention in recent years&#x2014;perhaps
+          significantly, in the influential business press and popular culture. Uniform Resource
+          Locators (URLs) appear in many advertisements, and <italic>Business Week</italic> devotes
+          a page to listing the URLs of its advertisers.</p>
+
+          <p>Reporting on the Web is currently fascinating to general readers. However, systematic
+          research is required to reveal the true nature of commerce on the Web. This is true
+          particularly from the perspective of the Web in marketing communication, and especially
+          so for the Web as an advertising medium or tool. In this chapter, we provide a brief
+          overview of the Web as a phenomenon of the late 20th century; then we explore the Web
+          as an advertising medium, using established theoretical models of consumer and industrial
+          buying behavior; finally, we develop a model of Web conversion efficiency&#x2014;its
+          power to move the customer from being a passive Internet surfer to an interactive user
+          of the medium.</p>
+        </sec>
+
+        <sec id="sec-5-2">
+          <title>5.2 The Internet and the World Wide Web</title>
+
+          <p>Cyberspace, or to give it its less clichi&#xe9;d name, the Internet (the net), is a
+          new medium based on broadcasting and publishing. However, unlike traditional broadcast
+          media, it facilitates two-way communication between actors; unlike most personal selling,
+          it is not physically face to face, but neither is it time-bound. The medium possesses
+          <italic>interactivity</italic>&#x2014;it has the facility for individuals and organizations
+          to communicate directly with one another regardless of distance or time. The Web has
+          introduced a much broader audience to the net. Furthermore, it allows anyone (organization
+          or individual) to have a 24-hour-a-day presence on the Internet.</p>
+
+          <p>The Web is not a transient phenomenon. It warrants serious attention by business
+          practitioners. No communication medium or electronic technology, not even fax or personal
+          computers, has ever grown as quickly.</p>
+        </sec>
+
+        <sec id="sec-5-3">
+          <title>5.3 An electronic trade show and a virtual flea market</title>
+
+          <p>The Web is rather like a cross between an electronic trade show and a community flea
+          market. As an <italic>electronic trade show</italic>, it can be thought of as a giant
+          international exhibition hall where potential buyers can enter at will and visit
+          prospective sellers. Like a trade show, they may do this passively, by simply wandering
+          around, enjoying the sights and sounds, pausing to pick up a pamphlet or brochure here,
+          and a sticker or sample there. Alternatively, they may become vigorously interactive in
+          their search for information and want-satisfaction, by talking to fellow attendees,
+          actively seeking the booths of particular exhibitors, carefully examining products,
+          soliciting richer information, and even engaging in sales transactions with the exhibitor.
+          As a <italic>flea market</italic>, it possesses the fundamental characteristics of
+          openness, informality, and interactivity, a combination of a community and a marketplace
+          or marketspace.</p>
+
+          <p>The central and fundamental problem facing conventional trade show and flea marketers
+          is how to convert visitors, casually strolling around, into customers at best, or leads
+          at least. Similarly, a central dilemma confronting the Web advertiser is how to turn
+          <italic>surfers</italic> (those who browse the Web) into <italic>interactors</italic>
+          (attracting the surfers to the extent that they become interested; ultimately purchasers;
+          and, staying interactive, repeat purchasers). Security First Network Bank, one of the
+          first financial services institutions to offer full-service banking on the Internet, uses
+          the graphic metaphor of a conventional bank to communicate and interact with potential
+          and existing customers, including an electronic inquiries desk, electronic brochures for
+          general information, and electronic tellers to deal with routine transactions.</p>
+
+          <p>We have taken the notion of trade shows as a marketing communication tool and extended
+          it to the possible role of the Web site as an advertising medium. This is speculated upon,
+          in the context of both the buying and selling process stages, and in both industrial and
+          consumer contexts, in Figure 5.1. The relative communication effectiveness of a Web site
+          is questioned graphically in Figure 5.1. Industrial buying can be thought of as a series
+          of stages. The buyer&#x2019;s information needs differ at each stage, as do the tasks of
+          the marketing communicator. The relative cost-effectiveness of advertising and personal
+          selling in performing marketing communication tasks depends on the stage of the buying
+          process, with personal selling becoming more cost effective the closer the buyer gets to
+          the latter phases in the purchasing sequence.</p>
+
+          <fig id="fig-5-1">
+            <label>Figure 5.1</label>
+            <caption><p>Buying and selling and Web marketing communication.</p></caption>
+          </fig>
+
+          <p>These two concerns&#x2014;the lack of clear or consistent objectives and the
+          relationship of those objectives to the variables under the control of the firm&#x2014;are
+          the issues that engage us here. We propose a more direct assessment of Web site
+          performance using multiple indices such that differing Web site objectives can be directly
+          translated into appropriate performance measures. We then explicitly link these
+          performance measures to tactical variables under the control of the firm and present a
+          conceptual framework to relate several of the most frequently mentioned objectives of Web
+          site participation to measures of performance associated with Web site traffic flow.</p>
+        </sec>
+
+        <sec id="sec-5-4">
+          <title>5.4 The role of the Web in the marketing communication mix</title>
+
+          <p>Personal selling is usually the largest single item in the industrial marketing
+          communications mix. On the other hand, broadcast advertising is typically the dominant
+          way used to reach consumers by marketers. Where do Web sites fit? The Web site is
+          something of a mix between direct selling (it can engage the visitor in a dialogue) and
+          advertising (it can be designed to generate awareness, explain/demonstrate the product,
+          and provide information without interactive involvement). It can play a cost-effective
+          role in the communication mix in the early stages of the process&#x2014;need recognition,
+          development of product specifications, and supplier search&#x2014;but can also be useful
+          as the buying process progresses toward evaluation and selection. Web sites can be used
+          to:</p>
+
+          <list list-type="bullet">
+            <list-item><p>Gain access to previously unknown or inaccessible buying influences.
+            Cathay Pacific Airlines uses a Web site to interview frequent international airline
+            flyers and determine their preferences with regard to airline, destination, airport,
+            and even aircraft.</p></list-item>
+            <list-item><p>Project a favorable corporate image. Guinness allows surfers to download
+            its latest television commercial from its Web site, which can then be used as a screen
+            saver, building affinity with the corporate brand while providing a constant reminder
+            of the advertising message.</p></list-item>
+            <list-item><p>Provide product information. Honda uses its Web site to give very detailed
+            information about its latest models. Not only can the surfer download video footage and
+            sound about the latest Honda cars, but can get different visual perspectives of the
+            vehicles, both from outside and inside the car.</p></list-item>
+            <list-item><p>Generate qualified leads for salespeople. The South African life assurance
+            company SANLAM uses its Web site to identify customer queries, and if needed, directs
+            sales advisers to these.</p></list-item>
+            <list-item><p>Handle customer complaints, queries, and suggestions. Software developers
+            such as Silverplatter use their Web sites as a venue for customers to voice complaints
+            and offer suggestions about the product.</p></list-item>
+            <list-item><p>Allow customers access to its system through its Web site. FedEx&#x2019;s
+            popular site allows customers to track their shipments traveling through the system by
+            typing in the package receipt number.</p></list-item>
+            <list-item><p>Serve as an electronic couponing device. E-Coupon.com targets college
+            students, featuring lists of participating campus merchants. Students click on shop
+            names to get a printable coupon on their computer screen, which they can take to shops
+            for discounts or free samples.</p></list-item>
+          </list>
+
+          <p>In summary, different organizations may have different advertising and marketing
+          objectives for establishing and maintaining a Web presence. Web sites can be used to move
+          customers and prospects through successive phases of the buying process by first attracting
+          surfers, making contact with interested surfers, qualifying/converting a portion of the
+          interested contacts into interactive customers, and keeping these interactive customers
+          interactive. This kind of flow process is analogous to that for the adoption of new
+          packaged goods and in organizational buying.</p>
+        </sec>
+
+        <sec id="sec-5-5">
+          <title>5.5 Web marketing communication: a conceptual framework</title>
+
+          <p>Based on the above, we model the flow of surfer activity on a Web site as a six-stage
+          process, which is shown in Figure 5.2. The variables and measures shown in Figure 5.2 are
+          defined in Table 5.1.</p>
+
+          <fig id="fig-5-2">
+            <label>Figure 5.2</label>
+            <caption><p>A model of the conversion process on the Web.</p></caption>
+          </fig>
+
+          <table-wrap id="table-5-1">
+            <label>Table 5.1</label>
+            <caption><p>Web efficiency variables.</p></caption>
+            <table>
+              <thead>
+                <tr><th>Variable</th><th>Meaning</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Q<sub>0</sub></td><td>Number of people with Web access</td></tr>
+                <tr><td>Q<sub>1</sub></td><td>Number of people aware of the site</td></tr>
+                <tr><td>Q<sub>2</sub></td><td>Number of hits on the site</td></tr>
+                <tr><td>Q<sub>3</sub></td><td>Number of active visitors to the site</td></tr>
+                <tr><td>Q<sub>4</sub></td><td>Number of purchases</td></tr>
+                <tr><td>Q<sub>5</sub></td><td>Number of repurchases</td></tr>
+              </tbody>
+            </table>
+          </table-wrap>
+
+          <p>All surfers on the Web may not be the relevant target audience for a given firm.
+          Surfers can be in one of two groups: those potentially interested in the organization
+          (&#x03B7;<sub>0</sub>), and those not interested (1&#x2212;&#x03B7;<sub>0</sub>). The
+          attractiveness of having a Web site for the organization depends on Q<sub>0</sub>&#x03B7;<sub>0</sub>,
+          the number of potentially interested surfers on the Web.</p>
+
+          <p>The first stage of the model represents the flow of surfers on the net to land on the
+          firm&#x2019;s Web site. This describes the <italic>awareness efficiency</italic>
+          (&#x03B7;<sub>0</sub>) of the Web site&#x2014;how effectively the organization is able
+          to make surfers aware of its Web site. Advertisers and marketers can employ
+          awareness-generating techniques such as including the Web site address in all advertising
+          and publicity, on product packaging, and other corporate communication materials.</p>
+
+          <p>The second stage concerns attempts to get aware surfers to find the Web site. We
+          distinguish between active and passive information seekers. Active seekers (Q<sub>1a</sub>)
+          are those who intentionally seek to hit the Web site, whereas passive seekers
+          (Q<sub>1b</sub>) are those aware surfers whose primary purpose in surfing was not
+          necessarily to hit the Web site. The second stage represents the
+          <italic>locatability/attractability efficiency</italic> (&#x03B7;<sub>1</sub>) of the
+          Web site. Tools to attract passive seekers include using a large number of relevant hot
+          links, embedding hot links in sponsored Web sites (e.g., IBM sponsors the Wimbledon
+          Tennis Tournament Web site), and banner ads on search engines.</p>
+
+          <p>The third stage represents the <italic>contact efficiency</italic> (&#x03B7;<sub>2</sub>)
+          of the Web site&#x2014;how effectively the organization transforms Web site hits into
+          visits. The material should be readable, visual effects should be appealing, and the
+          interface should be easy and intuitive. There is an important difference between a
+          <italic>hit</italic> and a <italic>visit</italic>: merely hitting or landing on a site
+          does not mean that the surfer did anything with the information to be found there. A
+          visit implies greater interaction between the surfer and the Web page.</p>
+
+          <p>Once the visitor is engaged in a visit at the Web site, he or she should be able to
+          establish a dialogue (at the simplest level, signing an electronic visitors&#x2019; book;
+          at higher levels, e-mail requests for information) or place an order. The
+          <italic>conversion efficiency</italic> (&#x03B7;<sub>3</sub>) measures the capability to
+          turn visitors into purchasers. CDnow offers a huge variety of CDs, thousands of reviews
+          from the All-Music Guide, and thousands of artists&#x2019; biographies. A powerful
+          program allows a search for recordings by artist, title, and key words, and the site
+          converts many of its visitors to buyers.</p>
+
+          <p>The final stage entails converting purchases into repurchases&#x2014;<italic>retention
+          efficiency</italic> (&#x03B7;<sub>4</sub>). Variables which the marketer can influence
+          include: regular updating and refreshing of the Web site; soliciting purchase satisfaction
+          and feedback; and regular updating and exploiting of the transaction database (e.g.,
+          e-mailing customers to repurchase, or inviting loyal customers to provide referrals).</p>
+
+          <p>Finally, a sixth, overall average Web site efficiency index (&#x03B7;<sub>Av</sub>)
+          summarizes the process. This index can be an effective way to establish the extent to
+          which Web site advertising and marketing objectives have been met. The measure is
+          particularly relevant for a Web direct mail order operation. A more refined and
+          appropriate measure might be a weighted average index, where &#x03BC;<sub>i</sub> is the
+          weighting accorded to each of the five efficiency indices in the model, allowing
+          advertisers and marketers to weight Web objectives in terms of their relative
+          importance.</p>
+
+          <sec id="sec-5-5-1">
+            <title>5.5.1 Caching and undercounting</title>
+
+            <p>The previously developed model assumes that all hits are counted. However, there are
+            hits that are never detected by a Web server because pages can be read from a cache
+            memory rather than the server. A <italic>cache</italic> is temporary memory designed to
+            speed up access to a data source. In the case of the Web, pages previously retrieved
+            may be stored on the disk of the personal computer running the browser. As a consequence,
+            data collected by a Web server undercount hits. Netscape offers three levels of caching:
+            once per session, always, and never. The use of cache memory or proxy servers will
+            result in undercounting of hits (Q<sub>2</sub>) and active visitors (Q<sub>3</sub>).</p>
+
+            <p>The existence of a <italic>proxy server</italic> can further exacerbate undercounting.
+            A proxy server is essentially a cache memory for a group of users (e.g., department,
+            organization, or even country). Although dozens of people within the organization may
+            reference a particular Web page, the originating server may score one hit per day for
+            the company because of the intervening proxy server. The proliferation of proxy servers
+            will result in severe undercounting.</p>
+
+            <p>The counting problem caused by caching is not unlike other counting problems
+            encountered by advertisers. The issue of readership, for example, has perplexed
+            advertisers, researchers, and publishers for many years. We believe that caching is a
+            new variation of the same old counting problem, and creative managers will need to
+            discover innovative ways to solve it.</p>
+          </sec>
+        </sec>
+
+        <sec id="sec-5-6">
+          <title>5.6 Conclusion</title>
+
+          <p>A fundamental problem in researching the effectiveness of marketing mix variables,
+          such as pricing strategy or advertising, is that of isolating them from others. The
+          importance of establishing specific communication objectives for Web sites, and for
+          identifying measurable means of determining the success of Web ventures, cannot be
+          overstated. There is perhaps some solace to be gained from realizing that the Web is a
+          lot more measurable than many other marketing communication efforts, with feedback being
+          relatively quick, if not immediate.</p>
+
+          <p>The Web is a new medium which is characterized by ease of entry, relatively low set-up
+          costs, globalness, time independence, and interactivity. As such, it represents a
+          remarkable new opportunity for advertisers and marketers to communicate with new and
+          existing markets in a very integrated way. The process model for assessing Web site
+          efficiency provides a sequence of productivity measures which can be calibrated with
+          relative ease.</p>
+        </sec>
+
+        <sec id="sec-5-7">
+          <title>5.7 Cases</title>
+
+          <p>Roos, J., M. Lissack, and D. Oliver. 1998. Bringing the Internet to the masses:
+          America Online Inc. (AOL). Lausanne, Switzerland: IMD. ECCH 398-184-1.</p>
+
+          <p>Christianse, E., J. Been, and T. van Diepen. 1997. KLM Cargo &#x201C;bringing worlds
+          together.&#x201D; Breukelen, Netherlands: Nijenrode University. ECCH 397-067-1.</p>
+        </sec>
+
+        <sec id="sec-5-8">
+          <title>5.8 References</title>
+
+          <p>Blattberg, R. C., and J. Deighton. 1991. Interactive marketing: exploiting the age of
+          addressability. <italic>Sloan Management Review</italic> 33(1):5&#x2013;14.</p>
+
+          <p>Gopalakrishna, S., and G. L. Lilien. 1995. A three-stage model of industrial trade
+          show performance. <italic>Marketing Science</italic> 14(1):22&#x2013;42.</p>
+
+          <p>Rayport, Jeffrey F., and John J. Sviokla. 1994. Managing in marketspace.
+          <italic>Harvard Business Review</italic> 72(6):141&#x2013;150.</p>
+
+          <p>Sherry, J. F. 1990. A sociocultural analysis of a midwestern American flea market.
+          <italic>Journal of Consumer Research</italic> 17(1):13&#x2013;30.</p>
+
+          <p>Berthon, P. R., Pitt, L. F., &amp; Watson, R. T. (1996). The World Wide Web as an
+          advertising medium: towards an understanding of conversion efficiency.
+          <italic>Journal of Advertising Research</italic>, 36(1), 43&#x2013;54.</p>
+        </sec>
+
+      </body>
+    </book-part>
+
+    <!-- CHAPTER 6 -->
+
+
+    <book-part book-part-type="chapter" id="chapter-6">
+      <book-part-meta>
+        <title-group>
+          <label>6</label>
+          <title>Distribution</title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="editor">
+            <n><surname>Pitt</surname><given-names>Leyland F.</given-names></n>
+            <aff>Simon Fraser University, Canada</aff>
+          </contrib>
+        </contrib-group>
+        <fpage>85</fpage>
+        <lpage>99</lpage>
+      </book-part-meta>
+
+      <body>
+
+        <sec id="sec-6-1">
+          <title>6.1 Introduction</title>
+
+          <p>The Internet and the Web will radically change distribution. The new medium undermines
+          key assumptions upon which traditional distribution philosophy is based, and in practice
+          renders many conventional channels and intermediaries obsolete.</p>
+
+          <p>In simple markets of old, producers of goods or services dealt directly with the
+          consumers of those offerings. However, in most contemporary markets, mass production and
+          mass consumption have caused intermediaries to enter the junction between buyer and seller.
+          These <italic>distribution channels</italic> involve relatively long-term commitments,
+          but if managed effectively over time, they create a key external resource. Small wonder
+          then that they exhibit powerful inertial tendencies, for once they are in place and
+          working well, managers are reluctant to fix what is not broken.</p>
+
+          <p>We contend that the Web will change distribution like no other environmental force
+          since the industrial revolution. Not only will it modify many of the assumptions on which
+          distribution channel structure is based, in many cases, it will transform and even
+          obliterate channels themselves. In doing so, it will render many intermediaries obsolete,
+          while simultaneously creating new channels and, indeed, new intermediaries.</p>
+        </sec>
+
+        <sec id="sec-6-2">
+          <title>6.2 What is the purpose of a distribution strategy?</title>
+
+          <p>The purpose of a distribution channel is to make the right quantities of the right
+          product/service available at the right place, at the right time. What has made
+          distribution strategy unique relative to the other marketing mix decisions is that it has
+          been almost entirely dependent on physical location. The old saying among retailers is
+          that the three keys to success are the 3 Ls&#x2014;Location, Location, Location!</p>
+
+          <p>Intermediaries provide economies of distribution by increasing the efficiency of the
+          process. They create time, place, and possession utility. Intermediaries in the
+          distribution channel fulfill three basic functions:</p>
+
+          <list list-type="order">
+            <list-item><label>1.</label>
+              <p><bold>Reassortment/sorting:</bold> Intermediaries support economies of scope by
+              adjusting the discrepancy of assortments. Producers supply large quantities of a
+              relatively small assortment of products or services, while customers require
+              relatively small quantities of a large assortment. Reassortment/sorting comprises:
+              sorting (arranging products according to class, kind, or size); sorting out (grading
+              products); accumulation (aggregating stocks from different suppliers); allocation
+              (distribution according to a plan, such as breaking bulk); and assorting (putting an
+              appropriate package together).</p>
+            </list-item>
+            <list-item><label>2.</label>
+              <p><bold>Routinization:</bold> Intermediaries routinize transactions so that the cost
+              of distribution can be minimized. Routinization facilitates exchange by leading to
+              standardization and automation. By standardizing lot size, delivery frequency,
+              payment, and communication, a routine is created to make the exchange relationship
+              between buyers and sellers both effective and efficient.</p>
+            </list-item>
+            <list-item><label>3.</label>
+              <p><bold>Searching:</bold> Intermediaries facilitate the searching processes of both
+              producers and customers by structuring the information essential to both parties.
+              Sellers are searching for buyers and buyers are searching for sellers, and
+              intermediaries provide a place for these parties to find each other. Searching occurs
+              because of uncertainty. Intermediaries reduce this uncertainty for both parties.</p>
+            </list-item>
+          </list>
+
+          <p>We will use these functions of reassortment/sorting, routinization, and searching in
+          our construction of the Internet Distribution Matrix.</p>
+        </sec>
+
+        <sec id="sec-6-3">
+          <title>6.3 What does technology do?</title>
+
+          <p>While much attention has been given to the Web from a general marketing perspective or
+          as a marketing communication medium, less attention has been given to the Web&#x2019;s
+          impact on distribution channels, and this may turn out to be even more significant. Indeed,
+          distribution may in the future change from channels to media. We discern three major
+          effects that electronic commerce will have on distribution: it will kill distance,
+          homogenize time, and make location irrelevant.</p>
+
+          <sec id="sec-6-3-1">
+            <title>6.3.1 The death of distance</title>
+
+            <p>Frances Cairncross chose to call her work on the convergence of three technologies
+            (telephone, television, and computer) <italic>The Death of Distance</italic>. She
+            contends that &#x201C;distance will no longer determine the cost of communicating
+            electronically.&#x201D; For the distribution of many products&#x2014;those that can
+            be digitized, such as pictures, video, sound, and words&#x2014;distance will thus have
+            no effect on costs. The same is true for services. For all products, distance will have
+            substantially less effect on distribution costs.</p>
+          </sec>
+
+          <sec id="sec-6-3-2">
+            <title>6.3.2 The homogenization of time</title>
+
+            <p>In the physical market, time and season predominate trading, and therefore by
+            definition, distribution. We see evidence of this in the form of opening hours and
+            social and climatic seasonality. The virtual marketplace is atemporal; a Web site is
+            always open. The seller doesn&#x2019;t need to be awake to serve the buyer and, indeed,
+            the buyer does not have to be awake, or even physically present, to be served by the
+            seller. Time can thus be homogenized&#x2014;made uniformly consistent for all buyers
+            and all sellers. Time and distance vanish, and action and response are simultaneous.</p>
+          </sec>
+
+          <sec id="sec-6-3-3">
+            <title>6.3.3 The irrelevance of location</title>
+
+            <p>Any screen-based activity can be operated anywhere on earth. The Web bookstore
+            Amazon.com supplies books to customers who can be located anywhere, from book suppliers
+            who can be located anywhere. The location of Amazon.com matters to neither book buyers
+            nor book publishers. No longer will location be key to most business decisions. We have
+            moved from <italic>marketplace</italic> to <italic>marketspace</italic>. To compare
+            marketspace-based firms to their traditional marketplace-based alternatives, one needs
+            to contrast three issues: <italic>content</italic> (what the buyer purchases),
+            <italic>context</italic> (the circumstances in which the purchase occurs), and
+            <italic>infrastructure</italic> (what the firm needs in order to do business).</p>
+
+            <p>The best way to understand Amazon.com as a marketspace firm is to compare it to a
+            conventional bookstore. Conventional bookstores sell books; Amazon.com sells
+            information about books, offering a vast selection and delivery system. Conventional
+            bookstores require a shop with shelves, people to serve, and a convenient location;
+            Amazon.com requires a fast efficient server and a great database. Try as they might,
+            conventional bookstores can never stock all the books in print; Amazon.com stocks no,
+            or very few, books, but paradoxically, it stocks them all. Technology is creating many
+            marketspace firms, enacting three new rules of retailing: Location is irrelevant,
+            irrelevant, irrelevant.</p>
+          </sec>
+        </sec>
+
+        <sec id="sec-6-4">
+          <title>6.4 The Internet distribution matrix</title>
+
+          <p>Contrasting the three effects of technology vertically, with the three basic functions
+          of distribution channels horizontally, permits the construction of a three-by-three grid,
+          which we call the <italic>Internet distribution matrix</italic> (see Figure 6.1). We
+          suggest that it can be a powerful tool for managers who wish to identify opportunities for
+          using the Internet and the Web to improve or change distribution strategy. It can also
+          assist in the identification of competitive threats by allowing managers to concentrate
+          on areas where competitors might use technology to perform distribution functions more
+          effectively.</p>
+
+          <fig id="fig-6-1">
+            <label>Figure 6.1</label>
+            <caption><p>The Internet distribution matrix.</p></caption>
+          </fig>
+
+          <p>Each cell in the matrix permits the identification of an effect of technology on a
+          distribution function. For example, the manager is able to ask what effect the death of
+          distance will have on the function of reassortment and sorting, or what effect the
+          irrelevance of location will have on the activity of searching. Neither the technological
+          effects nor the distribution functions are entirely discrete&#x2014;forces all interact
+          with each other in reality.</p>
+        </sec>
+
+        <sec id="sec-6-5">
+          <title>6.5 The effects of technology on distribution channels</title>
+
+          <sec id="sec-6-5-1">
+            <title>6.5.1 The death of distance and reassortment and sorting</title>
+
+            <p>Music Maker is a Web site that allows customers anywhere to create CDs of their own
+            by sorting through vast lists of recordings by various artists of every genre. The Web
+            site charges per song, and then allows the customer to personalize the CD by designing,
+            coloring, and labeling it. The company then presses the CD and delivers it to the
+            customer. Rather than compile a collection of music for the average customer, Music Maker
+            lets customers do reassortment and sorting for themselves, regardless of how far away
+            they may be. In the not-too-distant future, as the costs of digital storage continue to
+            plummet and as transmission rates increase, customers may simply download the
+            performances they like, rather than have a CD delivered physically.</p>
+          </sec>
+
+          <sec id="sec-6-5-2">
+            <title>6.5.2 The death of distance and routinization</title>
+
+            <p>A problem frequently encountered by business-to-business marketers with large
+            product ranges is that of routinely updating their catalogs. DuPont Lubricants markets
+            a large range of lubricants for special applications to customers in many parts of the
+            world, with its catalog always subject to change. Similarly, GE Plastics, a division
+            of General Electric, offers a large range of plastics with applications in many fields.
+            Both firms now use virtual routinization by way of their Web sites to replace the
+            physical routinization that updating of printed catalogs required previously. This can
+            be done for customers regardless of distance, and the virtual catalog is delivered
+            instantaneously.</p>
+          </sec>
+
+          <sec id="sec-6-5-3">
+            <title>6.5.3 The death of distance and searching</title>
+
+            <p>Anyone who has experienced being a traveler in country A, who wants to purchase an
+            airline ticket to travel from country B to country C, will know the frustration of being
+            at the mercy of travel agents and airlines. The German airline Lufthansa&#x2019;s global
+            reservation system lets travelers book fares from anywhere in the world, to and from
+            anywhere in the world, and permits them to pick up the tickets at the airport. Unlike
+            the Web sites of many airlines, Lufthansa&#x2019;s allows the customer to access the
+            timetables, fares, and routes of its competitors. In this way, distance no longer
+            presents an obstacle to customers in their search for need satisfaction.</p>
+          </sec>
+
+          <sec id="sec-6-5-4">
+            <title>6.5.4 The homogenization of time and reassortment/sorting</title>
+
+            <p>In a conventional setting, students who wish to complete a degree need to be in class
+            to take the courses they want. The Global MBA (GEMBA) program of Duke University, Fuqua
+            School of Business, allows its students to take elective course lectures anywhere,
+            anytime, over the Internet, and uses the medium to permit students to interact with
+            faculty and fellow students. Students enroll for the course from many different parts of
+            the world and in many time zones, yet are now able to self-assort the MBA program that
+            they really want.</p>
+          </sec>
+
+          <sec id="sec-6-5-5">
+            <title>6.5.5 The homogenization of time and routinization</title>
+
+            <p>Every two months, British Airways mails personalized information to the many millions
+            of members of its frequent flyer Executive Club. The problem is that this information is
+            out-of-date on arrival. Nowadays, members are availed of on-line, up-to-the-minute, and
+            immediate information on their status on the British Airways Web site. By entering a
+            frequent flyer number and a security code, a member is able to get a report on available
+            miles and check on the latest transactions. Then, the member is presented with a color
+            map of the globe with the city of preferred departure at the center, with other cities
+            to which the member would be able to fly highlighted. Time is homogenized, and
+            transactions routinized, because members can perform these activities when it suits
+            them.</p>
+          </sec>
+
+          <sec id="sec-6-5-6">
+            <title>6.5.6 The homogenization of time and searching</title>
+
+            <p>In many markets, the need to reduce uncertainty by searching is compounded by the
+            problem that buyer and seller operate in different time zones or at different hours of
+            the day or week. Monster Board lists around 50,000 jobs from more than 4,000 companies,
+            including blue-chip employers. It keeps potential employees informed by providing
+            customized e-mail updates for job seekers and, of course, potential employers are able
+            to access r&#xe9;sum&#xe9;s of suitable candidates on-line, anytime.</p>
+
+            <p>SeaNet is a network that serves the global maritime industry 24 hours a day,
+            regardless of time zones, by facilitating search for buyers and sellers. Shippers can
+            post their open positions, orders, sales, and purchase information onto the site. This
+            information is updated almost instantly and can be accessed by any shipping company
+            anywhere in the world. Companies that want to do business can then contact the seller
+            by e-mail or by more conventional methods.</p>
+          </sec>
+
+          <sec id="sec-6-5-7">
+            <title>6.5.7 The irrelevance of location and reassortment/sorting</title>
+
+            <p>Dell Computer is one of the real success stories of electronic commerce, with daily
+            sales off its Web site estimated in excess of USD 6 million each day. Using Dell&#x2019;s
+            Web site, a customer is able to customize a personal computer by specifying attributes
+            such as processor speed, RAM size, hard drive, CD ROM, and modem type and speed. A
+            handy calculator instantly updates customers on the cost of what they are specifying.
+            Once satisfied with a specified package, the customer can place the order and pay
+            on-line. Dell&#x2019;s location is irrelevant to customers&#x2014;the company is where
+            customers want it to be. The PC industry leader Compaq&#x2019;s current rate of stock
+            turnover is 12 times per year; Dell&#x2019;s is 30. When Intel launches a new, faster
+            processor, Compaq effectively has to sell six-week-old stock before it is able to launch
+            machines with the new chip. Dell only has to sell ten days&#x2019; worth.</p>
+          </sec>
+
+          <sec id="sec-6-5-8">
+            <title>6.5.8 The irrelevance of location and routinization</title>
+
+            <p>Caterpillar made its first attempt at serious on-line purchasing on 24 June 1997,
+            when it invited preapproved suppliers to bid on a USD 2.4 million order for hydraulic
+            fittings. Twenty-three suppliers elected to make bids in an on-line process on
+            Caterpillar&#x2019;s Web site. By the time the session closed at the end of the day,
+            the low bid was USD 22 cents. The previous low price paid on the component by Caterpillar
+            had been USD 30 cents. Caterpillar now attains an average saving of 6 percent through
+            its Web site supplier bidding system.</p>
+
+            <p>General Electric was one of the first major firms to exploit the Web&#x2019;s
+            potential in purchasing. In 1996, the firm purchased USD 1 billion worth of goods from
+            1,400 suppliers over the Internet. As a result, the company reports that the bidding
+            process has been cut from 21 days to 10, and that the cost of goods has declined between
+            5 and 20 percent. Previously, GE had no foreign suppliers. Now, 15 percent of the
+            company&#x2019;s suppliers are from outside North America.</p>
+          </sec>
+
+          <sec id="sec-6-5-9">
+            <title>6.5.9 The irrelevance of location and searching</title>
+
+            <p>Location has in the past been critical to the function of search. Most buyers
+            patronize proximal suppliers because the costs of searching further afield generally
+            outweigh the benefits of a possible lower price. Travel agents and insurance brokers
+            are typical examples of intermediaries that search for suitable offerings for customers
+            from a large range of potential suppliers, while at the same time finding customers for
+            these suppliers. The U.K. insurance company Eagle Star now allows customers to obtain
+            quotes on auto insurance directly off its Web site, offering a 15 percent discount on
+            purchase and credit card payment. The company reports selling 200 policies per month in
+            the first three months of this operation, generating USD 290,000 in premiums, and making
+            40,000 quotations.</p>
+          </sec>
+        </sec>
+
+        <sec id="sec-6-6">
+          <title>6.6 Some long-term effects</title>
+
+          <p>The long-term effects of the death of distance, homogenization of time, and the
+          irrelevance of location on the evolution of distribution channels will be manifold and
+          complex. We comment here on three effects which are already becoming apparent.</p>
+
+          <p>First, we may in the future talk of <italic>distribution media</italic> rather than
+          distribution channels in the case of most services and many products. The key distinction
+          between a channel and a medium in this context concerns the notion of interactivity.
+          Electronic media such as the Internet are potentially intrinsically interactive. Whereas
+          channels were typically conduits for products, an electronic medium such as the Internet
+          has the potential to go beyond simply passive distribution of products and services, to be
+          an active (and central) creative element in the production of the product or service. From
+          virtual markets (e.g., Priceline.com) through virtual communities (e.g., Firefly) to
+          virtual worlds (e.g., The Palace), the hypermedia of the Web actively constitutes
+          respectively a market, a community, and a virtual world. McLuhan&#x2019;s well-known
+          adage that the &#x201C;medium is the message&#x201D; can be complemented with the
+          addendum that, in some cases, the &#x201C;medium is the product.&#x201D;</p>
+
+          <p>A second effect may be a rise in <italic>commoditization</italic> as channels have a
+          diminished effect on the marketer&#x2019;s ability to differentiate a product or service.
+          Commoditization can be seen as a process by which the complex and the difficult become
+          simple and easy&#x2014;so simple that anyone can do them, and does. Commoditization will
+          be accelerated by the evolution of distribution media that will speed information flow
+          and thus make markets more efficient. The only antidote to commoditization will be to
+          identify a niche market too small to be attractive to others, innovation sufficiently
+          rapid to stay ahead of the pack, or a monopoly.</p>
+
+          <p><italic>Disintermediation</italic> (and also <italic>reintermediation</italic>) is the
+          third effect. As networks connect everybody to everybody else, they increase the
+          opportunities for shortcuts&#x2014;so that when buyers can connect straight from the
+          computer on their desk to the computer of an insurance company or an airline, insurance
+          brokers and travel agents begin to look slow, inconvenient, and overpriced. Products and
+          prices can be compared on the Web, and lots of information gleaned. All suppliers are
+          equidistant, a mere mouse click away.</p>
+
+          <p>The Web also creates opportunities for reintermediation, where intermediaries may
+          enter channels facilitated electronically. Where this occurs, it will be because they
+          perform one of the three fundamental channel functions more effectively than anyone else
+          can. Thus, we are beginning to see new intermediaries set up sites which facilitate simple
+          price search, such as the U.K.-based site Cheapflights, and more advanced sites (e.g.,
+          Priceline) which actually purchase the cheapest fare when customers state what price they
+          are prepared to pay. In these constant games of disintermediation and reintermediation,
+          customer relationships will be the winners&#x2019; prize.</p>
+
+          <p>Dealing effectively with distribution issues in the future will require an understanding
+          of the new distribution media and how the new model will differ from the old. Most extant
+          distribution and communication models are based on centralization, where the investment is
+          at the core (see Figure 6.2). In the new model (see Figure 6.3), investment is everywhere
+          and everywhere quite low. Essentially all that is required is a computer and a telephone
+          line, and anyone can enter the channel as supplier or customer.</p>
+
+          <fig id="fig-6-2">
+            <label>Figure 6.2</label>
+            <caption><p>The mass model of distribution and communication.</p></caption>
+          </fig>
+
+          <fig id="fig-6-3">
+            <label>Figure 6.3</label>
+            <caption><p>The network model of distribution and communication.</p></caption>
+          </fig>
+        </sec>
+
+        <sec id="sec-6-7">
+          <title>6.7 Conclusion</title>
+
+          <p>In this chapter, we have developed the Internet distribution matrix, and suggest that
+          it can be used by existing firms and entrepreneurs to identify at least three things.
+          First, how might the Internet and its multimedia platform, the Web, offer opportunities
+          to perform the existing distribution functions of reassortment/sorting, routinization,
+          and searching more efficiently and effectively. Second, the matrix can enable the
+          identification of competitors poised to use the media to change distribution in the
+          industry and the market. Finally, the matrix may enable managers to brainstorm how an
+          industry can be vulnerable. Neither the firm nor its immediate competitors may be
+          contemplating using the Web to achieve radical change. However, that does not mean that a
+          small startup is not doing so. In many cases, they might very well deprive a market of
+          its most valuable customers, as they exploit technology to change the basic functions of
+          distribution.</p>
+        </sec>
+
+        <sec id="sec-6-8">
+          <title>6.8 Cases</title>
+
+          <p>Dutta, S., A. De Meyer, and S. Kunduri. 1998. Auto-By-Tel and General Motors: David
+          and Goliath. Fontainebleau, France: INSEAD. ECCH 698-066-1.</p>
+
+          <p>Jelassi, T., and H. S. Lai. 1996. CitiusNet: the emergence of a global electronic
+          market. Fontainebleau, France: INSEAD and EAMS. ECCH 696-009-1.</p>
+
+          <p>Subirana, B., and M. Zuidhof. 1996. Readers Inn: virtual distribution on the Internet
+          and the transformation of the publishing industry. Barcelona, Spain: IESE. ECCH
+          196-026-1.</p>
+        </sec>
+
+        <sec id="sec-6-9">
+          <title>6.9 References</title>
+
+          <p>Blattberg, R. C., and J. Deighton. 1991. Interactive marketing: exploiting the age of
+          addressability. <italic>Sloan Management Review</italic> 33(1):5&#x2013;14.</p>
+
+          <p>Cairncross, Frances. 1997. <italic>The death of distance: how the communications
+          revolution will change our lives</italic>. London: Orion.</p>
+
+          <p>Hoffman, D. L., and T. P. Novak. 1996. Marketing in hypermedia computer-mediated
+          environments: conceptual foundations. <italic>Journal of Marketing</italic> 60
+          (July):50&#x2013;68.</p>
+
+          <p>Magretta, Joan. 1998. The power of virtual integration: an interview with Dell
+          Computer&#x2019;s Michael Dell. <italic>Harvard Business Review</italic>
+          76(2):73&#x2013;84.</p>
+
+          <p>McKenna, Regis. 1997. <italic>Real time: preparing for the age of the never satisfied
+          customer</italic>. Boston, MA: Harvard Business School Press.</p>
+
+          <p>Quelch, J. A., and L. R. Klein. 1996. The Internet and international marketing.
+          <italic>Sloan Management Review</italic> 37(3):60&#x2013;75.</p>
+
+          <p>Stern, Louis W., and Adel I. El-Ansary. 1988. <italic>Marketing channels</italic>.
+          3rd ed. Englewood Cliffs, NJ: Prentice-Hall.</p>
+        </sec>
+
+      </body>
+    </book-part>
+
+    <!-- CHAPTER 7 -->
+
+    <book-part book-part-type="chapter" id="chapter-7">
+      <book-part-meta>
+        <title-group>
+          <label>7</label>
+          <title>Service</title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="editor">
+            <n><surname>Pitt</surname><given-names>Leyland F.</given-names></n>
+            <aff>Simon Fraser University, Canada</aff>
+          </contrib>
+        </contrib-group>
+        <fpage>100</fpage>
+        <lpage>111</lpage>
+      </book-part-meta>
+
+      <body>
+
+        <sec id="sec-7-1">
+          <title>7.1 Introduction</title>
+
+          <p>In many advanced economies, services now account for a far greater proportion of gross
+          national product than manufactured goods (e.g., more than 75 percent of GDP and jobs in
+          the U.S.). Yet, it is only in recent years that marketing academics, practitioners, and
+          service firms have begun to give serious attention to the marketing of services, as
+          distinct from products. It is generally thought that the marketing of services is more
+          difficult, complex, and onerous because of the differences between services and products.
+          The Web, we believe, will dramatically change forever this received wisdom. Most of the
+          problems of services really don&#x2019;t matter on the Web. Services are no longer
+          different in a difficult way. Using the Web to deliver services overcomes previously
+          conceived limitations of services marketing, and in many cases, it creates hitherto
+          undreamed-of opportunities for services marketers. We are entering the era of
+          <italic>cyberservice</italic>.</p>
+        </sec>
+
+        <sec id="sec-7-2">
+          <title>7.2 What makes services different?</title>
+
+          <p>Services possess four distinct features not held by products, and an understanding of
+          them is necessary to anticipate problems and to exploit the unique opportunities that some
+          of these attributes provide. The unique characteristics of services are:</p>
+
+          <list list-type="bullet">
+            <list-item><p><bold>Intangibility:</bold> Unlike products, services are intangible or
+            impalpable; they cannot be seen, held, or touched. Whereas products are palpable things,
+            services are performances or experiences. The main problem that intangibility creates
+            for services marketers is that they have nothing to show the customer. Thus, experience
+            and credence qualities are significantly important in the case of services.</p>
+            </list-item>
+            <list-item><p><bold>Simultaneity:</bold> In the case of goods, production and consumption
+            are not simultaneous, and these activities do not occur at the same time or place. In
+            the case of services, it is generally true that the producer and consumer both have to
+            be present when a service is enacted.</p></list-item>
+            <list-item><p><bold>Heterogeneity:</bold> Products tend to possess a sameness, or
+            homogeneity. Manufacturing lines produce homogenous products and have quality control
+            procedures in place to test products as they come off the line. Services have the
+            characteristic of heterogeneity. They vary in output, and mistakes happen in real time,
+            in the customer&#x2019;s face, which creates a number of challenges for the services
+            marketer.</p></list-item>
+            <list-item><p><bold>Perishability:</bold> Because services are produced and consumed
+            simultaneously, they cannot be inventoried. For example, if there are twenty empty seats
+            on an aircraft for a particular flight, the airline can&#x2019;t say, &#x201C;Don&#x2019;t
+            worry, stick them in a cupboard. We&#x2019;ll certainly be able to sell them over
+            Thanksgiving.&#x201D; They are lost forever.</p></list-item>
+          </list>
+        </sec>
+
+        <sec id="sec-7-3">
+          <title>7.3 Cyberservice</title>
+
+          <p>Cyberservice overcomes many of the traditional problems of services marketing by giving
+          the marketer undreamed-of control over the previously capricious characteristics of
+          services. This is because the Web, as an interactive medium, combines the best of mass
+          production (based in the manufacture of products) and customization (typically found in
+          custom-made services). The Web is the ultimate tool for mass customization. It has the
+          ability to treat millions of customers as though they were unique.</p>
+
+          <sec id="sec-7-3-1">
+            <title>7.3.1 Managing intangibility</title>
+
+            <sec id="sec-7-3-1-1">
+              <title>7.3.1.1 Use the Web to provide evidence</title>
+
+              <p>Because customers can&#x2019;t see the service, we have to give them evidence of
+              what it is they will get. Cyberservice puts evidence management into overdrive. The
+              Royal Automobile Club (RAC) enables users to enroll for membership on-line and provides
+              details of the benefits of RAC membership, the extent of assistance the club has
+              provided, service options available, and methods of payment. Most importantly, the
+              site also e-mails a new member within a few minutes of him or her joining&#x2014;this
+              message confirms all details and provides instantaneous, tangible proof of membership.
+              Under traditional service delivery systems, such as the mail, this would take a few
+              days at least.</p>
+
+              <p>One of Ford Motor Company&#x2019;s most innovative U.S. dealers is planning to
+              install live video cameras in its service bays and relay a live feed to its Web site.
+              Customers will be able to visit the service center and check the progress of their
+              car&#x2019;s service. By opening up its service center for continuous customer
+              inspection, the dealer is making very evident the quality of its service.</p>
+            </sec>
+
+            <sec id="sec-7-3-1-2">
+              <title>7.3.1.2 Use the Web site to tangibilize the intangible</title>
+
+              <p>Although services are considered intangible, effective Web sites can, and should,
+              give services a tangible dimension. When you can&#x2019;t really see what it is that
+              you&#x2019;re buying, you look for clues, or what psychologists call cues. The Disney
+              Web site tangibilizes a future dream. It provides graphic details on the parks
+              themselves, allows children to see and listen to their favorite characters, examine the
+              rides that they might take, and get further information, before booking the visit.
+              In general, when managing Web sites, three critical elements stand out: quality of the
+              Web site (a site must have quality text, graphics, video, and sound; when the customer
+              sees the Web site and not the firm, the Web site <italic>becomes</italic> the firm);
+              frequency of update (surfers will generally not visit a site frequently unless it
+              changes regularly); and server speed (just as the customer won&#x2019;t wait endlessly
+              in line for a bank teller, they will not wait forever to access a slow Web site on a
+              sluggish server).</p>
+            </sec>
+
+            <sec id="sec-7-3-1-3">
+              <title>7.3.1.3 Sampling in cyberspace</title>
+
+              <p>It is very difficult to sample a service. The Web has the potential to change all
+              this. Harvard Business School Publishing Services (HBSP) previously required an
+              instructor anywhere in the world wishing to examine a Harvard case study to order a
+              sample copy either by telephone, fax, or in writing, and then wait some days for the
+              item to arrive. Nowadays, approved instructors from all over the world browse the
+              Harvard site, using powerful search facilities to find cases and other materials in
+              which they are interested. When something relevant is found, the instructor downloads
+              it in Adobe Acrobat format and prints it, complete with a watermark indicating that the
+              case is a sample, not for further reproduction.</p>
+            </sec>
+
+            <sec id="sec-7-3-1-4">
+              <title>7.3.1.4 Multiplying memories</title>
+
+              <p>Because services are intangible, the customer frequently relies on the testimony of
+              others (word of mouth) to a greater extent than in the case of products. Whereas in the
+              case of a product, the customer actually has something to show for it, with services
+              there is usually just a memory. Vivid Travel Network is a collection of Web sites based
+              in San Francisco that links and integrates travel information resources from all over
+              the world. Those who have visited a location relive their vacation by writing about it,
+              engaging in discussion with others who have also been there, while at the same time
+              providing valuable and highly credible word of mouth information to prospective
+              visitors.</p>
+            </sec>
+          </sec>
+
+          <sec id="sec-7-3-2">
+            <title>7.3.2 Managing simultaneity</title>
+
+            <sec id="sec-7-3-2-1">
+              <title>7.3.2.1 Customization</title>
+
+              <p>Because services are produced and consumed simultaneously, there is a possibility
+              that the provider can customize the service. Pointcast offers an individually customized
+              news retrieval service. The customer selects categories of personal interest, such as
+              news, sport, stock quotes, and weather. The service then scans news providers and
+              compiles a customized offering for each person, which is updated regularly either by
+              the individual requesting additional items, or by the software learning what the
+              individual likes and prefers. Thus, no two individuals receive the same service from
+              Pointcast.</p>
+            </sec>
+
+            <sec id="sec-7-3-2-2">
+              <title>7.3.2.2 Managing the customer as a part-time employee</title>
+
+              <p>In order to obtain services, the customer generally has to come inside the factory.
+              Furthermore, once inside the service factory, the customer actually has to do a bit of
+              work. The customer can therefore be seen as a co-producer in service firms, and is, in
+              a substantial sense, a part-time employee. The international courier company UPS allows
+              customers access to its system through its Web site. The site reduces uncertainty by
+              allowing customers to track shipments traveling through the system by entering the
+              package receipt number. Customers can also request a pickup and find the nearest
+              drop-off site. Now, millions of tracking requests are handled on-line each month. Many
+              would have used the more expensive and time-consuming telephone system.</p>
+            </sec>
+
+            <sec id="sec-7-3-2-3">
+              <title>7.3.2.3 Innovation as part of customer participation</title>
+
+              <p>If we understand that, in service settings, the customer is a necessary co-producer
+              and participant in the service creation process, then we can become aware of many
+              possible service innovations that can create advantage in competitive markets. Firefly
+              is an example of using the customer&#x2019;s willingness to participate in the service
+              production process to create service innovations on the Web. The Firefly network creates
+              virtual communities of customers by getting them not only to give a lot of information
+              about themselves, but also to do a lot of the work required to create this virtual
+              community. Customers give information about their preferences regarding books, music,
+              or films. Firefly then builds a profile of the customer&#x2019;s likes, which is
+              continually updated as the customer keeps on providing more information. Customers are
+              also put in touch with others who have similar interests. This information is then
+              correlated with other customers&#x2019; interests to recommend new music, books, or
+              films. Customers are thus not only co-creators of their own service and enjoyment;
+              they also produce for Firefly a very valuable and saleable information asset.</p>
+            </sec>
+
+            <sec id="sec-7-3-2-4">
+              <title>7.3.2.4 Service industrialization</title>
+
+              <p>It has been argued that service firms would be more successful if they provided
+              <italic>less</italic> service, not more! They should industrialize themselves, and
+              become more like mass producers of goods than benevolent panderers to the whims of
+              individuals. Rather than try to solve the problems that arise in service firms, they
+              should try to eliminate them. Don&#x2019;t fix the system, change the system.</p>
+
+              <p>Switchboard.com is a giant national database that contains the names, telephone
+              numbers, and addresses of more than 100 million households and a further million
+              businesses in the U.S. Visitors simply type in a name to get a listing of all of the
+              people in the country by that name. Further information the visitor has, such as state,
+              city, or street name, helps narrow the search considerably. The visitor is able to
+              print and keep the listing, and also use the Web site to automatically send a postcard
+              to the person just tracked down. This unique service is entirely produced by machines.
+              The directory assistance example illustrates how redesigning the system to provide less
+              service, by replacing the human element with a machine, actually provides more service.
+              Customers now have access to more information, which is so often the core element of
+              any service.</p>
+            </sec>
+
+            <sec id="sec-7-3-2-5">
+              <title>7.3.2.5 Reducing customer errors</title>
+
+              <p>When customers are part of the production process, their errors can directly affect
+              the service outcome. Indeed, one-third of all customer complaints are related to
+              problems caused by customers. Ways must be found to make the consumer component, as
+              well as the producer component, of services fail-safe. Customer errors arise during
+              preparation for the encounter, the service encounter, or the resolution of the
+              encounter.</p>
+
+              <p><bold>Encounter preparation:</bold> Customers can be reminded of what they need to
+              do prior to the encounter&#x2014;what to bring, the steps to follow, which service to
+              select, and where to go. Hampton Inn generates personalized driving instructions for
+              travelers to get them from their starting location to the selected Hampton Inn at their
+              destination.</p>
+
+              <p><bold>The encounter:</bold> An advantage of cyberservice is that customers can be
+              led precisely through a process repeatedly. When buying books from Amazon.com the
+              customer is stepped through the process of selecting books and providing payment and
+              shipping details. No steps can be missed and the system checks the validity of entered
+              information. Many Web sites require customers to enter their e-mail address twice
+              because of the observed high customer data entry error rate.</p>
+
+              <p><bold>Encounter resolution:</bold> On-line catalog companies, such as REI, e-mail
+              customers a copy of their order so customers can correct any errors they may have made
+              when entering delivery and order details.</p>
+            </sec>
+          </sec>
+
+          <sec id="sec-7-3-3">
+            <title>7.3.3 Managing heterogeneity</title>
+
+            <sec id="sec-7-3-3-1">
+              <title>7.3.3.1 Service standardization on the Web site</title>
+
+              <p>Some services marketers are reluctant to standardize service activities because they
+              feel that this tends to mechanize and dehumanize an interaction between individuals. In
+              some circumstances this is true, but that doesn&#x2019;t mean that managers shouldn&#x2019;t
+              look for opportunities to produce service activities in as predictable and uniform a
+              way as possible. Security First Network Bank (SFNB), which was one of the first
+              financial services institutions to offer full-service banking on the Internet, uses a
+              graphic metaphor&#x2014;a color picture of the lobby of a traditional bank&#x2014;to
+              communicate and interact with potential and existing customers. Whereas in a real bank
+              the customer might encounter great or indifferent service, warmth or rudeness,
+              competence or incompetence, depending on the individual who serves them, in SFNB, the
+              service is relevant and highly consistent.</p>
+            </sec>
+
+            <sec id="sec-7-3-3-2">
+              <title>7.3.3.2 Electronic eavesdropping on customers&#x2019; conversations</title>
+
+              <p>Firms must listen to different consumer groups to ensure that they are hearing what
+              customers are saying. They need to listen to three types of customers: external
+              customers, competitors&#x2019; customers, and internal customers (employees). Every
+              day on the Internet, customers are talking about products. Newsgroups and listservs
+              provide forums for consumers throughout the world to pass comment on a company&#x2019;s
+              products and services. Furthermore, bad news travels at megabits per second to millions
+              of customers, as Intel found when the flawed Pentium chip was detected. Companies can
+              eavesdrop on these conversations and respond when appropriate. Internally, an
+              organization can set up electronic bulletin boards to foster communication from
+              internal customers. Cyberservice means listening to more customers more intently and
+              reacting electronically in real time.</p>
+            </sec>
+
+            <sec id="sec-7-3-3-3">
+              <title>7.3.3.3 Service quality</title>
+
+              <p>Whereas good quality can be controlled into, and bad quality out of, the production
+              process for goods, in the case of services this is made much more difficult by
+              heterogeneity. Thus, service quality needs to be carefully managed. If you can&#x2019;t
+              measure something, you can&#x2019;t manage it. Interactive, Web-based questionnaires
+              are a convenient and inexpensive way of collecting customers&#x2019; perceptions of
+              service quality. An on-line version of SERVQUAL, a widely used measure of service
+              quality, can capture customers&#x2019; expectations and perceptions of service quality.
+              The real pay-off of Web-based questionnaires is in reducing the length of the feedback
+              loop so that service quality problems are rapidly detected and corrected before too many
+              customers are disaffected.</p>
+            </sec>
+          </sec>
+
+          <sec id="sec-7-3-4">
+            <title>7.3.4 Managing perishability</title>
+
+            <p>Because products are produced before they are consumed, many can be stored until
+            needed. Services cannot, for they are produced and consumed simultaneously. This gives
+            them the characteristic of perishability. To understand and minimize the effects of
+            service perishability, astute services marketers are using Web sites to manage two
+            things: supply and demand.</p>
+
+            <sec id="sec-7-3-4-1">
+              <title>7.3.4.1 Managing supply on the Web site</title>
+
+              <p>Managing supply in a conventional service setting requires controlling all those
+              factors of service production which affect the customer&#x2019;s ability to acquire
+              and use the service. On the Web, these issues are circumvented, for the Web site gives
+              the services marketer the ability to provide 24-hour service to customers anywhere.
+              British Airways uses its Web site to provide services that, under conventional
+              circumstances, would have been limited by people, time, and place. Customers are now
+              able to purchase tickets off the Web site at any time convenient to them, without
+              standing in line, from any place.</p>
+            </sec>
+
+            <sec id="sec-7-3-4-2">
+              <title>7.3.4.2 Directing demand on the Web site</title>
+
+              <p>Services marketers also cope with service perishability by managing demand. They use
+              aspects of the services marketing mix, such as promotions, pricing, and service
+              bundling, to stimulate or dampen demand for the service. Most service businesses are
+              characterized by a high fixed cost component. In many situations, even very low prices
+              for those last few seats or those last few rooms can be easily justified&#x2014;20 or
+              30 percent of list price is still better than nothing when the service would have
+              perished anyway. Many airlines are now conducting on-line ticket auctions on their Web
+              sites as a way of managing demand. Airlines typically fill only two-thirds of their
+              available capacity. By auctioning off unsold seats for imminent flights at low prices,
+              the potential exists to approach 100 percent capacity.</p>
+
+              <p>Finally, some services marketers make good use of <italic>service bundling</italic>&#x2014;putting
+              together inclusive packages of services in a way that allows value to the customer to
+              far exceed what he or she would have spent purchasing each component of the bundle
+              individually. Microsoft&#x2019;s travel Web site, Expedia.com, allows customers to
+              shop for vacations, flights, car rentals, and tours and to combine these into
+              personalized travel bundles, all from one location.</p>
+            </sec>
+          </sec>
+        </sec>
+
+        <sec id="sec-7-4">
+          <title>7.4 Conclusion</title>
+
+          <p>Services possess unique characteristics: intangibility, simultaneity, heterogeneity,
+          and perishability. These have traditionally presented serious challenges to the services
+          marketer. Cyberservice has the ability to ameliorate many of the problems traditionally
+          associated with service, and even turn them into singular opportunities. Ironically, in
+          the near future, it may be products that are more troublesome to marketers than services.
+          The Web overturns the traditional hierarchy between products and services.</p>
+
+          <p>How does cyberservice achieve this? The answer lies in three characteristics of
+          cyberspace&#x2014;the ability to quantize, search, and automate. Quantization of services
+          (the breaking down of services into their smallest constituent elements) allows unparalleled
+          mass customization (the recombination of elements into unique configurations). Search
+          facilitates hyper-efficient information markets, matching supply and demand at a level
+          previously unattainable. Automation allows service bottlenecks to be bypassed, returning
+          power and choice to the customer, and overcomes the traditional limitations of time and
+          space.</p>
+        </sec>
+
+        <sec id="sec-7-5">
+          <title>7.5 Cases</title>
+
+          <p>Charlet, J.-C., and E. Brynjolfsson. 1998. BroadVision. Graduate School of Business,
+          Stanford University, OIT-21.</p>
+
+          <p>Huff, S. L. 1998. Scantran. London, Canada: University of Western Ontario. 997E010.</p>
+
+          <p>Charlet, J.-C., and E. Brynjolfsson. 1998. Firefly Network (A). Graduate School of
+          Business, Stanford University, OIT-22A.</p>
+        </sec>
+
+        <sec id="sec-7-6">
+          <title>7.6 References</title>
+
+          <p>Berry, L. L., and A. Parasuraman. 1997. Listening to the customer&#x2014;the concept
+          of a service-quality information system. <italic>Sloan Management Review</italic>
+          38(3):65&#x2013;76.</p>
+
+          <p>Chase, R. B., and D. M. Stewart. 1994. Make your service fail-safe.
+          <italic>Sloan Management Review</italic> 35(3):35&#x2013;44.</p>
+
+          <p>Levitt, T. 1976. The industrialization of service.
+          <italic>Harvard Business Review</italic> 54(5):63&#x2013;74.</p>
+
+          <p>Pitt, Leyland F., Pierre Berthon, and Richard T. Watson. 1999. Cyberservice: taming
+          service marketing problems with the World Wide Web.
+          <italic>Business Horizons</italic> 42(1):11&#x2013;18.</p>
+
+          <p>Zeithaml, V., A. Parasuraman, and L. L. Berry. 1990.
+          <italic>Delivering quality service: balancing customer perceptions and
+          expectations</italic>. New York, NY: Free Press.</p>
+        </sec>
+
+      </body>
+    </book-part>
+
+  </body>
+
+</book>
